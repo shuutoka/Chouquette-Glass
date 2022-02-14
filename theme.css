@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+body, div, span, textarea, ::-webkit-input-placeholder {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+:root {
+    --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
+    --bg-blur: px; /*Amount of blur on the background*/
+    --app-accent-rgb: 10,90,200;/*mention alerte color in R G B value*/
+    --mention-rgb: var(--app-accent-rgb);
+}
+
+/*Modifies the background*/
+#app-mount::before {
+    content: "";
+    background: var(--background-image);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* position*/
+    width: 100%;
+    filter: blur(var(--bg-blur));
+    opacity: var(--bg-opacity);
+}
+/*Transparent panels*/
+.appMount-2yBXZl, body {
+    background-color: var(--bg-main-panels);
+}
+.app-2CXKsg { /*Discord Background*/
+    background-color: var(--bg-main-panels);
+}
+
+.layers-OrUESM {/*don't delete this line*/
+  background-color: rgba(0, 0, 0, 0.527); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
+}/*don't delete this line*/
+
+.standardSidebarView-E9Pc3j, /*don't delete this */
+.sidebarRegionScroller-FXiQOh, /* this modify the side bar you can delet/change it if you want*/
+.contentRegion-3HkfJJ,/*this is for the main region, you can delet/modify it but it can look strange*/
+.bg-1QIAus, /*this is the background, if you delete it, you will get a true black background*/
+.theme-dark .layer-86YKbF,
+.contentRegionScroller-2_GT_N, /* oh hey, this code isn't so complicated right ?*/
+.scroller-3_YDR2 { /*don't delete this line*/
+  background-color: transparent;/*don't delete this line*/
+}/*don't delete this line*/
+
+
+.guildSeparator-33mFX6, .scroller-3X7KbA, .wrapper-1_HaEi { /* allow you to see your image*/
+  background: none;
+}
+
+/*you will see your image trough the text bar, delet it to recover the legacy one*/
+.scrollableContainer-15eg7h {
+  background-color: transparent;
+}
+
+.channelTextArea-1FufC0 {
+  background-color: rgba(0, 0, 0, .3); /*text bar color*/
+}
+
+.searchBar-zdmu7v {
+  border-radius: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, .3); /*searchBar*/
+}
+
+.search-1FM8Qc .DraftEditor-root .public-DraftEditorPlaceholder-root {
+  color: rgba(255, 255, 255, 0.726); /* search inscription (top right)*/
+}
+
+.container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
+  background-color: transparent; /* main space of discord, don't delete this line*/
+}
+
+.theme-dark .container-ZMc96U {
+  color: white;
+  background-color: transparent; /* channel name& info*/
+}
+
+
+.childWrapper-1j_1ub {
+  background-color: transparent; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
+  color: white;
+}
+
+.children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
+.theme-dark .option-2KkUJO:after, .divider-q3P9HC {
+  background: none; /* if you delete, the search bar will be ugly... i guess */
+}
+
+
+.theme-dark .container-2McqkF { /* search bar color option */
+  background-color: #000000dc;
+}
+
+.theme-dark .resultsGroup-1BPR25 .header-3A13BX, .theme-dark .resultsGroup-1BPR25 .plusIcon-2V7coV, .theme-dark .resultsGroup-1BPR25 .searchClearHistory-2Be-92, .theme-dark .resultsGroup-1BPR25 .searchLearnMore-7__o_n a,
+.theme-dark .searchOption-351dTI .filter-5YbOzJ, .theme-dark .option-2KkUJO .answer-2fBfuP {
+  color: white; /*search bar result color*/
+}
+
+
+.theme-dark .option-2KkUJO .filter-5YbOzJ { /*search bar option color*/
+  color: #8f8f8f;
+}
+
+
+.theme-dark .focused-2FU0YH, .theme-dark .option-2KkUJO.selected-rZcOL- { /*hover in the search bar*/
+  background-color: rgba(216, 216, 221, 0.2);
+}
+
+.members-3WRCEx {
+  background-color: rgba(0,0,0,.3);/* don't delete this... it's gonna be ugly*/
+}
+
+.members-3WRCEx>div {
+  background-color: transparent; /* don't delete this... it's gonna be ugly*/
+}
+
+.container-2o3qEW {
+  background-color: transparent;
+}
+
+.body-GBnhET, .activity-2EQDZv, .member-2gU6Ar, .clickable-28SzVr.container-1oeRFJ:hover, .clickable-28SzVr.container-1oeRFJ:hover .muted-14PyqW {
+  color: rgb(228, 228, 228); /*change the global color of people. activate it by delete the "@". you can also edit it if you want */
+}
+
+.contentWrapper-3vHNP2,
+.emojiPicker-6YCk8a {
+  border-radius: 0 0 7px 7px;
+  background:  rgba(0, 0, 0, 0.719); /*adjust the color for the emote box*/
+}
+
+.diversityEmojiItem-2bgZKv:hover {  /* the zone were the server name is displayed*/
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+.wrapper-1NNaWG {
+  background-color: rgba(0, 0, 0, 0.048); /*wrapper*/
+}
+
+.inspector-DFKXwB, .wrapper-22rqw6 { /*emoji inspector*/
+  background: none;
+}
+ 
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, /* top buttons color in the "friends menu"*/
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected,
+.theme-dark .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy {
+  background-color: #5c5859;
+}
+
+.privateChannels-oVe7HL, .scroller-WSmht3, .theme-dark .container-2cd8Mz,
+.nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
+.scroller-29cQFV {
+  background: none;  /* background in the "friend menu"*/
+}
+
+.wrapper-2RrXDg {
+  background-color: rgba(0, 0, 0, .23);
+} /* online friends card, you can edit it */
+
+
+.container-1oAagU {
+  background-color: rgba(0, 0, 0, .23);
+} /* container for online friend you can edit it if you want*/
+
+.theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2 {
+  background: none;
+} /* activity of your friends (like "Play on Xbox") in the container, you can edit/delete it if you want*/
+
+.actionButton-3-B2x- { /*buttons shape and color. 0xp = square, 20 = round*/
+  border-radius: 14px;
+  color: white;
+  background-color: rgba(37, 36, 36, 0.6);
+}
+
+.actionButton-3-B2x-:hover, .actionButton-3-B2x-.highlight-3DSi7b {
+  background-color: #5a5a5a;
+} /* Hover action buttons color */
+
+.theme-dark .attachment-1PZZB2, .embedFull-1HGV2S, .wrapper-1HIH0j {
+  border-color: transparent;
+  background-color: rgba(0,0,0,0.3);
+} /* attachement and link, you can edit the color*/
+
+.theme-dark .autocomplete-3NRXG8, .theme-dark .uploadModal-2ie9O_ {
+  background: rgba(0, 0, 0, 0.842);
+} /*emoji selector in the text bar*/
+
+.theme-dark .selected-3H3-RC {
+  background-color: #3b3834e5;
+} /* hover in the emoji selector of the text bar*/
+
+.reaction-2A2y9y {
+  border-radius: 1px;
+  background-color: rgba(82, 78, 78, 0.671); /*reaction color and shape*/
+}
+
+
+.wrapper-2vIMkT {
+  background-color: #080808cc;
+  box-shadow: none;
+} /*reaction reply and more box*/
+
+.reaction-2A2y9y {
+  border-radius: 7px;
+  background-color: rgba(102, 99, 100, 0.6);
+} /*reaction shape and color*/
+
+.modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg,
+.modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV {
+  color: #ffffffd7;
+} /*unread channel*/
+
+/*sidebar update*/
+.standardSidebarView-E9Pc3j a, .imageDetails-1t6Zms a, .primary-jw0I4K a, .footer-1Ip3Sd a, .lookLink-15mFoz.colorLink-1Md3RZ,
+.bda-slist .bda-footer a, .markup-eYLPri a, .welcomeMessage-ULm0mo a, .theme-dark .filenameLinkWrapper-3Rc6sk, .theme-dark .filenameLinkWrapper-3Rc6sk a,
+.topic-11NuQZ a, .emptyStateCTA-206J-N a, .helpText-h3r3wC a, .colorStandard-21JIj7 a,
+.editChannelButton-1dYN-G, .fakeLink-2FvUR7, .button-1kija8,
+.footerText-2QLGHU a {
+  color: rgba(51, 139, 255, 0.74);
+} 
+/* TITLEBAR */
+.typeWindows-2-g3UY > .wordmark-2u86JB:before {
+  content: "Light Chouquette Glass";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  text-shadow: 0 0 3px #000;
+}
+.typeWindows-2-g3UY > .wordmark-2u86JB > svg {
+  filter: drop-shadow(0 0 5px var(--main-color));
+  margin-top: 0px;
+}
+
+
+/* CHAT AREA -> MESSAGES */
+.wrapper-30-Nkg {
+  border-radius: var(--messages-radius); }
+  .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+    margin-left: 47px; /*larger zone for tchat*/
+
+    padding: var(--messages-padding);
+    padding-right: 8px !important;
+    border: 2px solid transparent; }
+    .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m, .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m.alt-1dvXnH {
+      color: var(--text-normal); }
+.avatar-2e8lTP { /*avatar position*/
+  top: -14px;
+  left: -49px; }
+
+
+/*EMBEDDED */
+
+.textContainer-36wgKK {
+  background-color: var(--card-color);
+  border-radius: var(--messages-radius) var(--messages-radius) 0 0;
+  border: none; }
+
+.footer-GXWBBp {
+  background-color: var(--card-color);
+  border-radius: 0 0 var(--messages-radius) var(--messages-radius);
+  border: none;
+  border-top: 1px solid var(--card-color); }
+/*mention*/
+
+
+.mentioned-Tre-dv,
+.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv:hover {
+  background-color: var(--messages-color);
+  border-color: rgb(var(--mention-rgb)) !important;
+  box-shadow: inset 0px 0px 7px 1px rgb(var(--mention-rgb)), 0px 0px 9px 2px rgb(var(--mention-rgb)); }
+
+.localBot-GrCgVt:before,
+.mentioned-Tre-dv:before {
+  display: none; }
