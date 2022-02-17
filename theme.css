@@ -79,7 +79,10 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   color: white;
   background-color: transparent; /* channel name& info*/
 }
-
+.children-3xh0VB:after,
+.form-3gdLxP:before {
+    display: none !important
+} /*fix a bug with panels*/
 
 .childWrapper-1j_1ub {
   background-color: transparent; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
