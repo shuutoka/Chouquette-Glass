@@ -10,8 +10,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     --app-accent-rgb: 10,90,200;/*mention alerte color in R G B value*/
     --mention-rgb: var(--app-accent-rgb);
 }
-.titleBar-1it3bQ {
-  height: 23px; }
 /*Modifies the background*/
 #app-mount::before {
     content: "";
