@@ -9,6 +9,10 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     --bg-blur: px; /*Amount of blur on the background*/
     --app-accent-rgb: 10,90,200;/*mention alerte color in R G B value*/
     --mention-rgb: var(--app-accent-rgb);
+    --scrollbar-color: 255,255,255; /*RGB values*/
+    --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
+    --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
+    --scrollbar-width: 15px; /*angle smoothness*/
 }
 /*Modifies the background*/
 #app-mount::before {
@@ -238,6 +242,20 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .titleBar-1it3bQ {
   height: 23px; }
+
+
+/*SCROLLBARS */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity)) !important;
+ }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity-hover)) !important;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  border-color: transparent !important;
+} /*make invisible the "rail"*/
 
 /* CHAT AREA -> MESSAGES */
 .wrapper-30-Nkg {
