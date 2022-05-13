@@ -7,12 +7,17 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 :root {
     --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
     --bg-blur: px; /*Amount of blur on the background*/
-    --app-accent-rgb: 10,90,200;/*mention alerte color in R G B value*/
-    --mention-rgb: var(--app-accent-rgb);
+    --mention-rgb: 135,15,255;/*mention alerte color in R G B value*/
     --scrollbar-color: 255,255,255; /*RGB values*/
     --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
     --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
     --scrollbar-width: 15px; /*angle smoothness*/
+    --popout-color: rgba(0,0,0,0.55);
+    --popout-blur: 8px; /*blur of the popup's result search bar*/
+    --popout-header-opacity: 0.3;
+    --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
+    --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
+    --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 }
 /*Modifies the background*/
 #app-mount::before {
@@ -64,12 +69,51 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   background-color: rgba(0, 0, 0, .3); /*text bar color*/
 }
 
-.searchBar-zdmu7v {
-  border-radius: 0;
-  color: white;
-  background-color: rgba(0, 0, 0, .3); /*searchBar*/
+/*searchbar head*/
+.searchBar-jGtisZ {
+  padding: 0 8px;
+  background-color: rgba(68, 63, 63, 0.336);
 }
 
+/*friend list search bar*/
+.searchBar-2aylmZ {
+  background-color: rgba(255, 255, 255, 0.096);
+  border-radius: 17px;
+}
+
+/*result searchbar*/
+ .container-2McqkF {
+  background-color: var(--popout-color) !important;
+  border-radius: var(--popout-radius) !important;
+  box-shadow: var(--popout-shadow) !important;
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+.option-ayUoaq {
+  border-radius: var(--popout-radius);
+}
+.option-ayUoaq:after {
+  display: none;
+}
+[aria-selected=true].option-ayUoaq {
+  background-color: var(--background-modifier-hover);
+}
+
+.focused-2FU0YH {
+  background-color: transparent !important;
+}
+
+.queryContainer-ZunrLZ {
+  border: none;
+  box-shadow: var(--popout-header-shadow);
+}
+
+.resultsGroup-cfY57t:before {
+  display: none;
+}
+
+
+/*--*/
 .search-1FM8Qc .DraftEditor-root .public-DraftEditorPlaceholder-root {
   color: rgba(255, 255, 255, 0.726); /* search inscription (top right)*/
 }
@@ -98,24 +142,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 
-.theme-dark .container-2McqkF { /* search bar color option */
-  background-color: #000000dc;
-}
-
-.theme-dark .resultsGroup-1BPR25 .header-3A13BX, .theme-dark .resultsGroup-1BPR25 .plusIcon-2V7coV, .theme-dark .resultsGroup-1BPR25 .searchClearHistory-2Be-92, .theme-dark .resultsGroup-1BPR25 .searchLearnMore-7__o_n a,
-.theme-dark .searchOption-351dTI .filter-5YbOzJ, .theme-dark .option-2KkUJO .answer-2fBfuP {
-  color: white; /*search bar result color*/
-}
-
-
-.theme-dark .option-2KkUJO .filter-5YbOzJ { /*search bar option color*/
-  color: #8f8f8f;
-}
-
-
-.theme-dark .focused-2FU0YH, .theme-dark .option-2KkUJO.selected-rZcOL- { /*hover in the search bar*/
-  background-color: rgba(216, 216, 221, 0.2);
-}
 
 .members-3WRCEx {
   background-color: rgba(0,0,0,.3);/* don't delete this... it's gonna be ugly*/
@@ -230,7 +256,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 } 
 /* TITLEBAR */
 .typeWindows-2-g3UY > .wordmark-2u86JB:before {
-  content: "Light Chouquette Glass";
+  content: " Chouquette Glass"; /*name of the theme*/
   color: rgba(255, 255, 255, 0.7);
   font-size: 17px;
   text-shadow: 0 0 3px #000;
