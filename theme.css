@@ -8,6 +8,8 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
     --bg-blur: px; /*Amount of blur on the background*/
     --mention-rgb: 135,15,255;/*mention alerte color in R G B value*/
+    --message-padding-side: 5px; /*message padding*/
+    --message-padding-top: 1px;
     --scrollbar-color: 255,255,255; /*RGB values*/
     --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
     --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
@@ -343,4 +345,15 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .container-3i3IzO {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
+}
+/*REPLY*/
+.repliedMessage-3Z6XBG:before { /*bar in the reply*/
+  transform: translateX(38px);
+}
+.repliedMessage-3Z6XBG .replyAvatar-sHd2sU, /*avatar in the reply*/
+.repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
+  margin-left: 34px;
+}
+.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+  padding: var(--message-padding-top) var(--message-padding-side); /*Padding value for message are in "root"*/
 }
