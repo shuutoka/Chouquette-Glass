@@ -377,13 +377,24 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .bd-addon-list .bd-addon-header {
     color: rgb(80, 124, 190);
-    background: transparent;  /*header settings tranparency*/
+    background: transparent;
 }
 
 .theme-dark .bd-addon-list .bd-addon-card {
     background-color: rgba(0, 0, 0, 0.33); /*background color of the panels*/
     border: 4px solid rgba(64, 76, 192, 0.425); /*color of the border */
 }
+/*reply bar in text zone*/
+.replyBar-1oi75v,
+.threadSuggestionBar-3ExSyc {
+	background: rgba(33, 48, 182, 0.308);
+}
 
+.attachedBars-2BCP3l {
+	background: rgba(0, 0, 0, 0)
+}
 
-
+.attachedBars-2BCP3l .replyBar-1oi75v,
+.attachedBars-2BCP3l .threadSuggestionBar-3ExSyc {
+  background-color: transparent;
+}
