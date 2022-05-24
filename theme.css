@@ -377,7 +377,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .bd-addon-list .bd-addon-header {
     color: rgb(80, 124, 190);
-    background: transparent;
+    background: transparent;  /*header settings tranparency*/
 }
 
 .theme-dark .bd-addon-list .bd-addon-card {
