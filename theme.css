@@ -354,6 +354,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
   margin-left: 34px;
 }
+
 .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
   padding: var(--message-padding-top) var(--message-padding-side);
 }
@@ -384,11 +385,6 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: rgba(0, 0, 0, 0.33); /*background color of the panels*/
     border: 4px solid rgba(64, 76, 192, 0.425); /*color of the border */
 }
-/*reply bar in text zone*/
-.replyBar-1oi75v,
-.threadSuggestionBar-3ExSyc {
-	background: rgba(33, 48, 182, 0.308);
-}
 
 .attachedBars-2BCP3l {
 	background: rgba(0, 0, 0, 0)
@@ -397,4 +393,60 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .attachedBars-2BCP3l .replyBar-1oi75v,
 .attachedBars-2BCP3l .threadSuggestionBar-3ExSyc {
   background-color: transparent;
+}
+
+.root-g14mjS {
+    background-color: #111c3261; /*color of the message box*/
+    border-radius: 30px;  /*border radius of the message box*/
+    /*Error theme broken message when you open discord*/
+}
+.footer-31IekZ {
+    border-radius: 0 0 5px 5px;/*radius border*/
+    background-color: #0c121e94; /*footer color of the error theme message*/
+}
+
+.bd-tab-item.selected {
+    cursor: default;
+    background-color: rgb(44 64 95 / 60%); /* "theme icon" in the theme error message */
+}
+
+.bd-addon-error-icon {
+    border-radius: 35%; /*icons border of the error theme message*/
+}
+
+
+
+/*Discord nitro history*/
+
+.theme-dark .codeRedemptionRedirect-2hYMSQ { /*footer tips message*/
+    color: #fff;
+    background-color: #1f2f5680;
+    border-color: #172841;
+}
+
+.theme-dark .paymentPane-ut5qKZ,
+.theme-dark .paginator-1eqD2g {
+  background-color: rgba(0, 0, 0, 0.226)
+}
+
+.theme-dark .bottomDivider-ZmTm-j {
+  border-color: rgba(0, 0, 0, 0)
+}
+
+.theme-dark .hoverablePayment-lE1s4t:hover {
+  background-color: rgba(65, 54, 216, 0.055)
+}
+
+.theme-dark .payment-2bOh4k {
+  background-color: rgba(29, 28, 82, 0.158)
+}
+
+.lookFilled-yCfaCM.colorPrimary-2AuQVo { /*modify payment button*/
+    color: #fff;
+    background-color: #2b497780;
+}
+
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover { /*modify payement button on hover*/
+    color: #fff;
+    background-color: #357aa1b9;
 }
