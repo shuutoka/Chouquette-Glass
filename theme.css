@@ -529,8 +529,13 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #1d1d773a;
     backdrop-filter: blur(var(--popout-blur));
 }
-
+/*SERVER items*/
 .communityInfoPill-2Mll66 {
     background: var(--card-color);
     backdrop-filter: blur(var(--popout-blur)); /* Public badge on discord server banner*/
+}
+
+.emptyChannelIcon-1YdEz2 {
+    background-color: #4a47ae46;
+    backdrop-filter: blur(var(--popout-blur)); /*icon empty channel "#"*/
 }
