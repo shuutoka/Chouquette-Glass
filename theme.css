@@ -164,6 +164,14 @@ body, div, span, textarea, ::-webkit-input-placeholder {
        background-color: #465c9359; /*folder server in the bar*/
 }
 
+.menu-1QACrS { /*server menu*/
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    background: var(--card-color);
+    border-radius: 20px;
+    backdrop-filter: blur(var(--popout-blur));
+}
+
 .children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
 .theme-dark .option-2KkUJO:after, .divider-q3P9HC {
   background: none; /* if you delete, the search bar will be ugly... i guess */
@@ -495,4 +503,3 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     color: #fff;
     background-color: #357aa1b9;
 }
-/*test zone*/
