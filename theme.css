@@ -526,3 +526,8 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #1d1d773a;
     backdrop-filter: blur(var(--popout-blur));
 }
+
+.communityInfoPill-2Mll66 {
+    background: var(--card-color);
+    backdrop-filter: blur(var(--popout-blur)); /* Public badge on discord server banner*/
+}
