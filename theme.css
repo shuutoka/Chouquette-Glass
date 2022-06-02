@@ -274,6 +274,14 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   background-color: rgba(82, 78, 78, 0.671); /*reaction color and shape*/
 }
 
+.button-1zW0-r {
+    background-color: #0d0d326b; /*emoji reaction button in the menu*/
+}
+
+.button-1zW0-r:hover {
+    background-color: #3737b96b; /*emoji reaction button on hover in the menu*/
+}
+
 
 .wrapper-2vIMkT {
   background-color: #080808cc;
