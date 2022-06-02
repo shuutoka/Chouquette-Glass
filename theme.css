@@ -137,7 +137,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 } /*fix a bug with panels*/
 
 .childWrapper-1j_1ub {
-  background-color: transparent; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
+  background-color: #2a3eb74d;; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
   color: white;
 }
 
@@ -374,6 +374,29 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 /*settings and non-feed panels*/
+
+/*ACOUNT SETTINGS*/
+.accountProfileCard-lbN7n- {
+    background-color: #2538546e;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-3d_SjE {
+    border-radius: 8px;
+    background-color: var(--card-color);
+    padding: 16px;
+    margin: 8px 16px 16px;
+    
+}
+
+.fieldList-in8WkP {
+    border-radius: 8px;
+    background-color: var(--card-color);
+    
+}
+/*BD theme settings*/
 
 
 .bd-addon-list .bd-addon-header {
