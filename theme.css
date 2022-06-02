@@ -549,4 +549,14 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .defaultColor-24IHKz {
     color: #3c92e8;
 }
+/*discorver menu*/
+.theme-dark .pageWrapper-2PwDoS {
+    background-color: #1a326246;
+    backdrop-filter: blur(var(--popout-blur));
+}
+
+.theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
+    background-color: #07112c62;
+} 
+
 /**/
