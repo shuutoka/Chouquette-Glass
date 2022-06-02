@@ -520,3 +520,9 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     color: #fff;
     background-color: #357aa1b9;
 }
+
+/*Follow channel pop up*/
+.wrapper-2SplAX {
+    background-color: #1d1d773a;
+    backdrop-filter: blur(var(--popout-blur));
+}
