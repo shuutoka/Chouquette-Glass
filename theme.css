@@ -481,6 +481,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .bd-tab-item.selected {
     cursor: default;
     background-color: rgb(44 64 95 / 60%); /* "theme icon" in the theme error message */
+    backdrop-filter: blur(var(--popout-blur));
 }
 
 .bd-addon-error-icon {
@@ -539,3 +540,13 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #4a47ae46;
     backdrop-filter: blur(var(--popout-blur)); /*icon empty channel "#"*/
 }
+/* create a server menu*/
+.container-x8Y1ix {
+    border-radius: 19px;
+    background-color: #172c64ad;
+}
+
+.defaultColor-24IHKz {
+    color: #3c92e8;
+}
+/**/
