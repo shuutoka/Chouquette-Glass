@@ -86,6 +86,16 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   border-radius: 17px;
 }
 
+.searchBar-3TnChZ .searchBarComponent-3N7dCG { /*the second friend search bar*/
+    width: 100%;
+    height: 30px;
+    border-radius: 18px;
+    background-color: #0d0d32;
+    font-size: 13px;
+    font-weight: 510;
+    line-height: 4px;
+}
+
 /*result searchbar*/
  .container-2McqkF {
   background-color: var(--popout-color) !important;
@@ -141,11 +151,23 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   color: white;
 }
 
+.circleIconButton-1VxDrg {
+     background-color: #2339648f; /*server discover and add button color*/
+}
+
+.folder-241Joy {
+    cursor: pointer;
+    background-color: #334d8f26; /*folder icon background*/
+}
+
+.expandedFolderBackground-1kSAf6 {
+       background-color: #465c9359; /*folder server in the bar*/
+}
+
 .children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
 .theme-dark .option-2KkUJO:after, .divider-q3P9HC {
   background: none; /* if you delete, the search bar will be ugly... i guess */
 }
-
 
 
 .members-3WRCEx {
