@@ -85,6 +85,15 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   background-color: rgba(255, 255, 255, 0.096);
   border-radius: 17px;
 }
+/*button over the search bar in friend tab*/
+.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
+  background-color: rgba(22, 55, 165, 0.723);
+  color: rgba(255, 255, 255, .7)
+} /*hover button color over the search bar*/
+
+.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+  background-color: var(--card-color);
+} /*button color over the search bar*/
 
 .searchBar-3TnChZ .searchBarComponent-3N7dCG { /*the second friend search bar*/
     width: 100%;
