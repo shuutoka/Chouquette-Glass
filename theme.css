@@ -540,6 +540,12 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #4a47ae46;
     backdrop-filter: blur(var(--popout-blur)); /*icon empty channel "#"*/
 }
+.role-23oyrw {
+    /*color: */
+    background-color: var(--card-color); /*Roles that have persmission to access to this channel. information at the top of a new channel*/
+    border-radius: 20px;
+}
+
 /* create a server menu*/
 .container-x8Y1ix {
     border-radius: 19px;
@@ -558,5 +564,35 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
     background-color: #07112c62;
 } 
+
+.theme-dark .searchBox-pyIJJj {
+    background-color: #1c4c9941; /*search bar*/
+}
+
+.lookFilled-1GseHa.select-1Ia3hD {
+    background-color: var(--card-color); /*filter "langage"*/
+    border-color: #07112c62;
+}
+
+.popout-1KHNAq {
+    border: 0px solid var(--background-tertiary); /*pop up menu langage*/
+    background: var(--card-color);
+    border-radius: 0 0 20px 20px;
+   backdrop-filter: blur(2px);
+}
+
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
+    color: var(--interactive-active);
+    background-color: #2e4a9662;
+}
+
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv):hover {
+    background-color: #2e5f9662;
+}
+
+.option-2eIyOn.focused-ODgjnC, .option-2eIyOn:focus, .option-2eIyOn:hover {
+    background-color: #2c90b862;
+    color: var(--interactive-hover);
+}
 
 /**/
