@@ -540,6 +540,12 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #4a47ae46;
     backdrop-filter: blur(var(--popout-blur)); /*icon empty channel "#"*/
 }
+
+.unreadBar-elBRZx {
+  background-color: #3436ab6d;
+  backdrop-filter: blur(1px); /*un read bar*/
+}
+
 .role-23oyrw {
     /*color: */
     background-color: var(--card-color); /*Roles that have persmission to access to this channel. information at the top of a new channel*/
@@ -596,3 +602,5 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 /**/
+
+
