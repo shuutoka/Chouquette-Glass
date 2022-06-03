@@ -409,6 +409,18 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   padding: var(--message-padding-top) var(--message-padding-side);
 }
 
+.repliedMessage-3Z6XBG:before { /*replied slash command */
+    --spine-width: 2px;
+    top: -49%;
+    right: 75%;
+    bottom: 0;
+    margin-top: calc(var(--spine-width)*-1/2);
+    margin-left: calc(var(--spine-width)*-10/2);
+    margin-bottom: calc(.125rem - 10px);
+    border-top-left-radius: 20px;
+    border-color: #2c90b862;
+}
+
 /*REACTION*/
 .reaction-3vwAF2{background-color:rgba(255,255,255,.05);
 
@@ -600,6 +612,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     background-color: #2c90b862;
     color: var(--interactive-hover);
 }
+
 
 /**/
 
