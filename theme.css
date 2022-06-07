@@ -402,7 +402,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 .repliedMessage-3Z6XBG .replyAvatar-sHd2sU,
 .repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
-  margin-left: 34px;
+  margin-left: 4px;
 }
 
 .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
@@ -412,7 +412,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .repliedMessage-3Z6XBG:before { /*replied slash command */
     --spine-width: 2px;
     top: -49%;
-    right: 75%;
+    right: 95%;
     bottom: 0;
     margin-top: calc(var(--spine-width)*-1/2);
     margin-left: calc(var(--spine-width)*-10/2);
