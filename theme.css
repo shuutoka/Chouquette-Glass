@@ -613,7 +613,23 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     color: var(--interactive-hover);
 }
 
+/*Jump to present bar*/
+
+.jumpToPresentBar-1cEnH0 {
+  background: var(--card-color);
+  border-radius: 20px;
+  padding-bottom: 4px;
+  max-height: 40px;
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+.jumpToPresentBar-1cEnH0>button {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.jumpToPresentBar-1cEnH0:hover {
+  background: rgba(10, 62, 174, 0.329);
+}
+
 
 /**/
-
-
