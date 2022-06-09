@@ -178,7 +178,15 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     box-shadow: var(--elevation-high);
     background: var(--card-color);
     border-radius: 20px;
+}
+
+.menu-1QACrS::after{ 
+    content: '';
+    width: 100%;
+    height: 100%; /* Bug fix by carrot#8812 !  many thanks ! */
+    position: absolute;
     backdrop-filter: blur(var(--popout-blur));
+    z-index: -999;
 }
 
 .children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
@@ -644,3 +652,4 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 
 /**/
+
