@@ -366,6 +366,17 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   border-radius: 0 0 var(--messages-radius) var(--messages-radius);
   border: none;
   border-top: 1px solid var(--card-color); }
+
+/*Code Embed*/
+
+.markup-eYLPri code {
+    background: var(--card-color);
+    border: 0px ;
+    border-radius: 20px;;
+      backdrop-filter: blur(var(--popout-blur));
+}
+
+
 /*mention*/
 
 
