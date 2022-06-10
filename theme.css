@@ -187,6 +187,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     position: absolute;
     backdrop-filter: blur(var(--popout-blur));
     z-index: -999;
+  border-radius: 20px;
 }
 
 .children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
