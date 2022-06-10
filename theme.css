@@ -137,6 +137,28 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 
+/*Quick Switcher ctrl+K*/
+.quickswitcher-pKcM9U {
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(28 36 43 / 60%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(28 36 43 / 60%);
+    background-color: var(--card-color);
+     backdrop-filter: blur(2px);
+} 
+
+.scroller-2qwVWY {
+    background-color: var(--card-color); /*background of suggestions*/
+     backdrop-filter: blur(2px);
+     border-radius: 20px;
+}
+
+.input-3r5zZY { /*input zone*/
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1c1a54;
+}
+
+
 /*--*/
 .search-1FM8Qc .DraftEditor-root .public-DraftEditorPlaceholder-root {
   color: rgba(255, 255, 255, 0.726); /* search inscription (top right)*/
@@ -650,7 +672,3 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .jumpToPresentBar-1cEnH0:hover {
   background: rgba(10, 62, 174, 0.329);
 }
-
-
-/**/
-
