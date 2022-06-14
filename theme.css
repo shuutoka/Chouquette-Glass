@@ -708,4 +708,16 @@ divider-2rZFJK {
 .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {
     background-color: rgba(27, 18, 158, 0.301); /*color of the selected channel*/
 }
+
+/*--------> parameters buttons*/
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
+    background-color: rgba(27, 18, 158, 0.301) ;
+}
+
+.item-3XjbnG:hover {
+  background-color: rgba(24, 42, 143, 0.397) !important
+}
+
+
+
 /*User Pop Out*/
