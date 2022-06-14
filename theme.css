@@ -24,6 +24,11 @@ body, div, span, textarea, ::-webkit-input-placeholder {
     --card-radius: 8px /*thread smoothness*/
   
 }
+
+/*animation*/
+
+
+
 /*Modifies the background*/
 #app-mount::before {
     content: "";
@@ -212,6 +217,10 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   border-radius: 20px;
 }
 
+.menu-1QACrS, .colorDefault-CDqZdO { 
+    border-radius: 15px; 
+} /*rounded context menu*/
+
 .children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
 .theme-dark .option-2KkUJO:after, .divider-q3P9HC {
   background: none; /* if you delete, the search bar will be ugly... i guess */
@@ -383,6 +392,20 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
   left: -65px; /*timestamp in the following messages*/
+}
+
+/*date*/
+
+divider-2rZFJK {
+    z-index: 1;
+    height: 0;
+    border-top: var(--card-color);
+    
+}
+
+.content-3spvdd {
+    color: var(--text-muted);
+    background: var(--card-color);
 }
 
 /*EMBEDDED */
@@ -672,3 +695,17 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .jumpToPresentBar-1cEnH0:hover {
   background: rgba(10, 62, 174, 0.329);
 }
+/*main button */
+.content-1gYQeQ .icon-2W8DHg {
+  color: rgba(210, 210, 228, 0.664); /*icon  in channel name*/
+}
+
+.content-1gYQeQ:hover { /*hover color in channel name*/
+  position: relative;
+  background: rgba(24, 42, 143, 0.397) !important
+}
+
+.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {
+    background-color: rgba(27, 18, 158, 0.301); /*color of the selected channel*/
+}
+/*User Pop Out*/
