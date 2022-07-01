@@ -6,7 +6,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 
 :root {
     --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
-    --bg-blur: px; /*Amount of blur on the background*/
+    --bg-blur: 0px; /*Amount of blur on the background*/
     --mention-rgb: 135,15,255;/*mention alerte color in R G B value*/
     --message-padding-side: 5px; /*message padding*/
     --message-padding-top: 1px;
