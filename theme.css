@@ -394,6 +394,13 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   left: -65px; /*timestamp in the following messages*/
 }
 
+/*SPOILER*/
+
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum {
+    background-color: #23416fb8;
+    backdrop-filter: var(--bg-blur);
+}
+
 /*date*/
 
 divider-2rZFJK {
