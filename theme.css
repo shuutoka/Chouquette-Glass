@@ -722,4 +722,71 @@ divider-2rZFJK {
   border-radius: 15px; /*button are smooth now ! and I love love love it ! ♥*/
 }
 
-/*User Pop Out*/
+/* User Pop Out */
+
+
+
+/*
+ *
+ *  USER POPOUT
+ *
+ */
+.userPopout-2j1gM4 {
+  max-height: 90vh;
+  background-color: var(--card-color) !important;
+  border-radius: var(--popout-radius) !important;
+  
+}
+.userPopout-2j1gM4:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--card-color);
+  border-radius: var(--popout-radius);
+  backdrop-filter: blur();
+  z-index: -1;
+}
+.userPopout-2j1gM4 .avatar-2Vndt_ {
+  background-color: transparent;
+  border: none;
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(2px);
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+  background-color: transparent;
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .role-2TIOKu {
+  background-color: var(--card-color);
+  border-radius: 11px;
+}
+.userPopout-2j1gM4 .footer-3naVBw {
+  background-color: transparent;
+}
+/*note zone*/
+.input-2g-os5 {
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--text-normal);
+    background-color: #081d4687;
+    border: none;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+}
+
+.textarea-_59yqs:focus {
+      background-color: #081d4687;
+}
+
+
+
+/*Send DM in user pop out*/
+.input-2z42oC {
+    font-size: 14px;
+    background-color: #081d4687;
+}
