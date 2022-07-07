@@ -712,6 +712,12 @@ divider-2rZFJK {
     color: #3c92e8;
 }
 /*discover menu*/
+
+.new-3EJMgr {
+  background-color: #1d18b394;
+  backdrop-filter: blur(2px);
+}
+
 .theme-dark .pageWrapper-2PwDoS {
     background-color: #1a326246;
     backdrop-filter: blur(var(--popout-blur));
