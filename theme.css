@@ -711,7 +711,7 @@ divider-2rZFJK {
 .defaultColor-24IHKz {
     color: #3c92e8;
 }
-/*discorver menu*/
+/*discover menu*/
 .theme-dark .pageWrapper-2PwDoS {
     background-color: #1a326246;
     backdrop-filter: blur(var(--popout-blur));
@@ -719,6 +719,10 @@ divider-2rZFJK {
 
 .theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
     background-color: #07112c62;
+} 
+
+.theme-dark .card-2TuZPZ:hover {
+    background-color: #4d587533!important;
 } 
 
 .theme-dark .searchBox-pyIJJj {
@@ -855,8 +859,6 @@ divider-2rZFJK {
 .textarea-_59yqs:focus {
       background-color: #081d4687;
 }
-
-
 
 /*Send DM in user pop out*/
 .input-2z42oC {
