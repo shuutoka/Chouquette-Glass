@@ -638,7 +638,13 @@ divider-2rZFJK {
     border-radius: 35%; /*icons border of the error theme message*/
 }
 
+.directionRow-2Iu2A9  { 
+  background-color: transparent;
+}
 
+.directionRow-2Iu2A9:hover  { 
+  background-color: #28249263!important;
+}
 
 /*Discord nitro history*/
 
