@@ -25,8 +25,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   
 }
 
-/*animation role in user pop out by Gibbu#1211 */
-.rolesList-3uZoaa {
+/*animation role in user pop out by Gibbu#1211 */.rolesList-3uZoaa {
   gap: 8px;
 }
 .role-2TIOKu {
@@ -39,7 +38,8 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   overflow: hidden;
 }
 .role-2TIOKu:hover .roleCircle-1EgnFN {
-  width: 100%;
+  width: 100px;
+ margin-top: -6px;
   opacity: 1;
 }
 .role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
@@ -84,6 +84,10 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 .panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
     opacity: 100% !important;
     width: 32px;
+}
+
+.button-12Fmur:hover {
+    background-color:var(--card-color) !important; /*color on hover fot those buttons*/
 }
 /*end*/
 
