@@ -173,24 +173,28 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 /*result searchbar*/
- .container-2McqkF {
+ .searchResultsWrap-5RVOkx  {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
   box-shadow: var(--popout-shadow) !important;
   backdrop-filter: blur(var(--popout-blur));
 }
 
+.searchHeader-1r_ZSh{
+  background-color: #13132556;
+}
+
 .option-ayUoaq {
   border-radius: var(--popout-radius);
 }
-.option-ayUoaq:after {
+.channelName-3w2Y3c {
   display: none;
 }
 [aria-selected=true].option-ayUoaq {
   background-color: var(--background-modifier-hover);
 }
 
-.focused-2FU0YH {
+.searchResult-O9NDji  {
   background-color: transparent !important;
 }
 
