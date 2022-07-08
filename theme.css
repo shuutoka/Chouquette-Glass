@@ -359,7 +359,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 .actionButton-3-B2x-:hover, .actionButton-3-B2x-.highlight-3DSi7b {
-  background-color: #5a5a5a;
+  background-color: var(--card-color);
 } /* Hover action buttons color */
 
 .theme-dark .attachment-1PZZB2, .embedFull-1HGV2S, .wrapper-1HIH0j {
