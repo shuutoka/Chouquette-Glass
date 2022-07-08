@@ -158,6 +158,12 @@ body, div, span, textarea, ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, .7)
 } /*hover button color over the search bar*/
 
+.channel-1Shao0:hover {
+    position: relative;
+    max-width: 224px;
+    background-color: var(--card-color)!important;
+}
+
 .container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
   background-color: var(--card-color);
 } /*button color over the search bar*/
