@@ -485,12 +485,15 @@ divider-2rZFJK {
 
 .textContainer-36wgKK {
   background-color: var(--card-color);
-  border-radius: var(--messages-radius) var(--messages-radius) 0 0;
-  border: none; }
+  border: none;
+  border-radius: 8px;
+  margin-top: -5px;
+  scroll-padding-right: px;
+   }
 
 .footer-GXWBBp {
   background-color: var(--card-color);
-  border-radius: 0 0 var(--messages-radius) var(--messages-radius);
+  border-radius: 8px;
   border: none;
   border-top: 1px solid var(--card-color); }
 
