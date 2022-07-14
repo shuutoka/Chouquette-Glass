@@ -29,7 +29,7 @@
 }
  /*-----MAIN TRANSPARENCY FOR THE APP-----*/
 
-/*image parameters*/
+/*IMAGE PARAMETERS*/
 #app-mount::before {
     content: ""; /*void content*/
     background: var(--background-image);/*custom background*/
@@ -44,6 +44,9 @@
     opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
 }
 /*Transparent panels*/
+.container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
+  background-color: transparent; /* main space of discord, don't delete this line*/
+}
 .appMount-2yBXZl, body {
     background-color: var(--bg-main-panels);
 }
