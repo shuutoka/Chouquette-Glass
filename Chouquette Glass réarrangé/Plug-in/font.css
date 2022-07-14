@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+body, div, span, textarea, ::-webkit-input-placeholder {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
