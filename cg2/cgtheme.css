@@ -1,6 +1,8 @@
 /*Import*/
 
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/sound-para-anim.css'); /*sound para-anime*/
+
 
 
 
@@ -24,71 +26,6 @@
     --card-radius: 8px /*thread smoothness*/
   
 }
-
-/*---PLUG-IN and MOD---*/
-
-
-/*microphone and sound hide by he Commie Axolotl#0001 */
-.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
-    opacity: 0% !important;
-    width: 0px;
-    transition: all 0.2s ease-in-out;
-}
-.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
-    opacity: 100% !important;
-    width: 32px;
-}
-.button-12Fmur:hover {
-    background-color: #3c92e82d !important; /*color on hover fot those buttons*/
-}
-
-/*role hover in pop out Gibbu#1211  */
-.rolesList-3uZoaa {
-  gap: 8px;
-}
-.role-2TIOKu {
-  margin: 0;
-  height: auto;
-  padding: 6px 8px;
-  border-radius: 4px;
-  gap: 4px;
-  position: relative;
-  overflow: hidden;
-}
-.role-2TIOKu:hover .roleCircle-1EgnFN {
-  width: 100%;
-  opacity: 1;
-}
-.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
-  margin-left: 22px;
-}
-.roleCircle-1EgnFN {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  height: 100%;
-  border-radius: 0;
-  width: 85%;
-  -webkit-mask: linear-gradient(90deg, black, transparent);
-          mask: linear-gradient(90deg, black, transparent);
-  filter: none;
-  opacity: 0.3;
-  justify-content: flex-start;
-  padding: 8px;
-  box-sizing: border-box;
-  transition: 0.15s ease;
-}
-.roleName-2ZJJYR {
-  position: relative;
-  margin: 0;
-  transition: margin-left 0.15s ease;
-}
-.roleRemoveIcon-387wKV {
-  width: 16px;
-  height: 16px;
-}
-/*------------------------------------------------------------*/
 
 /*LEGACY CODE BELOW*/
 
@@ -648,14 +585,7 @@ divider-2rZFJK {
     border-radius: 35%; /*icons border of the error theme message*/
 }
 
-.directionRow-2Iu2A9  { 
-  background-color: transparent;
-  border-radius: 15px;
-}
 
-.directionRow-2Iu2A9:hover  { 
-  background-color: #28249263!important;
-}
 
 /*Discord nitro history*/
 
