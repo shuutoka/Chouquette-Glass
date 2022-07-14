@@ -1,0 +1,45 @@
+.rolesList-3uZoaa {
+  gap: 8px;
+}
+.role-2TIOKu {
+  margin: 0;
+  height: auto;
+  padding: 6px 8px;
+  border-radius: 4px;
+  gap: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.role-2TIOKu:hover .roleCircle-1EgnFN {
+  width: 100%;
+  opacity: 1;
+}
+.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+  margin-left: 22px;
+}
+.roleCircle-1EgnFN {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  border-radius: 0;
+  width: 85%;
+  -webkit-mask: linear-gradient(90deg, black, transparent);
+          mask: linear-gradient(90deg, black, transparent);
+  filter: none;
+  opacity: 0.3;
+  justify-content: flex-start;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.15s ease;
+}
+.roleName-2ZJJYR {
+  position: relative;
+  margin: 0;
+  transition: margin-left 0.15s ease;
+}
+.roleRemoveIcon-387wKV {
+  width: 16px;
+  height: 16px;
+}
