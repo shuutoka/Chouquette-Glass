@@ -5,9 +5,11 @@
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/roles-anim.css'); /*role animation in pop out user, but doesn't work for the moment*/
 
 
-
 :root {
     --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
+    --background-image-Minsk: url('https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig');;
+    --background-image-Mikasa: url('https://wallpapercave.com/uwp/uwp423127.jpeg');;
+    --background-image-Ibuki: url('https://i.imgur.com/wPsgn7Y.jpeg');
     --bg-blur: 0px; /*Amount of blur on the background*/
     --bg-opacity: 80%; /*background value of the opacity*/
     --mention-rgb: 135,15,255;/*mention alerte color in R G B value*/
@@ -16,7 +18,6 @@
     --scrollbar-color: 255,255,255; /*RGB values*/
     --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
     --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
-    --scrollbar-width: 15px; /*angle smoothness*/
     --popout-color: rgba(0,0,0,0.55);
     --popout-blur: 8px; /*blur of the popup's result search bar*/
     --popout-header-opacity: 0.3;
@@ -32,7 +33,7 @@
 /*IMAGE PARAMETERS*/
 #app-mount::before {
     content: ""; /*void content*/
-    background: var(--background-image);/*custom background*/
+    background: var(--background-image-Minsk);/*custom background*/
     background-position: center; /*position of the background*/
     background-size: cover; /*size of the background, i recommand "cover" */
     position: absolute; /*position of the image*/
@@ -71,9 +72,25 @@
   background-color: transparent;/*remove the standard background*/
 }
 
+/*---------SCROLLBAR --------- */
 
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity)) !important;
+ }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--scrollbar-color), var(--scrollbar-opacity-hover)) !important;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  border-color: transparent !important;
+} /*make invisible the "rail"*/
 
 /*------TCHAT ZONE------*/
+
+/*USERS IN GUILD PANNEL*/
+.members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
+    background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
+}
 
 /*Typing zone*/
 .scrollableContainer-15eg7h {
