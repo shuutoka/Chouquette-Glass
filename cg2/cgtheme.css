@@ -25,6 +25,7 @@
     --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
     --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     --card-color: rgba(32, 31, 102, 0.4); /*general dark color*/
+    --color-light: rgba(70, 133, 187, 0.623);
     --card-radius: 8px /*thread smoothness*/
   
 }
@@ -55,9 +56,9 @@
     background-color: var(--bg-main-panels);
 }
 
-.layers-OrUESM {/*don't delete this line*/
+.layers-OrUESM {
   background-color: rgba(0, 0, 0, 0.527); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
-}/*don't delete this line*/
+}
 
 .guildSeparator-33mFX6, .scroller-3X7KbA, .wrapper-1_HaEi { /*remove standard background*/
   background: none;
@@ -70,6 +71,13 @@
 .contentRegionScroller-2_GT_N, /*I don't remember what is the purpose fo this line xD*/
 .scroller-3_YDR2 { /*scroller zone is set to transparent, you can modify is by a RGB or Hexa value if you want*/
   background-color: transparent;/*remove the standard background*/
+
+}
+.container-ZMc96U.themed-Hp1KC_ {
+    background: transparent; /*make the header, channel description, transparent*/
+}
+.children-3xh0VB:after { /*fade effect in the description*/
+    display: none; /*geting a ride of the fade effect because this doesn't match with the theme plus ugly*/
 }
 
 /*---------SCROLLBAR --------- */
@@ -87,9 +95,23 @@
 
 /*------TCHAT ZONE------*/
 
-/*USERS IN GUILD PANNEL*/
-.members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
-    background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
+/*BIGGER MESSAGE AREA / FEED IS MOREE WIDH */
+.wrapper-30-Nkg {
+  border-radius: var(--messages-radius); }
+  .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+    margin-left: 47px; /*larger zone for tchat*/
+
+    padding: var(--messages-padding);
+    padding-right: 8px !important;
+    border: 2px solid transparent; }
+    .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m, .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m.alt-1dvXnH {
+      color: var(--text-normal); }
+.avatar-2e8lTP { /*avatar position*/
+  top: -14px;
+  left: -49px; }
+
+.wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+  left: -65px; /*timestamp in the following messages in -65px to avoid bug this the larger zone*/
 }
 
 /*Typing zone*/
@@ -98,8 +120,94 @@
 }
 .channelTextArea-1FufC0 {
   background-color: rgba(0, 0, 0, .3); /*text bar color*/
+  border-radius: 20px; /*make the input text bar more smooth*/
 }
 
+/*UNREAD SPAN*/
+.group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt { /*Undread banner or "new message span"*/
+    margin-bottom: 35px; /*Higher from the new message*/
+    top: .8rem; /*lower from the old message*/
+}
+
+/*Avatar position in the feed*/
+.avatar-2e8lTP {
+    top: 2px; /*vertical postion, positive value = higher*/
+    left: -49px; /*honrizontal position, negative value =  move to left*/
+}
+
+/*Quote Response*/
+.repliedMessage-3Z6XBG:before {
+  transform: translateX(38px); /*bar of the quoted message, push it to the right to avoid colision with the user avatar*/
+}
+.repliedMessage-3Z6XBG .replyAvatar-sHd2sU,
+.repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
+  margin-left: 5px; /*push the quote to the right to avoid colision with other item such as the username*/
+}
+
+.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*this use the var to avoid bug, aligne to the right item to avoid colision*/
+  padding: var(--message-padding-top) var(--message-padding-side);
+}
+
+.repliedMessage-3Z6XBG:before { /*Quote reply and/or with slash command */
+      top: -49%; /*move the bar/span higher to avoid colision with the quoted message*/
+    right: 90%; /*modify the length of the bar*/ 
+    left: -48px; /*modify the horizontal starting point of the bar */
+    border-top-left-radius: 20px; /*modify the angle of the bar, the smoothness  if you prefer*/
+    border-color: var(--color-light); /*this modify the color of the bar*/
+}
+
+/*MENTION*/
+
+
+.mention {
+    border-radius: 15px; /*mention border radius to make them more smooth */
+}
+
+/*higlighted message where you were mentioned*/
+/*main setting of the neon*/
+.mentioned-Tre-dv,
+.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
+  border-radius: 1rem; /*angle smoothness of the neon*/
+  animation: flicker 1.5s infinite alternate;    /*type of animation*/
+  border: 0.1rem  var(--color-light); /*color of the center of the neon*/
+} 
+/* Animation of the neon */
+@keyframes flicker {
+    
+    100%{
+      
+        box-shadow:
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 .1rem #08f, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            inset 0 0 .1rem #08f, /*in glowing*/
+            0 0 .9rem #08f,
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+ }
+}
+
+.localBot-GrCgVt:before,
+.mentioned-Tre-dv:before {
+  display: none;  /*remove the yellow bar when you got a mention*/
+}
+.mentioned-Tre-dv {
+    background-color: transparent!important; /*remove the orange filter in the message where you were mentionned, if you want a color you can remove the "transparent" value by a color */
+}
+
+.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*to solve a visual bug with the animation above, the message border is smaller, doesn't affect message width*/
+    margin-left: 47px;
+    margin-right: 15px;
+}
+/*USERS IN GUILD PANNEL*/
+.members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
+    background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
+       
+}
+.membersWrap-3NUR2t { /*smaller pannel for the guild members*/
+    min-width: 240px;
+    margin-right: -10px;
+    max-height: 100%;
+}
 
 
 
