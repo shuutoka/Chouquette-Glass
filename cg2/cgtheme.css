@@ -88,7 +88,9 @@
   background-color: rgba(0, 0, 0, .23);
 } /* online friend's activity card, you can edit it */
 
-
+.theme-dark .form-3gdLxP:before {
+  display:none; /*fix a visual bug caused to the legacy fade between your activity and hte feed in the bottom left */
+}
 
 
 /*---------SCROLLBAR --------- */
