@@ -79,6 +79,42 @@
 .children-3xh0VB:after { /*fade effect in the description*/
     display: none; /*geting a ride of the fade effect because this doesn't match with the theme plus ugly*/
 }
+/*Friends list and MP channels pannel*/
+.privateChannels-oVe7HL, .scroller-WSmht3, .theme-dark .container-2cd8Mz,
+.nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
+.scroller-29cQFV, .container-1oAagU, .theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2 {
+  background: none;  /* remove the legacy background of the friends pannels*/
+}
+.wrapper-2RrXDg {
+  background-color: rgba(0, 0, 0, .23);
+} /* online friend's activity card, you can edit it */
+
+.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+    background-color: rgba(31, 88, 102, 0.4);
+    transition: .6s;
+    cursor: pointer;
+        box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff;
+    } /*Animation hover  on friend's activity card*/
+
+
+/*SPOTIFY ACTIVITY*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC {
+    border-radius: 15px; /*make the spotify album picture round*/
+}
+/*animation of the spotify album picture*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC:hover {
+    border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
+    animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
+}
+@keyframes rotation { /*rotation from 0° to 359° in 8 secondes*/
+  from { /*start from this angle*/
+    transform: rotate(0deg); /*initial angle*/
+  }
+  to { /*go to this angle*/
+    transform: rotate(359deg); /*end angle*/
+  }
+}
+
 
 /*---------SCROLLBAR --------- */
 
