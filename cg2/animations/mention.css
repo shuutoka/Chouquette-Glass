@@ -1,0 +1,24 @@
+/*this file add a glowning neon to the message where you are mentioned*/
+
+/*higlighted message where you were mentioned*/
+/*main setting of the neon*/
+.mentioned-Tre-dv,
+.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
+  border-radius: 1rem; /*angle smoothness of the neon*/
+  animation: flicker 1.5s infinite alternate;    /*type of animation*/
+  border: 0.1rem  var(--color-light); /*color of the center of the neon*/
+} 
+/* Animation of the neon */
+@keyframes flicker {
+    
+    100%{
+      
+        box-shadow:
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 .1rem #08f, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            inset 0 0 .1rem #08f, /*in glowing*/
+            0 0 .9rem #08f,
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+ }
+}
