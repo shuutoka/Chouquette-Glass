@@ -248,6 +248,17 @@ transition: .6s;
 
 
 
+/** POP OUT **/
+.role-2TIOKu {  /*modify the shape of the roles in the user pop out*/
+  border-radius: 15px;
+}
+.roleRemoveButton-17oXnT { /*fix a weird bug on hover*/
+  width: 14.5px;
+  height: 8px;
+}
+
+
+
 /*-----------------------------------------------*/
 /*--------------TRASH LINE--------------------*/
 /*-----------------------------------------------*/
