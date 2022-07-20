@@ -201,6 +201,32 @@ transition: .6s;
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
 
+/*--EMOJI AND REACTION*/
+.reaction-3vwAF2 {
+  background-color: rgba(54, 77, 121, 0.349); /*change the color of an unreacted reaction */
+  border-radius: 15px; /*change the border radius of all reactions*/
+  backdrop-filter: blur(5px);
+}
+
+.reaction-3vwAF2:hover {
+   background-color: rgba(46, 161, 190, 0.336) ; /*color of a reaction on hover*/
+   }
+
+ .wrapper-2vIMkT {
+   background-color: rgba(18, 79, 128, 0.315); /*quick reaction menu/ quote, create a thread and more menu. Change the main color*/
+   backdrop-filter: blur(2px); /*add a blur filter*/
+   border-radius: 15px; /*border radius set to 15px to get a more rounded menu*/
+ }
+
+.button-3bklZh {
+  transition: .5s; /*animation hover out of the quick menu*/
+}
+
+ .button-3bklZh:hover {
+   background-color: var(--color-light); /*color of the menu when you hover it*/
+   transition: .5s; /*animation when you hover it */
+ }
+
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
     background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
