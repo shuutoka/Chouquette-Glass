@@ -234,6 +234,14 @@
     margin-left: 47px;
     margin-right: 15px;
 }
+
+/*EMBED*/
+.embed-hKpSrO {
+  background-color: #0ebfff18; /*change the color of the embed*/
+  backdrop-filter: blur(2px); /*add a blur filter to the embed*/
+    border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
+}
+
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
     background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
