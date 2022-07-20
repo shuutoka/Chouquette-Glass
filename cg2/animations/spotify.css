@@ -1,0 +1,17 @@
+/*SPOTIFY ACTIVITY*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC {
+    border-radius: 15px; /*make the spotify album picture round*/
+}
+/*animation of the spotify album picture*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC:hover {
+    border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
+    animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
+}
+@keyframes rotation { /*rotation from 0° to 359° in 8 secondes*/
+  from { /*start from this angle*/
+    transform: rotate(0deg); /*initial angle*/
+  }
+  to { /*go to this angle*/
+    transform: rotate(359deg); /*end angle*/
+  }
+}
