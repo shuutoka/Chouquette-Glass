@@ -1,8 +1,7 @@
 /*Import*/
 
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/sound-para-anim.css'); /*sound para-anime*/
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/roles-anim.css'); /*role animation in pop out user, but doesn't work for the moment*/
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/animations.css'); /*import and load animations*/
 
 
 :root {
@@ -89,31 +88,7 @@
   background-color: rgba(0, 0, 0, .23);
 } /* online friend's activity card, you can edit it */
 
-.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
-    background-color: rgba(31, 88, 102, 0.4);
-    transition: .6s;
-    cursor: pointer;
-        box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff;
-    } /*Animation hover  on friend's activity card*/
 
-
-/*SPOTIFY ACTIVITY*/
-.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC {
-    border-radius: 15px; /*make the spotify album picture round*/
-}
-/*animation of the spotify album picture*/
-.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC:hover {
-    border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
-    animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
-}
-@keyframes rotation { /*rotation from 0° to 359° in 8 secondes*/
-  from { /*start from this angle*/
-    transform: rotate(0deg); /*initial angle*/
-  }
-  to { /*go to this angle*/
-    transform: rotate(359deg); /*end angle*/
-  }
-}
 
 
 /*---------SCROLLBAR --------- */
@@ -186,10 +161,17 @@
 
 .repliedMessage-3Z6XBG:before { /*Quote reply and/or with slash command */
       top: -49%; /*move the bar/span higher to avoid colision with the quoted message*/
-    right: 90%; /*modify the length of the bar*/ 
+    right: 100%; /*modify the length of the bar*/ 
     left: -48px; /*modify the horizontal starting point of the bar */
     border-top-left-radius: 20px; /*modify the angle of the bar, the smoothness  if you prefer*/
     border-color: var(--color-light); /*this modify the color of the bar*/
+    transition: .6s;
+}
+
+.repliedMessage-3Z6XBG:hover:before { /*Quote reply and/or with slash command */
+right: 95%;
+top: -90%;
+transition: .6s;
 }
 
 /*MENTION*/
@@ -197,29 +179,6 @@
 
 .mention {
     border-radius: 15px; /*mention border radius to make them more smooth */
-}
-
-/*higlighted message where you were mentioned*/
-/*main setting of the neon*/
-.mentioned-Tre-dv,
-.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
-  border-radius: 1rem; /*angle smoothness of the neon*/
-  animation: flicker 1.5s infinite alternate;    /*type of animation*/
-  border: 0.1rem  var(--color-light); /*color of the center of the neon*/
-} 
-/* Animation of the neon */
-@keyframes flicker {
-    
-    100%{
-      
-        box-shadow:
-            0 0 .2rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 .1rem #08f, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            inset 0 0 .1rem #08f, /*in glowing*/
-            0 0 .9rem #08f,
-            inset 0 0 1rem #08f;  /*glowing intensity*/
- }
 }
 
 .localBot-GrCgVt:before,
@@ -253,11 +212,67 @@
     max-height: 100%;
 }
 
-
-
-
 /*searchbar head*/
 .searchBar-jGtisZ {
   padding: 0 8px;
   background-color: rgba(55, 48, 159, 0.229);
+}
+
+
+
+/*-----------------------------------------------*/
+/*--------------TRASH LINE--------------------*/
+/*-----------------------------------------------*/
+
+/*SPOTIFY ACTIVITY*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC {
+    border-radius: 15px; /*make the spotify album picture round*/
+}
+/*animation of the spotify album picture*/
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC:hover {
+    border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
+    animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
+}
+@keyframes rotation { /*rotation from 0° to 359° in 8 secondes*/
+  from { /*start from this angle*/
+    transform: rotate(0deg); /*initial angle*/
+  }
+  to { /*go to this angle*/
+    transform: rotate(359deg); /*end angle*/
+  }
+}
+
+
+
+.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+    background-color: rgba(31, 88, 102, 0.4);
+    transition: .6s;
+    cursor: pointer;
+        box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff;
+    } /*Animation hover  on friend's activity card*/
+
+
+
+
+/*higlighted message where you were mentioned*/
+/*main setting of the neon*/
+.mentioned-Tre-dv,
+.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
+  border-radius: 1rem; /*angle smoothness of the neon*/
+  animation: flicker 1.5s infinite alternate;    /*type of animation*/
+  border: 0.1rem  var(--color-light); /*color of the center of the neon*/
+} 
+/* Animation of the neon */
+@keyframes flicker {
+    
+    100%{
+      
+        box-shadow:
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 .1rem #08f, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            inset 0 0 .1rem #08f, /*in glowing*/
+            0 0 .9rem #08f,
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+ }
 }
