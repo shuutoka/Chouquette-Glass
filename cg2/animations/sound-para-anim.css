@@ -10,6 +10,6 @@
 }
 .button-12Fmur:hover {
     background-color: var(--color-secondary) !important; /*color on hover fot those buttons*/
-    border-radius: 15px;
+    border-radius: 15px!important;
 }
 
