@@ -1,4 +1,4 @@
-/*microphone and sound hide by he Commie Axolotl#0001 */
+/*microphone and sound hide*/
 .panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
     opacity: 0% !important;
     width: 0px;
@@ -10,9 +10,6 @@
 }
 .button-12Fmur:hover {
     background-color: var(--color-secondary) !important; /*color on hover fot those buttons*/
+    border-radius: 15px;
 }
 
-.directionRow-2Iu2A9  { 
-  background-color: transparent;
-  border-radius: 15px;
-}
