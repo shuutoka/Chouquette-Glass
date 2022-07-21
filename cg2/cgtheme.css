@@ -248,7 +248,6 @@ transition: .6s;
 }
 
 
-
 /** POP OUT **/
 .role-2TIOKu {  /*modify the shape of the roles in the user pop out*/
   border-radius: 15px;
@@ -259,3 +258,8 @@ transition: .6s;
 }
 
 
+/*SERVERS FOLDER*/
+.folder-241Joy, .expandedFolderBackground-1kSAf6, .folder-241Joy:hover{
+  background-color: var(--color-light); /*change the background color of folders, opened and closed*/
+  border-radius: 15px; /*change the shape of eextended folder to avoid visual bug*/
+}
