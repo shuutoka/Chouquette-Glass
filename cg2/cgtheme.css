@@ -263,3 +263,12 @@ transition: .6s;
   background-color: var(--color-light); /*change the background color of folders, opened and closed*/
   border-radius: 15px; /*change the shape of eextended folder to avoid visual bug*/
 }
+
+/*DEFAULT ICON FOR IMAGELESS SERVERS*/
+.childWrapper-1j_1ub{
+  background-color: rgba(0, 255, 255, 0.438); /*basic color*/
+  backdrop-filter: blur (5px);
+}
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub{
+  background-color: rgb(63 119 169)!important; /*color on hover*/
+}
