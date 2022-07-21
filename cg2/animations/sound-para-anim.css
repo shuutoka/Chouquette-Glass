@@ -9,7 +9,7 @@
     width: 32px;
 }
 .button-12Fmur:hover {
-    background-color: #3c92e82d !important; /*color on hover fot those buttons*/
+    background-color: var(--color-secondary) !important; /*color on hover fot those buttons*/
 }
 
 .directionRow-2Iu2A9  { 
