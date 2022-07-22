@@ -23,7 +23,7 @@
     --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
     --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
     --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
-    --card-color: rgba(32, 31, 102, 0.4); /*general dark color*/
+    --color-transparency: #0ebfff18; /*general dark color*/
     --color-light: rgba(70, 133, 187, 0.623);
     --color-secondary: #0ebfff59;
     --card-radius: 8px /*thread smoothness*/
@@ -109,7 +109,7 @@
 
 /*------TCHAT ZONE------*/
 
-/*BIGGER MESSAGE AREA / FEED IS MOREE WIDH */
+/*BIGGER MESSAGE AREA / FEED IS MORE WIDH */
 .wrapper-30-Nkg {
   border-radius: var(--messages-radius); }
   .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
@@ -122,10 +122,15 @@
       color: var(--text-normal); }
 .avatar-2e8lTP { /*avatar position*/
   top: -14px;
-  left: -49px; }
+  left: -49px; 
+  }
 
 .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
   left: -65px; /*timestamp in the following messages in -65px to avoid bug this the larger zone*/
+}
+
+.messageListItem-ZZ7v6g{
+  margin-left: 19px /*mooving message to the right to avoid bug,  this reduce a little bit the text area*/
 }
 
 /*Typing zone*/
@@ -177,6 +182,36 @@ top: -90%;
 transition: .6s;
 }
 
+
+/*THREAD*/
+.cozy-VmLDNB.hasThread-3h-KJV:after{
+  left: -29px!important; /*change the location of the thread bar in the feed*/
+  border-color: var(--color-light); /*change the color of the thread bar*/
+}
+.container-2sjPya>*{
+  background-color: var(--color-transparency); /*background color thread overview under a message in the feed*/
+  border-radius: 15px; /*change its shape*/
+  backdrop-filter: blur(2px); /*add a blur filter*/
+}
+.container-3XgAHv{
+background-color: rgba(0, 0, 0, 0.096); /*color of the background thread chat zone*/
+backdrop-filter: blur(5px); /*blur filter for the thread zone chat */
+border: none; /*remove the border*/
+        box-shadow: /*add a neon instead of the legacy border*/
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            0 0 .9rem #08f, /*offset glowing*/
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+    }
+.container-3XgAHv{
+  transition: 0.9 step-start;
+}
+.quotedChatMessage-PxNsZi{ /*readjust thee location of the quoted message in the thread window*/
+  margin-left: 18px; /*mooving to the right*/
+}
+
+
+
 /*MENTION*/
 
 
@@ -199,7 +234,7 @@ transition: .6s;
 
 /*EMBED*/
 .embed-hKpSrO {
-  background-color: #0ebfff18; /*change the color of the embed*/
+  background-color: var(--color-transparency); /*change the color of the embed*/
   backdrop-filter: blur(2px); /*add a blur filter to the embed*/
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
