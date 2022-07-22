@@ -188,7 +188,7 @@ transition: .6s;
   left: -29px!important; /*change the location of the thread bar in the feed*/
   border-color: var(--color-light); /*change the color of the thread bar*/
 }
-.container-2sjPya>*{
+.container-3i3IzO{
   background-color: var(--color-transparency); /*background color thread overview under a message in the feed*/
   border-radius: 15px; /*change its shape*/
   backdrop-filter: blur(2px); /*add a blur filter*/
