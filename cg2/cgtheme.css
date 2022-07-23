@@ -188,10 +188,17 @@ transition: .6s;
   left: -29px!important; /*change the location of the thread bar in the feed*/
   border-color: var(--color-light); /*change the color of the thread bar*/
 }
+
 .container-3i3IzO{
-  background-color: var(--color-transparency); /*background color thread overview under a message in the feed*/
+  background-color: var(--color-transparency)!important; /*background color thread overview under a message in the feed*/
+  border-radius: 15px; /*change its shape*/
+}
+
+.container-3i3IzO::after{
+  background-color: var(--color-transparency)!important; /*background color thread overview under a message in the feed*/
   border-radius: 15px; /*change its shape*/
   backdrop-filter: blur(2px); /*add a blur filter*/
+ z-index: -999;
 }
 .container-3XgAHv{
 background-color: rgba(0, 0, 0, 0.096); /*color of the background thread chat zone*/
