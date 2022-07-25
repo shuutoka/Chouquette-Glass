@@ -26,6 +26,7 @@
     --color-transparency: #0ebfff18; /*general dark color*/
     --color-light: rgba(70, 133, 187, 0.623);
     --color-secondary: #0ebfff59;
+    --color-white: rgba(255, 255, 255, 0.096);
     --card-radius: 8px /*thread smoothness*/
   
 }
@@ -92,6 +93,53 @@
 .theme-dark .form-3gdLxP:before {
   display:none; /*fix a visual bug caused to the legacy fade between your activity and hte feed in the bottom left */
 }
+/*friend search bar*/
+.searchBar-2aylmZ {
+  background-color: var(--color-white); /*search bar color*/
+  border-radius: 17px; /*border radius of the search bar*/
+  transition: .4s; /*transition time with the hover mode is secondes*/
+}
+.searchBar-2aylmZ:hover {
+ background-color: rgba(255, 255, 255, 0.171);/*color of the hover search bar*/
+  transition: .4; /*transition time of the hover search bar*/
+}
+/*button over the search bar in friend tab*/
+.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
+  background-color: var(--color-transparency);
+  color: rgba(255, 255, 255, .7);
+  transition: .4s;
+} /*hover button color over the search bar*/
+.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF {
+transition: .4s; /*transition when unhover*/
+}
+.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+  background-color: var(--color-light);
+} /*button color over the search bar*/
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG{ /*color of the quickswitcher bar*/
+ font-size: 13px; /*reduce the font size to avoid bug in some language*/
+ background-color: var(--color-white);
+}
+
+.quickswitcher-pKcM9U{ /*quickswitcher menu*/
+  background-color: transparent; /*background color of the quickswitcher */
+  backdrop-filter: blur(6px); /*adding a blur effect*/
+  box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff; /*color of the shadow box*/
+} /*adding a neon as border*/
+
+.scroller-2qwVWY{
+  background-color: transparent; /*removing the color of the center in the quickswitcher menu */
+  scrollbar-color: var(--color-transparency);
+}
+
+.input-3r5zZY{/*input of the quickswitcher search menu*/
+background-color: transparent;
+}
+
+.quickswitcher-pKcM9U .scroller-2qwVWY::-webkit-scrollbar-track {
+  background-color: transparent !important; /*color of the track scrolling quickswitcher*/
+}
+
 
 
 /*---------SCROLLBAR --------- */
