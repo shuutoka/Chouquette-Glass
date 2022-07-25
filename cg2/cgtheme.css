@@ -308,9 +308,9 @@ border: none; /*remove the border*/
 
 /*DEFAULT ICON FOR IMAGELESS SERVERS*/
 .childWrapper-1j_1ub{
-  background-color: rgba(0, 255, 255, 0.438); /*basic color*/
+  background-color: rgba(84, 151, 228, 0.524); /*basic color*/
   backdrop-filter: blur (5px);
 }
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub{
-  background-color: rgb(63 119 169)!important; /*color on hover*/
+  background-color:rgba(0, 255, 255, 0.671)!important; /*color on hover*/
 }
