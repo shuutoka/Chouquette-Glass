@@ -4,7 +4,7 @@
 /*main setting of the neon*/
 .mentioned-Tre-dv,
 .mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
-  border-radius: 1rem; /*angle smoothness of the neon*/
+  border-radius: 0.5rem; /*angle smoothness of the neon*/
   animation: flicker 1.5s infinite alternate;    /*type of animation*/
   border: 0.1rem  var(--color-light); /*color of the center of the neon*/
 } 
