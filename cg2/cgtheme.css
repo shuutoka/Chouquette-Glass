@@ -325,6 +325,12 @@ border: none; /*remove the border*/
 }
 
 
+/* UPLOAD FILES*/
+.upload-vLbqu- {
+    border-radius: var(--popout-radius); /*border radius of the*/
+    background-color: #00a2ff0a;
+}
+
 /*--EMOJI AND REACTION*/
 .reaction-3vwAF2 {
   background-color: rgba(54, 77, 121, 0.349); /*change the color of an unreacted reaction */
