@@ -80,6 +80,12 @@
 .children-3xh0VB:after { /*fade effect in the description*/
     display: none; /*geting a ride of the fade effect because this doesn't match with the theme plus ugly*/
 }
+
+
+.content-1jQy2l::before {
+  display: none; /*get ride of the weird bar at the top*/
+}
+
 /*Friends list and MP channels pannel*/
 .privateChannels-oVe7HL, .scroller-WSmht3, .theme-dark .container-2cd8Mz,
 .nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
