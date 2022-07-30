@@ -364,8 +364,7 @@ border: none; /*remove the border*/
     border-top-left-radius:var(--popout-radius) ;
     transition: .7s;
 }
-
-.members-3WRCEx:hover, .container-2o3qEW:hover, .members-3WRCEx>div:hover {
+ .container-2o3qEW:hover{
     background-color: rgba(31, 81, 114, 0)!important; /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
     backdrop-filter: blur(3px)!important;
