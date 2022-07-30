@@ -181,6 +181,22 @@ background-color: transparent;
   margin-left: 19px /*mooving message to the right to avoid bug,  this reduce a little bit the text area*/
 }
 
+/*messages*/
+
+.wrapper-30-Nkg:hover { /*animation when you hover a message*/
+    background-color: var(--color-transparency) !important; /*change the color to the var set in root*/
+  border-radius: var(--popout-radius); /*change the border radius to the var set in root*/
+  transition: .4s; /*transition time when you hover a message*/
+}
+
+.wrapper-30-Nkg{
+  transition: .4s; /*transition when you hover out a message*/
+}
+
+.wrapper-30-Nkg:not(.groupStart-3Mlgv1), .wrapper-30-Nkg.compact-2Nkcau {
+  margin-top: 3px; /*give more space between message to avoid visual gitch*/
+}
+
 /*Typing zone*/
 .scrollableContainer-15eg7h {
   background-color: transparent; /*typing zone  set to be transparent*/
@@ -282,6 +298,7 @@ border: none; /*remove the border*/
     background-color: transparent!important; /*remove the orange filter in the message where you were mentionned, if you want a color you can remove the "transparent" value by a color */
 }
 
+
 .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*to solve a visual bug with the animation above, the message border is smaller, doesn't affect message width*/
     margin-left: 47px;
     margin-right: 15px;
@@ -293,6 +310,20 @@ border: none; /*remove the border*/
   backdrop-filter: blur(2px); /*add a blur filter to the embed*/
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
+
+/*IMAGES*/
+
+/*remove button*/
+.removeAttachmentButton-1iO1qS{
+ opacity: 0;
+    position: sticky; /*moving the remove button under the image instead of on an another continent*/
+    top: -2px;
+    right: -20px;
+    cursor: pointer;
+    padding: 2px;
+    color: var(--interactive-normal);
+}
+
 
 /*--EMOJI AND REACTION*/
 .reaction-3vwAF2 {
@@ -311,6 +342,7 @@ border: none; /*remove the border*/
    border-radius: 15px; /*border radius set to 15px to get a more rounded menu*/
  }
 
+
 .button-3bklZh {
   transition: .5s; /*animation hover out of the quick menu*/
 }
@@ -322,9 +354,22 @@ border: none; /*remove the border*/
 
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
-    background-color: rgba(0, 0, 0, 0.185); /*color of the members list in the guild right pannel*/
-       
+    background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
+    border-top-left-radius:var(--popout-radius) ;
+    left: 25px;
+    transition: .7s;
 }
+
+.members-3WRCEx:hover, .container-2o3qEW:hover, .members-3WRCEx>div:hover {
+    background-color: rgba(31, 81, 114, 0)!important; /*color of the members list in the guild right pannel*/
+    border-top-left-radius:var(--popout-radius) ;
+    backdrop-filter: blur(3px)!important;
+    left: 0px!important;
+    transition: .7s;
+}
+
+
+
 .membersWrap-3NUR2t { /*smaller pannel for the guild members*/
     min-width: 240px;
     margin-right: -10px;
