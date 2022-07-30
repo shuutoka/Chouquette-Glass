@@ -362,7 +362,6 @@ border: none; /*remove the border*/
 .members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
     background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
-    left: 25px;
     transition: .7s;
 }
 
@@ -372,6 +371,12 @@ border: none; /*remove the border*/
     backdrop-filter: blur(3px)!important;
     left: 0px!important;
     transition: .7s;
+    border: none; /*remove the border*/
+        box-shadow: /*add a neon instead of the legacy border*/
+            0 0 .2rem #fff,
+            inset 0 0 .1rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            0 0 .9rem #08f, /*offset glowing*/
+            inset 0 0 .2rem #08f;  /*glowing intensity*/
 }
 
 
@@ -417,6 +422,81 @@ border: none; /*remove the border*/
     backdrop-filter: blur(var(--popout-blur)); /*adding a blur filter*/
     z-index: -999;
   border-radius: 20px; /*change the border radius*/
+}
+
+
+/*
+ *
+ *  USER POPOUT
+ *
+ */
+.userPopout-2j1gM4 {
+  max-height: 90vh;
+  background-color: var(--card-color) !important;
+  border-radius: var(--popout-radius) !important;border:display ; /*remove the border*/
+        box-shadow: /*add a neon instead of the legacy border*/
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            0 0 .9rem #08f, /*offset glowing*/
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+  
+}
+
+.popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI{
+  position: relative;
+  z-index: -1;
+}
+
+.userPopout-2j1gM4:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--card-color);
+  border-radius: var(--popout-radius);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+.userPopout-2j1gM4 .avatar-2Vndt_ {
+  background-color: transparent;
+  border: none;
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(2px);
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+  background-color: transparent;
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .role-2TIOKu {
+  background-color: var(--card-color);
+  border-radius: 11px;
+}
+.userPopout-2j1gM4 .footer-3naVBw {
+  background-color: transparent;
+}
+/*note zone*/
+.input-2g-os5 {
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--text-normal);
+    background-color: rgba(0, 219, 248, 0.096);
+    border: none;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+}
+
+.textarea-_59yqs:focus {
+      background-color: rgba(0, 219, 248, 0.096);
+}
+/*Send DM in user pop out*/
+.input-2z42oC {
+    font-size: 14px;
+    border-radius: var(--popout-radius);
+    background-color: var(--color-transparency);
 }
 
 
