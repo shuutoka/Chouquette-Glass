@@ -20,5 +20,7 @@
             inset 0 0 .1rem #08f, /*in glowing*/
             0 0 .9rem #08f,
             inset 0 0 1rem #08f;  /*glowing intensity*/
+                 z-index: 999;
+                 position: relative;
  }
 }
