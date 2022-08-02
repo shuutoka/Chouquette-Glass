@@ -318,11 +318,12 @@ padding-top: 4px;
 
 
 /*EMBED*/
-.embed-hKpSrO {
-  background-color: var(--color-transparency); /*change the color of the embed*/
+.embedFull-1HGV2S {
+ background-color: var(--color-transparency)!important; /*change the color of the embed*/
   backdrop-filter: blur(2px); /*add a blur filter to the embed*/
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
+
 
 /*IMAGES*/
 
