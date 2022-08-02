@@ -401,14 +401,6 @@ border: none; /*remove the border*/
 
 /** POP OUT **/
 
-/*role user pop out*/
-.role-2TIOKu {  /*modify the shape of the roles in the user pop out*/
-  border-radius: 15px;
-}
-.roleRemoveButton-17oXnT { /*fix a weird bug on hover*/
-  width: 14.5px;
-  height: 8px;
-}
 
 /*menu pop out*/
 
@@ -450,6 +442,7 @@ border: none; /*remove the border*/
 .popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI{
   position: relative;
   z-index: -1;
+  transition: .7s;
 }
 
 .userPopout-2j1gM4:before {
@@ -459,27 +452,55 @@ border: none; /*remove the border*/
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--card-color);
+  background-color: var(--color-transparency);
   border-radius: var(--popout-radius);
   backdrop-filter: blur(3px);
   z-index: -1;
+  transition: .7s;
 }
-.userPopout-2j1gM4 .avatar-2Vndt_ {
+.userPopout-2j1gM4 .avatar-2Vndt_ { /*background connection statu (connected, idle etc..)*/
   background-color: transparent;
   border: none;
-  box-shadow: var(--popout-shadow);
   backdrop-filter: blur(2px);
+  transition: .7s;
 }
 .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
   background-color: transparent;
+  transition: .7s;
 }
-.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k .role-2TIOKu {
-  background-color: var(--card-color);
-  border-radius: 11px;
-}
-.userPopout-2j1gM4 .footer-3naVBw {
+
+.footer-3naVBw{
   background-color: transparent;
 }
+
+/**--role user--**/
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+
+    --transparency: .4;
+    border-radius: 13px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: var(--transparency);
+}
+
 /*note zone*/
 .input-2g-os5 {
     font-size: 16px;
