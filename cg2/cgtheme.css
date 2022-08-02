@@ -294,21 +294,28 @@ border: none; /*remove the border*/
 
 .mention {
     border-radius: 15px; /*mention border radius to make them more smooth */
+
 }
 
 .localBot-GrCgVt:before,
 .mentioned-Tre-dv:before {
   display: none;  /*remove the yellow bar when you got a mention*/
-}
+  }
 .mentioned-Tre-dv {
     background-color: transparent!important; /*remove the orange filter in the message where you were mentionned, if you want a color you can remove the "transparent" value by a color */
-}
+ }
 
 
 .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*to solve a visual bug with the animation above, the message border is smaller, doesn't affect message width*/
     margin-left: 47px;
     margin-right: 15px;
 }
+
+.mentioned-Tre-dv, .mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
+padding-bottom: 7px;
+padding-top: 4px;
+} /*give more space between the neon and the message to avoid colision*/
+
 
 /*EMBED*/
 .embed-hKpSrO {
