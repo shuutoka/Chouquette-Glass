@@ -439,12 +439,6 @@ border: none; /*remove the border*/
   
 }
 
-.popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI{
-  position: relative;
-  z-index: -1;
-  transition: .7s;
-}
-
 .userPopout-2j1gM4:before {
   position: absolute;
   content: " ";
@@ -460,7 +454,7 @@ border: none; /*remove the border*/
 }
 .userPopout-2j1gM4 .avatar-2Vndt_ { /*background connection statu (connected, idle etc..)*/
   background-color: transparent;
-  border: none;
+ border-color: transparent;
   backdrop-filter: blur(2px);
   transition: .7s;
 }
