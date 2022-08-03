@@ -1,9 +1,9 @@
 /*SPOTIFY ACTIVITY*/
-.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC {
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC .assetsLargeImageSpotify-17ME3M {
     border-radius: 15px; /*make the spotify album picture round*/
 }
 /*animation of the spotify album picture*/
-.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC:hover {
+.activitySectionAssets-1wpe42 .borderRadius0-1BDqiC .assetsLargeImageSpotify-17ME3M:hover {
     border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
     animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
 }
