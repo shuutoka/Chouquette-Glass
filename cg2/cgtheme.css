@@ -548,3 +548,38 @@ padding-top: 4px;
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub{
   background-color:rgba(0, 255, 255, 0.671)!important; /*color on hover*/
 }
+
+/*-------PARAMETERS IN GUILD------*/
+
+/*global view*/
+
+/*upload a picture button*/
+.lookOutlined-3yKVGo.colorPrimary-2AuQVo{
+  border-color : rgb(84, 175, 84)!important;
+  transition: .6s;
+}
+.lookOutlined-3yKVGo.colorPrimary-2AuQVo:hover{
+  background-color : rgb(84, 175, 84)!important;
+  border-radius: 15px;
+  transition: .6s;
+}
+
+/*filler*/
+.lookFilled-1GseHa.select-1Ia3hD,.option-2eIyOn, .option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv){
+  background-color: var(--color-secondary) ;
+  border-color: var(--color-secondary)!important; /*menu selector*/
+   backdrop-filter: blur(2px);
+}
+.popout-1KHNAq {
+ border-color:  var(--color-secondary); /*menu selector*/
+  background: transparent;
+}
+
+.option-2eIyOn:hover{
+  background-color: var(--color-transparency); /*menu selector*/
+}
+
+/*text color*/
+.subtitle-2SfoOV{
+  color: white;
+}
