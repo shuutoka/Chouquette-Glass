@@ -146,8 +146,6 @@ background-color: transparent;
   background-color: transparent !important; /*color of the track scrolling quickswitcher*/
 }
 
-
-
 /*---------SCROLLBAR --------- */
 
 ::-webkit-scrollbar-thumb {
@@ -489,13 +487,15 @@ padding-top: 4px;
     --transparency: .4;
     border-radius: 13px;
 }
-.role-2TIOKu .roleRemoveIcon-387wKV {
+.role-2TIOKu .roleRemoveIcon-387wKV { /*readjust the positin of the remove icon in user pop out*/
     margin: 0;
-    left: unset;
+    left: 2px;
+    top: 14px;
     transform: translate(50%,-50%);
 }
-.role-2TIOKu .roleRemoveButton-17oXnT {
+.role-2TIOKu .roleRemoveButton-17oXnT {/*readjust the positin of the remove BUTTON in user pop out*/
     position: static;
+    left: 5px;
 }
 .role-2TIOKu .roleCircle-3K9O3d:before {
     content: '';
