@@ -576,6 +576,14 @@ padding-top: 4px;
   background-color:rgba(0, 255, 255, 0.671)!important; /*color on hover*/
 }
 
+.circleIconButton-1VxDrg { /*add server and discover button*/
+  background-color: var(--color-transparency);
+}
+
+.circleIconButton-1VxDrg:hover{ /*hover the button*/
+background-color: var(--color-secondary);
+}
+
 /*-------PARAMETERS IN GUILD------*/
 
 /*global view*/
