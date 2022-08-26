@@ -370,6 +370,15 @@ padding-top: 4px;
    transition: .5s; /*animation when you hover it */
  }
 
+.button-1zW0-r{
+  background-color: var(--color-transparency); /*emoji button selector*/
+}
+
+.button-1zW0-r:hover{
+  background-color: var(--color-secondary); /*hover the emoji button selector*/
+}
+
+
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div {
     background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
