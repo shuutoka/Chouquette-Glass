@@ -479,6 +479,24 @@ padding-top: 4px;
   background-color: transparent;
 }
 
+.bodyInnerWrapper-2bQs1k{
+  background-color: transparent; /*about section*/
+}
+
+.separator-1So4YB{
+  border-color: transparent; /*remove lower separator*/
+  }
+
+.divider-1wtgZ3{
+  border-color: transparent;
+  background-color: transparent; /*remove upper separator*/
+}
+
+.avatar-2Vndt_{
+  border-color: transparent;
+  background-color: transparent; /*remove the dark background behind the avatar*/
+}
+
 /**--role user--**/
 .role-2TIOKu {
     transform: translate(0);
