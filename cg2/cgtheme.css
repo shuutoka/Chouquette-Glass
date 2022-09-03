@@ -145,6 +145,17 @@ background-color: transparent;
 .quickswitcher-pKcM9U .scroller-2qwVWY::-webkit-scrollbar-track {
   background-color: transparent !important; /*color of the track scrolling quickswitcher*/
 }
+/*--------------better discord settings---------*/
+/*pluggins*/
+.bd-addon-list{
+background-color: var(--card-color) !important;
+  border-radius: var(--popout-radius) !important;border:display ; /*remove the border*/
+        box-shadow: /*add a neon instead of the legacy border*/
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            0 0 .9rem #08f, /*offset glowing*/
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+  }
 
 /*---------SCROLLBAR --------- */
 
@@ -341,6 +352,13 @@ padding-top: 4px;
 .upload-vLbqu- {
     border-radius: var(--popout-radius); /*border radius of the*/
     background-color: #00a2ff0a;
+}
+
+.attachment-1PZZB2 { /*uploading file in the feed AND uploaded*/
+  background-color: var(--color-transparency); /*change the background color*/
+  border-color: transparent; /*remove the black/grey border*/
+  backdrop-filter: blur(3px); /*add a blur filter*/
+  border-radius: 10px; /*smooth the angle*/
 }
 
 /*--EMOJI AND REACTION*/
@@ -618,3 +636,5 @@ background-color: var(--color-secondary);
 .subtitle-2SfoOV{
   color: white;
 }
+
+/*TESTING ZONE TESTING ZONE TESTING ZONE*/
