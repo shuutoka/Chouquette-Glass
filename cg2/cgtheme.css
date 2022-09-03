@@ -602,6 +602,12 @@ padding-top: 4px;
 background-color: var(--color-secondary);
 }
 
+/*-------STANDARD ICON LOOK--------*/
+.iconWrapper-3plkqh, .emptyChannelIcon-1YdEz2, .role-23oyrw {
+  background-color: var(--color-transparency);
+}
+
+
 /*-------PARAMETERS IN GUILD------*/
 
 /*global view*/
