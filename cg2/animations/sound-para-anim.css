@@ -3,6 +3,7 @@
     opacity: 0% !important;
     width: 0px;
     transition: all 0.2s ease-in-out;
+    transform: rotate(30deg); /*test line*/
 }
 .panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
     opacity: 100% !important;
