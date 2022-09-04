@@ -333,6 +333,21 @@ padding-top: 4px;
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
 
+/*Embed Discord Invit*/
+.wrapper-1HIH0j{
+  background-color: var(--color-secondary);
+  border-radius: 13px;
+  backdrop-filter: blur(3px);
+}
+
+/*join button*/
+.lookFilled-yCfaCM.colorGreen-3y-Z79:hover{
+  background-color: rgb(67, 155, 67);
+}
+.lookFilled-yCfaCM.colorGreen-3y-Z79{
+  border-radius: 8px!important;
+}
+
 
 /*IMAGES*/
 
@@ -598,7 +613,7 @@ padding-top: 4px;
   background-color: var(--color-transparency);
 }
 
-.circleIconButton-1VxDrg:hover{ /*hover the button*/
+.circleIconButton-1VxDrg:hover{ /*hover  button*/
 background-color: var(--color-secondary);
 }
 
@@ -606,6 +621,9 @@ background-color: var(--color-secondary);
 .iconWrapper-3plkqh, .emptyChannelIcon-1YdEz2, .role-23oyrw {
   background-color: var(--color-transparency);
 }
+.disableColor-1nVFoH{
+color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+} /*return the verified badge server to the original green*/
 
 
 /*-------PARAMETERS IN GUILD------*/
