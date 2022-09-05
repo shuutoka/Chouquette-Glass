@@ -245,10 +245,36 @@ background-color: var(--card-color) !important;
   border-radius: 20px; /*make the input text bar more smooth*/
 }
 
+.form-3gdLxP { /*the "border" between tchat zone feed and input text zone*/
+  margin-top: 0px; /*taller, this prevent a visual bug*/
+   margin-left: -13px; /*widder, this prevent a visual bug*/
+}
+
 /*UNREAD SPAN*/
 .group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt { /*Undread banner or "new message span"*/
     margin-bottom: 35px; /*Higher from the new message*/
     top: .8rem; /*lower from the old message*/
+}
+
+/*Jump to present bar*/
+
+.jumpToPresentBar-1cEnH0 {
+  background: var(--color-light); /*main color*/
+  border-radius: 3px; /*smooth the border */
+  padding-bottom: 4px; /*change the height of the bar*/
+  backdrop-filter: blur(var(--popout-blur)); /*add a filter*/
+  transition: all 0.4s; /*add an all transition between normal and hover statue*/
+ margin-left: 20px; /*change the lengt of the bar*/
+ margin-right: 20px;
+}
+
+.jumpToPresentBar-1cEnH0>button {
+  color: rgba(255, 255, 255, 0.7); /*change the color of the button's text*/
+}
+
+.jumpToPresentBar-1cEnH0:hover {
+  background: var(--color-secondary); /*change the color when hovered*/
+  border-radius: 15px; /*change the border radius for the hovered form*/
 }
 
 /*Avatar position in the feed*/
