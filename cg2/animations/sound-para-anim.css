@@ -14,3 +14,7 @@
     border-radius: 15px!important;
 }
 
+.withTagAsButton-OsgQ9L:hover, .withTagless-10ooWt:hover{
+  border-radius: 13px;
+  transition: all  0.3s;
+}
