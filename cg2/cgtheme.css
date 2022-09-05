@@ -138,6 +138,14 @@ transition: .4s; /*transition when unhover*/
   background-color: var(--color-secondary); /*color of the buttons when hovered*/
 }
 
+.layout-1qmrhw:hover{ /*hovering people in the guild members panel*/
+  background-color: var(--color-transparency)!important;
+  border-radius: 13px;
+  transition: all 0.3s;
+}
+
+/*--------------------------------*/
+
 .searchBar-3TnChZ .searchBarComponent-3N7dCG{ /*color of the quickswitcher bar*/
  font-size: 13px; /*reduce the font size to avoid bug in some language*/
  background-color: var(--color-white);
@@ -683,4 +691,3 @@ color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
 }
 
 /*TESTING ZONE TESTING ZONE TESTING ZONE*/
-
