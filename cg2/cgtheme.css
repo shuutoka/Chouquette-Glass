@@ -122,6 +122,22 @@ transition: .4s; /*transition when unhover*/
   background-color: var(--color-light);
 } /*button color over the search bar*/
 
+/*standard button (friends, options etc...*/
+.interactiveSelected-29CP8y{ /*selected button color*/
+  background-color: var(--color-light);
+}
+.interactive-iyXY_x:hover, .peopleListItem-u6dGxF:hover{ /*when you hover a standard button, this will change his color to blue from the default --iteractive-active color */
+  background-color: var(--color-transparency);
+}
+
+.actionButton-3-B2x-,.actionButton-3-B2x-.highlight-3DSi7b{ /*action button in your friends menu, chat and burger menu*/
+  background-color: var(--color-transparency);
+  color:aqua /*color of the .icon*/
+  }
+.actionButton-3-B2x-:hover,.actionButton-3-B2x-.highlight-3DSi7b:hover{
+  background-color: var(--color-secondary); /*color of the buttons when hovered*/
+}
+
 .searchBar-3TnChZ .searchBarComponent-3N7dCG{ /*color of the quickswitcher bar*/
  font-size: 13px; /*reduce the font size to avoid bug in some language*/
  background-color: var(--color-white);
@@ -661,4 +677,10 @@ color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
   color: white;
 }
 
+/*QUICK USER SETTINGS / SATUES*/
+.withTagAsButton-OsgQ9L:hover, .withTagless-10ooWt:hover{
+  background-color: var(--color-secondary);
+}
+
 /*TESTING ZONE TESTING ZONE TESTING ZONE*/
+
