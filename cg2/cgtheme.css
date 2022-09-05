@@ -23,6 +23,7 @@
     --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
     --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
     --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    --color-button: rgb(67, 155, 67);
     --color-transparency: #0ebfff18; /*general dark color*/
     --color-light: rgba(70, 133, 187, 0.623);
     --color-secondary: #0ebfff59;
@@ -392,7 +393,7 @@ padding-top: 4px;
 
 /*join button*/
 .lookFilled-yCfaCM.colorGreen-3y-Z79:hover{
-  background-color: rgb(67, 155, 67);
+  background-color: var(--color-button);
 }
 .lookFilled-yCfaCM.colorGreen-3y-Z79{
   border-radius: 8px!important;
@@ -518,8 +519,13 @@ padding-top: 4px;
     z-index: -999;
   border-radius: 20px; /*change the border radius*/
 }
-
-
+/*FOLLOW THIS CHANNEL POP OUT*/
+.wrapper-2SplAX {
+  background-color: var(--color-secondary);
+}
+.button-cO0-d9{
+  background-color: var(--color-button)!important;
+}
 /*
  *
  *  USER POPOUT
