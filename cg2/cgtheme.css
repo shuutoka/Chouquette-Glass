@@ -251,6 +251,24 @@ background-color: var(--card-color) !important;
    margin-left: -13px; /*widder, this prevent a visual bug*/
 }
 
+/*button in channel*/
+.card-PQEqCK {
+  background-color: var(--color-light);
+}
+.card-PQEqCK:hover{
+  background-color: var(--color-transparency);
+}
+.lookFilled-yCfaCM.colorPrimary-2AuQVo{ /*welcome/greeting button*/
+  background-color: var(--color-secondary);
+  border-radius: 13px;
+  transition: all .4s;
+}
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover{ /*welcome/greeting button in hover mode*/
+  background-color: rgb(17, 194, 194);
+  border-radius: 5px;
+}
+
+
 /*UNREAD SPAN*/
 .group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt { /*Undread banner or "new message span"*/
     margin-bottom: 35px; /*Higher from the new message*/
