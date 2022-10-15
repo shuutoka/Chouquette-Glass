@@ -242,6 +242,16 @@ background-color: var(--card-color) !important;
   margin-top: 3px; /*give more space between message to avoid visual gitch*/
 }
 
+/*spoiler images & texts*/
+.spoilerContainer-3wsC0k.hidden-3B-Rum{
+ background-color: rgb(66, 80, 80);
+}
+
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum{
+  background-color: rgba(76, 160, 163, 0.671);
+  border-radius: 15px;
+}
+
 /*Typing zone*/
 .scrollableContainer-15eg7h {
   background-color: transparent; /*typing zone  set to be transparent*/
