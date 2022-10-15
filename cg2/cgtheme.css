@@ -229,6 +229,10 @@ background-color: var(--card-color) !important;
   border-radius: var(--popout-radius); /*change the border radius to the var set in root*/
   transition: .4s; /*transition time when you hover a message*/
 }
+/*time / date of messages*/
+.content-3spvdd, .divider-2rZFJK{
+  background-color: rgba(19, 155, 155, 0.788);
+}
 
 .wrapper-30-Nkg{
   transition: .4s; /*transition when you hover out a message*/
