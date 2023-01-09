@@ -805,3 +805,70 @@ border: 1px solid var(--color-button);
 color: greenyellow;
 border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
+
+
+/*EVENT*/
+.avatarDecoration-34OC0G {
+    position: absolute;
+    z-index: 2;
+    left: calc(-29px - 40px*var(--decoration-to-avatar-ratio)/2);
+    margin-top: calc(24px - .125rem - 40px*var(--decoration-to-avatar-ratio)/2);
+    width: calc(40px*var(--decoration-to-avatar-ratio));
+    height: calc(40px*var(--decoration-to-avatar-ratio));
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*DICOVER*/
+
+
+.new-3EJMgr {
+  background-color: #1d18b394;
+  backdrop-filter: blur(2px);
+}
+
+.theme-dark .pageWrapper-2PwDoS {
+    background-color: #1a326246;
+    backdrop-filter: blur(var(--popout-blur));
+}
+
+.theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
+    background-color: #07112c62;
+} 
+
+.theme-dark .card-2TuZPZ:hover {
+    background-color: #4d587533!important;
+} 
+
+.theme-dark .searchBox-pyIJJj {
+    background-color: #ffffff; /*search bar*/
+}
+
+.lookFilled-1GseHa.select-1Ia3hD {
+    background-color: var(--card-color); /*filter "langage"*/
+    border-color: #07112c62;
+}
+
+.popout-1KHNAq {
+    border: 0px solid var(--background-tertiary); /*pop up menu langage*/
+    background: var(--card-color);
+    border-radius: 0 0 20px 20px;
+   backdrop-filter: blur(2px);
+}
+
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) {
+    color: var(--interactive-active);
+    background-color: #2e4a9662;
+}
+
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv):hover {
+    background-color: #2e5f9662;
+}
+
+.option-2eIyOn.focused-ODgjnC, .option-2eIyOn:focus, .option-2eIyOn:hover {
+    background-color: #2c90b862;
+    color: var(--interactive-hover);
+}
