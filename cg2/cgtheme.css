@@ -49,7 +49,7 @@
     opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
 }
 /*Transparent panels*/
-.container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
+.theme-dark .container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
   background-color: transparent; /* main space of discord, don't delete this line*/
 }
 .appMount-2yBXZl, body {
@@ -63,7 +63,7 @@
   background-color: rgba(0, 0, 0, 0.527); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
 }
 
-.guildSeparator-33mFX6, .scroller-3X7KbA, .wrapper-1_HaEi { /*remove standard background*/
+.guildSeparator-33mFX6, .theme-dark .scroller-3X7KbA, .wrapper-1_HaEi { /*remove standard background*/
   background: none;
 }
 .standardSidebarView-E9Pc3j, /*don't delete this */
@@ -89,7 +89,7 @@
 }
 
 /*Friends list and MP channels pannel*/
-.privateChannels-oVe7HL, .scroller-WSmht3, .theme-dark .container-2cd8Mz,
+.privateChannels-oVe7HL, .theme-dark .scroller-WSmht3, .theme-dark .container-2cd8Mz,
 .nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
 .scroller-29cQFV, .container-1oAagU, .theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2 {
   background: none;  /* remove the legacy background of the friends pannels*/
@@ -871,4 +871,9 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 .option-2eIyOn.focused-ODgjnC, .option-2eIyOn:focus, .option-2eIyOn:hover {
     background-color: #2c90b862;
     color: var(--interactive-hover);
+}
+
+/*DEV ZONE*/
+.theme-dark .container-YkUktl{
+  background-color: transparent;
 }
