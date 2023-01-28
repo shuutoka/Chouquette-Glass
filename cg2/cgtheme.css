@@ -874,18 +874,24 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*FORUM*/
+.container-3wLKDe{ /*main zone of the forum panel / interface*/
+  background-color: transparent
+}
+
 .chatContent-3KubbW{ /*Chat zone in the forum*/
   background-color: transparent;
 }
-
-.container-3YcgdM { /*the bar for the buttons in forum post*/
+.container-3YcgdM, .buttonInner-3aRbcx { /*the bar for the buttons in forum post*/
   background-color: var(--color-secondary);
   border-color: none;
   border-radius: 15px;
 }
 .button-f2h6uQ .contents-3ca1mk{ /*button "follow" and copy link in forum header chat post*/
-  background-color: var(--color-white);
   border-color: var(--color-cyan);
+}
+
+.divider-AZrXIA{ /*divider under the bar*/
+  background-color: transparent;
 }
 
 /*DEV ZONE*/
