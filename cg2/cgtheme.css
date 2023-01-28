@@ -732,7 +732,7 @@ background-color: var(--color-secondary);
 }
 
 /*-------STANDARD ICON LOOK--------*/
-.iconWrapper-3plkqh, .emptyChannelIcon-1YdEz2, .role-23oyrw {
+.iconWrapper-3plkqh, .emptyChannelIcon-1YdEz2, .role-23oyrw, .iconWrapper-3FqQ75, .pill-3pRQlO {
   background-color: var(--color-transparency);
 }
 .disableColor-1nVFoH{
@@ -873,11 +873,22 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
     color: var(--interactive-hover);
 }
 
-/*DEV ZONE*/
-.theme-dark .container-YkUktl{ /*USER settings box and activity in the lower left of the screen*/
+/*FORUM*/
+.chatContent-3KubbW{ /*Chat zone in the forum*/
   background-color: transparent;
 }
 
-.chatContent-3KubbW{ /*Chat zone in the forum*/
+.container-3YcgdM { /*the bar for the buttons in forum post*/
+  background-color: var(--color-secondary);
+  border-color: none;
+  border-radius: 15px;
+}
+.button-f2h6uQ .contents-3ca1mk{ /*button "follow" and copy link in forum header chat post*/
+  background-color: var(--color-white);
+  border-color: var(--color-cyan);
+}
+
+/*DEV ZONE*/
+.theme-dark .container-YkUktl{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
