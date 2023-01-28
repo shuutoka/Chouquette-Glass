@@ -99,7 +99,7 @@
 } /* online friend's activity card, you can edit it */
 
 .theme-dark .form-3gdLxP:before {
-  display:none; /*fix a visual bug caused to the legacy fade between your activity and hte feed in the bottom left */
+  display:none; /*fix a visual bug caused to the legacy fade between your activity and the feed in the bottom left */
 }
 /*friend search bar*/
 .searchBar-2aylmZ {
@@ -667,7 +667,7 @@ padding-top: 4px;
     top: 14px;
     transform: translate(50%,-50%);
 }
-.role-2TIOKu .roleRemoveButton-17oXnT {/*readjust the positin of the remove BUTTON in user pop out*/
+.role-2TIOKu .roleRemoveButton-17oXnT {/*readjust the position of the remove BUTTON in user pop out*/
     position: static;
     left: 5px;
 }
@@ -874,6 +874,10 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*DEV ZONE*/
-.theme-dark .container-YkUktl{
+.theme-dark .container-YkUktl{ /*USER settings box and activity in the lower left of the screen*/
+  background-color: transparent;
+}
+
+.chatContent-3KubbW{ /*Chat zone in the forum*/
   background-color: transparent;
 }
