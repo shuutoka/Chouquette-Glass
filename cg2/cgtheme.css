@@ -900,6 +900,7 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*DEV ZONE*/
-.theme-dark .container-YkUktl{ /*USER settings box and activity in the lower left of the screen*/
+.theme-dark .container-YkUktl, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
+
