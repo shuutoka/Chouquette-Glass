@@ -566,14 +566,14 @@ padding-top: 4px;
 
 /*menu pop out*/
 
-.menu-1QACrS { /*server menu*/
+.menu-2TXYjN { /*server menu*/
     -webkit-box-shadow: var(--elevation-high); /*legacy value, keep it to prevent bug*/
     box-shadow: var(--elevation-high); /*box shadow around the frame*/
     background: var(--color-transparency); /*change the color */
     border-radius: 20px; /*change the border radius*/
 }
 
-.menu-1QACrS::after{ 
+.menu-2TXYjN::after{ 
     content: '';
     width: 100%; /*position of the pop out*/
     height: 100%; 
@@ -904,3 +904,16 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   background-color: transparent;
 }
 
+/*FORUM*/
+
+/*search bar - Post cards*/
+.mainCard-3KBsBI {
+  background-color: var(--color-transparency);
+  transition: .4s
+}
+
+.mainCard-3KBsBI:hover {
+  background-color: var(--color-secondary);
+   backdrop-filter: blur(2px);
+   transition: .4s;
+}
