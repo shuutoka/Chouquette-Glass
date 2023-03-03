@@ -53,10 +53,10 @@
   background-color: transparent; /* main space of discord, don't delete this line*/
 }
 .appMount-2yBXZl, body {
-    background-color: var(--bg-main-panels);
+    background-color: rgba(0, 0, 0, 0);
 }
 .app-2CXKsg { /*Discord Background*/
-    background-color: var(--bg-main-panels);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .layers-OrUESM {
@@ -378,9 +378,8 @@ border: none; /*remove the border*/
             0 0 .9rem #08f, /*offset glowing*/
             inset 0 0 1rem #08f;  /*glowing intensity*/
     }
-.container-3XgAHv{
-  transition: 0.9 step-start;
-}
+
+
 .quotedChatMessage-PxNsZi{ /*readjust thee location of the quoted message in the thread window*/
   margin-left: 18px; /*mooving to the right*/
 }
@@ -916,4 +915,8 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   background-color: var(--color-secondary);
    backdrop-filter: blur(2px);
    transition: .4s;
+}
+
+.matchingPostsRow-2IiEQ1 {
+  background-color: var(--color-transparency);
 }
