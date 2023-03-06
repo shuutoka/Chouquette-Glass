@@ -375,15 +375,18 @@ border: none; /*remove the border*/
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .2rem #fff,
             inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .9rem #08f, /*offset glowing*/
-            inset 0 0 1rem #08f;  /*glowing intensity*/
-    }
+            0 0 1.5rem #08f, /*offset glowing*/
+            inset 0 0 1.5rem #08f;  /*glowing intensity*/
+            }
 
 
 .quotedChatMessage-PxNsZi{ /*readjust thee location of the quoted message in the thread window*/
   margin-left: 18px; /*mooving to the right*/
 }
 
+.resizeHandle-PBRzPC {
+  display: none;
+}
 
 
 /*MENTION*/
@@ -464,18 +467,19 @@ padding-top: 4px;
   border-radius: 10px; /*smooth the angle*/
 }
 
+
 /*--EMOJI AND REACTION*/
 .reaction-3vwAF2 {
   background-color: rgba(54, 77, 121, 0.349); /*change the color of an unreacted reaction */
   border-radius: 15px; /*change the border radius of all reactions*/
-  backdrop-filter: blur(5px);
+  border-color: var(--color-secondary);
 }
 
 .reaction-3vwAF2:hover {
-   background-color: rgba(46, 161, 190, 0.336) ; /*color of a reaction on hover*/
+   background-color: var(--color-secondary) ; /*color of a reaction on hover*/
    }
 
- .wrapper-2vIMkT {
+.wrapper-2vIMkT {
    background-color: rgba(18, 79, 128, 0.315); /*quick reaction menu/ quote, create a thread and more menu. Change the main color*/
    backdrop-filter: blur(2px); /*add a blur filter*/
    border-radius: 15px; /*border radius set to 15px to get a more rounded menu*/
@@ -491,13 +495,15 @@ padding-top: 4px;
    transition: .5s; /*animation when you hover it */
  }
 
-.button-1zW0-r{
+
+ .button-1zW0-r{
   background-color: var(--color-transparency); /*emoji button selector*/
 }
 
 .button-1zW0-r:hover{
   background-color: var(--color-secondary); /*hover the emoji button selector*/
 }
+
 
 /*all emoji selector*/
 .contentWrapper-3vHNP2{
@@ -898,13 +904,6 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   background-color: transparent;
 }
 
-/*DEV ZONE*/
-.theme-dark .container-YkUktl, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
-  background-color: transparent;
-}
-
-/*FORUM*/
-
 /*search bar - Post cards*/
 .mainCard-3KBsBI {
   background-color: var(--color-transparency);
@@ -919,4 +918,9 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 
 .matchingPostsRow-2IiEQ1 {
   background-color: var(--color-transparency);
+}
+
+/*DEV ZONE*/
+.theme-dark .container-YkUktl, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
+  background-color: transparent;
 }
