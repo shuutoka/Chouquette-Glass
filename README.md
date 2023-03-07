@@ -1,2 +1,2 @@
 # Chouquette-Glass
-Discord Theme in bêta version
+Discord Theme in Early Access
