@@ -25,6 +25,8 @@ header {
 header h1 {
   color: cyan;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 section {
@@ -38,14 +40,17 @@ h2 {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000;
-  color: cyan;
-  border: 1px solid cyan;
+  background-color: cyan;
+  color: #000;
+  border: none;
   text-decoration: none;
-  transition: box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .button:hover {
+  transform: scale(1.1);
   box-shadow: 0 0 10px cyan;
 }
 
