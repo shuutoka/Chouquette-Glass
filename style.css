@@ -40,9 +40,9 @@ h2 {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: black;
-  color: #000;
-  border: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid cyan;
   text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
   border-radius: 5px;
