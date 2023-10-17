@@ -338,6 +338,11 @@ background-color: var(--card-color) !important;
   border-color: var(--color-cyan);
 }
 
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz:disabled { /*FIX THIS BUG*/
+  border-color: 1px(red);
+  border-radius: 13px;
+}
+
 .lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover {
   background-color: var(--color-transparency);
   border: 2px solid rgb(0, 225, 255); /* border and become transparent when hovering the button */
@@ -589,10 +594,16 @@ padding-top: 4px;
 .inspector-2A2Chb,.inspector-2A2Chb, .list-obNEuP, .scroller-2MALzE, .wrapper-22rqw6{ /*warpers and other element of the selector*/
   background-color: var(--color-transparency);
 }
-.header-1ULbqO{
-  background-color: transparent;
+.header-1ULbqO{ 
+  background-color: rgba(0, 128, 255, 0.427); /*title / name of the serveur*/
+  border-radius: 13px;
 }
-.unicodeShortcut-3N8oDe,.categoryItemRecentEmoji-Rk8CU1{
+
+.wrapper-1NNaWG:after{ /*remove a weird bar that come out from no where*/
+  display: none;
+}
+
+.unicodeShortcut-3N8oDe,.categoryItemRecentEmoji-Rk8CU1, .guildIcon-2SUGiq{
   background-color: var(--color-transparency);
 }
 
@@ -626,6 +637,11 @@ padding-top: 4px;
 
 .emojiItem-277VFM.emojiItemSelected-2Lg50V:hover {
   transform: scale(1.1); /* the item grow for animation / transition */
+}
+
+/*text color*/
+.headerIcon-2Gk2OH+.headerLabel-1g790w{
+  color: white; /*change text to white, else we can't read those little funny text --" */
 }
 
 /*---------------------------------------------------------------------------------*/
