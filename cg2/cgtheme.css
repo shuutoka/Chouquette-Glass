@@ -832,17 +832,20 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
     user-select: none;
 }
 
-/*DICOVER*/
-
+/*DISCOVER*/
 
 .new-3EJMgr {
   background-color: #1d18b394;
   backdrop-filter: blur(2px);
 }
 
-.theme-dark .pageWrapper-2PwDoS {
+.theme-dark .pageWrapper-eg3-6i {
     background-color: #1a326246;
     backdrop-filter: blur(var(--popout-blur));
+}
+
+.theme-dark .card-2TuZPZ:hover .iconMask-2fMR98, .theme-dark .iconMask-2fMR98:hover .iconMask-2fMR98 { /*image mask on hover*/
+  background-color: var(--color-secondary);
 }
 
 .theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
