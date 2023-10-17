@@ -560,7 +560,7 @@ padding-top: 4px;
 }
 
 
-/*all emoji selector*/
+/*--------------------all emoji selector-------------*/
 .contentWrapper-3vHNP2, .contentWrapper-2f9yME{ /*emoji picker menue*/
   background-color: var(--color-transparency);
   border: none; /*remove the border*/
@@ -618,6 +618,18 @@ padding-top: 4px;
 .icon-18rqoe { /*search icon*/
   color: white;
 }
+
+.emojiItem-277VFM.emojiItemSelected-2Lg50V { /*animation of the emoji when hovered for selection*/
+  background-color: var(--color-secondary);
+  transition: background-color 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transition of the color, background and size*/
+}
+
+.emojiItem-277VFM.emojiItemSelected-2Lg50V:hover {
+  transform: scale(1.1); /* the item grow for animation / transition */
+}
+
+/*---------------------------------------------------------------------------------*/
+
 
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2vWgD2, .members-3WRCEx>div,.member-2iQhp7, .members-2y1nVj {
