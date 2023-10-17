@@ -312,6 +312,17 @@ background-color: var(--card-color) !important;
   border-radius: 5px;
 }
 
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz{ /*button in chat*/
+  background-color: var(--color-light);
+  border-radius: 10px;
+  border-color: var(--color-cyan);
+}
+
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover {
+  background-color: var(--color-transparency);
+  border: 2px solid rgb(0, 225, 255); /* border and become transparent when hovering the button */
+}
+
 
 /*UNREAD SPAN*/
 .group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt { /*Undread banner or "new message span"*/
