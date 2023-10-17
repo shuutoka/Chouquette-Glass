@@ -560,7 +560,7 @@ padding-top: 4px;
 
 
 /*all emoji selector*/
-.contentWrapper-3vHNP2{
+.contentWrapper-3vHNP2, .contentWrapper-2f9yME{ /*emoji picker menue*/
   background-color: var(--color-transparency);
   border: none; /*remove the border*/
         box-shadow: /*add a neon instead of the legacy border*/
@@ -571,14 +571,33 @@ padding-top: 4px;
   backdrop-filter: blur(3px);
 }
 
-.inspector-2A2Chb,.inspector-2A2Chb, .list-obNEuP, .scroller-2MALzE{
+.categoryItemDefaultCategorySelected-2YeRUu /*favorite icon*/{
+  background-color: var(--color-transparency);
+  transition: color 0.3s ease;
+}
+
+.categoryItemDefaultCategorySelected-2YeRUu:hover { /*change the background of the icon to match to the theme*/
+  background-color: transparent;
+}
+
+.categoryItemDefaultCategorySelected-2YeRUu .categoryIcon-2cYeku:hover {/*change the color of the icon when hovered*/
+  color:gold;
+  transform: scale(1.1);
+}
+
+.inspector-2A2Chb,.inspector-2A2Chb, .list-obNEuP, .scroller-2MALzE, .wrapper-22rqw6{ /*warpers and other element of the selector*/
   background-color: var(--color-transparency);
 }
 .header-1ULbqO{
   background-color: transparent;
 }
 .unicodeShortcut-3N8oDe,.categoryItemRecentEmoji-Rk8CU1{
-  background-color: rgb(70, 145, 145);
+  background-color: var(--color-transparency);
+}
+
+.categoryIcon-2cYeku:hover{ /*tick tack emoji recent picked*/
+  color: white;
+  border: 1px cyan;
 }
 .navButtonActive-1EqC5l{
   color: var(--color-cyan);
@@ -853,7 +872,7 @@ color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
   color: aqua;/*change the icon color*/
 }
 
-.subtext-14b69p{
+.subtext-14b69p, .container-q97qHp{
   color: rgb(245, 245, 245)/*change the text color*/
 }
 
