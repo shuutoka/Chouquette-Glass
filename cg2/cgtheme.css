@@ -30,7 +30,8 @@
     --color-secondary: #0ebfff59;
     --color-white: rgba(255, 255, 255, 0.096);
     --color-cyan: rgb(17, 194, 194);
-    --card-radius: 8px /*thread smoothness*/
+    --card-radius: 8px /*thread smoothness*/;
+    --interactive-normal: var(--color-white)
   
 }
  /*-----MAIN TRANSPARENCY FOR THE APP-----*/
@@ -604,6 +605,20 @@ padding-top: 4px;
   background-color: transparent;
   border: 1px solid cyan;
 }
+
+.unicodeShortcut-3N8oDe{ /*the emooji in the lower corner left*/
+  backdrop-filter: blur(19px);
+  color : white;
+}
+
+.container-1SX9VC {
+  background-color: rgba(0, 0, 0, 0.429);
+} /*search bar*/
+
+.icon-18rqoe { /*search icon*/
+  color: white;
+}
+
 /*USERS IN GUILD PANNEL*/
 .members-3WRCEx, .container-2vWgD2, .members-3WRCEx>div,.member-2iQhp7, .members-2y1nVj {
     background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
