@@ -49,7 +49,7 @@
     opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
 }
 /*Transparent panels*/
-.theme-dark .container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
+.theme-dark .container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-9g_3Xj, .messages-3amgkR {
   background-color: transparent; /* main space of discord, don't delete this line*/
 }
 .appMount-2yBXZl, body {
@@ -532,12 +532,12 @@ padding-top: 4px;
   border: 1px solid cyan;
 }
 /*USERS IN GUILD PANNEL*/
-.members-3WRCEx, .container-2o3qEW, .members-3WRCEx>div,.member-48YF_l, .members-3WRCEx {
+.members-3WRCEx, .container-2vWgD2, .members-3WRCEx>div,.member-2iQhp7, .members-2y1nVj {
     background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
     transition: .7s;
 }
- .container-2o3qEW:hover{
+ .container-2vWgD2:hover{
     background-color: rgba(31, 81, 114, 0)!important; /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
     backdrop-filter: blur(3px)!important;
@@ -921,6 +921,24 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*DEV ZONE*/
-.theme-dark .container-YkUktl, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
+.theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
+}
+
+/*POP UP UPDATE*/
+.root-1CAIjD{ /*pop up better discord upadte and other pop up that use this root*/
+  background-color: var(--color-light); /*does not affect the footer*/
+  border-radius: 15px; /*does not affect the footer*/
+}
+
+.bd-changelog-modal video, .bd-changelog-modal img{ /*Radius of the image*/
+border-radius: 15px;
+}
+
+.theme-dark .footerSeparator-3U8YsT{ /*make the footer transparent*/
+  background-color: transparent;
+}
+
+.emptyCard-KDifrB{
+  background-color: var(--color-light);
 }
