@@ -1,20 +1,24 @@
-/*microphone and sound hide*/
-.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
-    opacity: 0% !important;
-    width: 0px;
-    transition: all 0.2s ease-in-out;
-    
-}
-.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
-    opacity: 100% !important;
-    width: 32px;
-}
-.button-12Fmur:hover {
-    background-color: var(--color-secondary) !important; /*color on hover fot those buttons*/
-    border-radius: 15px!important;
+/* Microphone and sound hide */
+.container-1CH86i > .flex-2S1XBF > :not(:last-child) {
+  opacity: 0% !important;
+  width: 0px;
+  transition: all 0.2s ease-in-out, transform 0.2s ease-in-out; /* Ajout de la transition de rotation */
+  transform-origin: center center;
+  transform: rotate(0deg); /* Rotation de départ à 0 degrés */
 }
 
-.withTagAsButton-OsgQ9L:hover, .withTagless-10ooWt:hover{
+.container-1CH86i:hover > .flex-2S1XBF > :not(:last-child) {
+  opacity: 100% !important;
+  width: 32px;
+  transform: rotate(360deg); /* Rotation complète de 360 degrés au survol */
+}
+
+.button-12Fmur:hover {
+  background-color: var(--color-secondary) !important; /* Couleur au survol pour ces boutons */
+  border-radius: 15px !important;
+}
+
+.avatarWrapper-12uuu4:hover, .withTagless-10ooWt:hover {
   border-radius: 13px;
-  transition: all  0.3s;
+  transition: all 0.3s;
 }
