@@ -3,3 +3,26 @@
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/spotify.css');
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/friends-activity.css');
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/mention.css');
+
+/*----------------input text bar button---------------*/
+
+.buttonWrapper-3YFQGJ svg, .attachButtonPlus-3IYelE {
+  color: lightgrey;
+  fill: lightgrey;
+  transition: transform 0.3s ease; /* Transition for jump animation */
+}
+
+.attachButton-_ACFSu:hover .attachButtonPlus-3IYelE {
+ border-color: gold;
+ fill: var(--color-cyan); /*the plus button*/
+}
+
+.buttonWrapper-3YFQGJ svg:hover {
+  transform: translateY(-5px); /* moove the item above in hover mode */
+  color: var(--color-cyan);
+}
+
+.buttonWrapper-3YFQGJ svg, .attachButtonPlus-3IYelE {
+  transform: translateY(0); /* reset the animation to avoid bug in hover when the mouse ins't in the right place or too slow */
+}
+/*-------------------------------------------------*/
