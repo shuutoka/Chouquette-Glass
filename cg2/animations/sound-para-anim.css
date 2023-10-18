@@ -21,4 +21,5 @@
 .avatarWrapper-12uuu4:hover, .withTagless-10ooWt:hover {
   border-radius: 13px;
   transition: all 0.3s;
+  background-color: var(--color-secondary);
 }
