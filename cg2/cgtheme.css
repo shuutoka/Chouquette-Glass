@@ -109,6 +109,10 @@
   padding-right: 2px; /*made teh panel wider to avoid a visual bug */
 }
 
+.actionIcon-2sw4Sl{ /*button in the selected channel (settings, invit friend), color set to default*/
+  color:none;
+}
+
 /*Friends list and MP channels pannel*/
 .privateChannels-oVe7HL, .theme-dark .scroller-WSmht3, .theme-dark .container-2cd8Mz,
 .nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
@@ -731,7 +735,7 @@ padding-top: 4px;
   border-radius: 20px; /*change the border radius*/
 }
 /*FOLLOW THIS CHANNEL POP OUT*/
-.wrapper-2SplAX {
+.wrapper-IjGAlW {
   background-color: var(--color-secondary);
 }
 .button-cO0-d9{
