@@ -33,3 +33,12 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 .topic-11NuQZ {
   color: white; /*change the color of the channel's topic*/
 }
+
+/*---------boost objective------*/
+ 
+.text-xs-normal-3O7EaX, .count-e4ipkH{
+  font-family: 'Baloo Bhaijaan 2';
+    font-size: 12px;
+    line-height: 16px;
+    color:var(--color-cyan) !important;
+}
