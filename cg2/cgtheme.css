@@ -451,7 +451,6 @@ border: none; /*remove the border*/
 
 /*MENTION*/
 
-
 .mention {
     border-radius: 15px; /*mention border radius to make them more smooth */
 
@@ -564,6 +563,15 @@ padding-top: 4px;
   background-color: var(--color-secondary); /*hover the emoji button selector*/
 }
 
+.icon-tZV_7s, .icon-1zidb7{ /*fix the color of the button*/
+  color :lightblue;
+}
+
+.icon-tZV_7s:hover, .icon-1zidb7:hover{ /*added a quick animation to fix a visual bug*/
+  color :cyan;
+  transition: color 0.3s ease;
+}
+
 
 /*--------------------all emoji selector-------------*/
 .contentWrapper-3vHNP2, .contentWrapper-2f9yME{ /*emoji picker menue*/
@@ -617,7 +625,7 @@ padding-top: 4px;
   border: 1px solid cyan;
 }
 
-.unicodeShortcut-3N8oDe{ /*the emooji in the lower corner left*/
+.unicodeShortcut-3N8oDe{ /*the emoji in the lower corner left*/
   backdrop-filter: blur(19px);
   color : white;
 }
