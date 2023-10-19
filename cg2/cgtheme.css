@@ -338,6 +338,10 @@ background-color: var(--card-color) !important;
               inset 0 0 1.5rem #08f;  /*glowing intensity*/
             }  
 
+.contentTitle-3CylD3 { /*color of the text*/
+  color: white;
+}
+
 /*------------button in channel---------------------*/
 .card-PQEqCK {
   background-color: var(--color-light);
@@ -727,6 +731,7 @@ padding-top: 4px;
     box-shadow: var(--elevation-high); /*box shadow around the frame*/
     background: var(--color-transparency); /*change the color */
     border-radius: 20px; /*change the border radius*/
+    backdrop-filter: blur(13px);
 }
 
 .menu-2TXYjN::after{ 
@@ -1057,6 +1062,11 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   border-radius: 15px;
 }
 
+/*pop out filter*/
+.container-2d0jMv{
+  background-color: transparent;
+}
+
 /*tags hover*/
 .pill-3pRQlO.clickable-3YTfAq:not(.disabled-3Rezaw):hover{
   background-color: var(--color-transparency);
@@ -1144,6 +1154,9 @@ border-color: var(--color-cyan);
 .matchingPostsRow-2IiEQ1 {
   background-color: var(--color-transparency);
 }
+
+/*notification "new post"*/
+/*see the file "animation for this item*/
 
 /*POP UP UPDATE*/
 .root-1CAIjD{ /*pop up better discord upadte and other pop up that use this root*/
