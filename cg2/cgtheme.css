@@ -50,6 +50,10 @@
     filter: blur(var(--bg-blur)); /*blur filter, the defalut value is in "root" and is set to "0"*/
     opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
 }
+
+.winButton-3SigSb{
+  color: white; /*windows buttons*/
+}
 /*Transparent panels*/
 .theme-dark .container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-9g_3Xj, .messages-3amgkR {
   background-color: transparent; /* main space of discord, don't delete this line*/
@@ -755,6 +759,13 @@ padding-top: 4px;
  *  USER POPOUT
  *
  */
+
+ .scroller-15bIdk { /*prevent the user pop out to be longer than the discord window*/
+  overflow-y: auto;
+  max-height: 500px; /* max height here */
+}
+
+
 /**------------role user--------------**/
 .role-2TIOKu {
     transform: translate(0);
