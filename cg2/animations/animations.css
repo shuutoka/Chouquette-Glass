@@ -25,4 +25,29 @@
 .buttonWrapper-3YFQGJ svg, .attachButtonPlus-3IYelE {
   transform: translateY(0); /* reset the animation to avoid bug in hover when the mouse ins't in the right place or too slow */
 }
-/*-------------------------------------------------*/
+/*------------------FORUM NEW POST NOTIFICATION--------------------*/
+.newPostsButton-UaBhcU {
+  background-color: var(--color-secondary);
+  border-color: var(--color-cyan);
+  backdrop-filter: blur(2px);
+  transition: background-color 0.5s ease, border-color 0.5s ease; /* Transition pour l'animation */
+}
+
+@keyframes shine {
+  0% {
+      background-color: var(--color-secondary);
+      border-color: var(--color-cyan);
+  }
+  50% {
+      background-color: var(--color-secondary-light); /* Couleur plus claire pour la brillance */
+      border-color: white; /* Couleur de la bordure plus claire pour la brillance */
+  }
+  100% {
+      background-color: var(--color-secondary);
+      border-color: var(--color-cyan);
+  }
+}
+
+.newPostsButton-UaBhcU {
+  animation: shine 2s infinite; /* Animation de brillance lors du survol */
+}
