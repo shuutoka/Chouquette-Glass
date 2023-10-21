@@ -198,6 +198,7 @@ transition: .4s; /*transition when unhover*/
 .searchBar-3TnChZ .searchBarComponent-3N7dCG{ /*color of the quickswitcher bar*/
  font-size: 13px; /*reduce the font size to avoid bug in some language*/
  background-color: var(--color-white);
+ color: var(--color-cyan);
 }
 
 .quickswitcher-pKcM9U{ /*quickswitcher menu*/
@@ -618,7 +619,7 @@ padding-top: 4px;
 }
 
 .icon-tZV_7s:hover, .icon-1zidb7:hover{ /*added a quick animation to fix a visual bug*/
-  color :cyan;
+  color : var(--color-cyan);
   transition: color 0.3s ease;
 }
 
@@ -667,12 +668,12 @@ padding-top: 4px;
 
 .categoryIcon-2cYeku:hover{ /*tick tack emoji recent picked*/
   color: white;
-  border: 1px cyan;
+  border: 1px var(--color-cyan);
 }
 .navButtonActive-1EqC5l{
   color: var(--color-cyan);
   background-color: transparent;
-  border: 1px solid cyan;
+  border: 1px solid var(--color-cyan);
 }
 
 .unicodeShortcut-3N8oDe{ /*the emoji in the lower corner left*/
@@ -1053,7 +1054,7 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 /*tags hover*/
 .pill-3pRQlO.clickable-3YTfAq:not(.disabled-3Rezaw):hover{
   background-color: var(--color-transparency);
-  border-color: cyan;
+  border-color: var(--color-cyan);
 }
 
 /*all tags filter pop out / up*/
@@ -1166,7 +1167,6 @@ border-radius: 15px;
 .theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
-
 
 /*Parameters*/
 .themed-qqoYp3.item-2GWPIy{ /*text color*/
