@@ -152,6 +152,11 @@
  background-color: rgba(255, 255, 255, 0.171);/*color of the hover search bar*/
   transition: .4; /*transition time of the hover search bar*/
 }
+
+.icon-3CDcPB{ /*color of the search button*/
+  color: white;
+}
+
 /*button over the search bar in friend tab*/
 .container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
   background-color: var(--color-transparency);
@@ -195,7 +200,7 @@ transition: .4s; /*transition when unhover*/
 }
 
 .quickswitcher-pKcM9U{ /*quickswitcher menu*/
-  background-color: transparent; /*background color of the quickswitcher */
+  background-color: var(--color-transparency); /*background color of the quickswitcher */
   backdrop-filter: blur(6px); /*adding a blur effect*/
   box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff; /*color of the shadow box*/
 } /*adding a neon as border*/
@@ -205,13 +210,22 @@ transition: .4s; /*transition when unhover*/
   scrollbar-color: var(--color-transparency);
 }
 
+.contentDefault-17ewQQ, .miscContainer-33U-X-, .header-1ZpMzy, .icon-12xJtb{ /*title, channel name, server name, icon color*/
+  color:white;
+}
+
 .input-3r5zZY{/*input of the quickswitcher search menu*/
 background-color: transparent;
 }
 
-.quickswitcher-pKcM9U .scroller-2qwVWY::-webkit-scrollbar-track {
+.scroller-2qwVWY::-webkit-scrollbar-track {
   background-color: transparent !important; /*color of the track scrolling quickswitcher*/
 }
+
+.result-u66Ywh[aria-selected=true]{ /*color of the selcted item / hovering the item you want select*/
+  background-color: var(--color-secondary);
+}
+
 /*--------------better discord settings---------*/
 /*pluggins*/
 .bd-addon-list{
@@ -919,6 +933,14 @@ color: greenyellow;
 border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
+.topPill-2vcLsa .themed-qqoYp3.selected-1sf9UK.item-2GWPIy{
+  background-color: transparent;
+  border: 2px solid var(--color-cyan);
+}
+
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover, .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
+  background-color: var(--color-transparency); /*buttons in the bar at the top in the friends tabs*/
+}
 
 /*------------EVENT-----------------*/
 .avatarDecoration-34OC0G {
