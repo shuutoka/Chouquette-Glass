@@ -121,7 +121,7 @@
 /*Friends list and MP channels pannel*/
 .privateChannels-oVe7HL, .theme-dark .scroller-WSmht3, .theme-dark .container-2cd8Mz,
 .nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
-.scroller-29cQFV, .container-1oAagU, .theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2 {
+.scroller-29cQFV, .container-1oAagU, .theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2, .theme-dark .panel-ufc1-o {
   background: none;  /* remove the legacy background of the friends pannels*/
 }
 
@@ -1167,6 +1167,7 @@ border-radius: 15px;
 .theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
+
 
 /*Parameters*/
 .themed-qqoYp3.item-2GWPIy{ /*text color*/
