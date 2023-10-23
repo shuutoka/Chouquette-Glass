@@ -1163,12 +1163,6 @@ border-radius: 15px;
   background-color: var(--color-light);
 }
 
-/*DEV ZONE*/
-.theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
-  background-color: transparent;
-}
-
-
 /*Parameters*/
 .themed-qqoYp3.item-2GWPIy{ /*text color*/
   color: lightgrey;
@@ -1185,4 +1179,17 @@ border-radius: 15px;
 .closeButton-PCZcma:hover{ /*close button in hovering mode*/
   color: var(--color-cyan);
   background-color: var(--color-transparency);
+}
+
+/*DEV ZONE*/
+.theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
+  background-color: transparent;
+}
+
+.reactionCount-26U4As, .reactionBtn-3I19bq .icon-1q31jb{ /*add reaction to a message in the feed, button in white*/
+  color:lightgray;
+}
+
+.reactionBtn-3I19bq:hover .icon-1q31jb{ /*hover of thoses buttons*/
+  color : var(--color-cyan);
 }
