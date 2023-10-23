@@ -42,3 +42,8 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
     line-height: 16px;
     color:var(--color-cyan) !important;
 }
+/*--------------Reactions-----------------*/
+
+.reactionCount-26U4As{
+  background-color: white;
+}
