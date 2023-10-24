@@ -266,10 +266,7 @@ background-color: var(--card-color) !important;
     border: 2px solid transparent; }
     .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m, .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m.alt-1dvXnH {
       color: var(--text-normal); }
-.avatar-2e8lTP { /*avatar position*/
-  top: -14px;
-  left: -49px; 
-  }
+
 
 .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
   left: -65px; /*timestamp in the following messages in -65px to avoid bug this the larger zone*/
@@ -425,7 +422,6 @@ background-color: var(--card-color) !important;
 
 /*-----------------Avatar position in the feed-------------------*/
 .avatar-2e8lTP {
-    top: 2px; /*vertical postion, positive value = higher*/
     left: -49px; /*honrizontal position, negative value =  move to left*/
 }
 
@@ -959,6 +955,14 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.avatarDecoration-2Wb1Au {
+  display: all;
+}
+
+.profileEffects-km5xa2 {
+  display: all;
 }
 
 /*------------DISCOVER----------------*/
