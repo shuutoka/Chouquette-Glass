@@ -1102,12 +1102,13 @@ border-color: var(--color-cyan);
 .container-3s2w-i {
   background-color: var(--color-transparency);
   backdrop-filter: blur(8px);
-  border: none; /*remove the border*/
-        box-shadow: /*add a neon instead of the legacy border*/
-            0 0 .2rem #fff,
-            inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 1.5rem #08f, /*offset glowing*/
-            inset 0 0 1.5rem #08f;  /*glowing intensity*/
+  border: none; /* Supprimer la bordure */
+  margin-left: -8px; /* Décalage de 13px vers la gauche */
+  box-shadow:
+    0 0 0.2rem #fff,
+    inset 0 0 0.5rem #fff, /* Luminosité intérieure */
+    0 0 1.5rem #08f, /* Lueur externe */
+    inset 0 0 1.5rem #08f; /* Intensité de la lueur intérieure */
 }
 
 /*search bar - Post cards*/
