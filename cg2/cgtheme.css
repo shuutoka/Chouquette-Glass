@@ -1,3 +1,11 @@
+/**
+ * @name Chouquette Glass
+ * @author @Shuutoka
+ * @version Bêta 0.9.88
+ * @description transparent & animated theme in bêta.
+ * @source https://github.com/shuutoka/Chouquette-Glass/
+*/
+
 /*Import*/
 
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
@@ -52,54 +60,54 @@
     opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
 }
 
-.winButton-3SigSb{
+.winButton__88672{
   color: white; /*windows buttons*/
 }
 /*Transparent panels*/
-.theme-dark .container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-9g_3Xj, .messages-3amgkR {
+.theme-dark .container__590e2, .sidebar_ded4b5, .panels__58331, .chat__52833, .messages-3amgkR {
   background-color: transparent; /* main space of discord, don't delete this line*/
 }
-.appMount-2yBXZl, body {
+.appMount_fae9dd, body {
     background-color: rgba(0, 0, 0, 0);
 }
-.app-2CXKsg { /*Discord Background*/
+.app_de4237 { /*Discord Background*/
     background-color: rgba(0, 0, 0, 0);
 }
 
-.layers-OrUESM {
+.layers__1c917 {
   background-color: rgba(0, 0, 0, 0.527); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
 }
 
-.guildSeparator-33mFX6, .theme-dark .scroller-3X7KbA, .wrapper-1_HaEi { /*remove standard background*/
+.guildSeparator-33mFX6, .theme-dark .scroller__3d071, .wrapper_a7e7a8 { /*remove standard background*/
   background: none;
 }
-.standardSidebarView-E9Pc3j, /*don't delete this */
-.sidebarRegionScroller-FXiQOh, /* this modify the side bar you can delet/change it if you want*/
-.contentRegion-3HkfJJ,/*this is for the main region, you can delet/modify it but it can look strange*/
-.bg-1QIAus, /*this is the background, if you delete it, you will get a true black background*/
-.theme-dark .layer-86YKbF, /*parameter for dark mode*/
-.contentRegionScroller-2_GT_N, /*I don't remember what is the purpose fo this line xD*/
-.scroller-3_YDR2 { /*scroller zone is set to transparent, you can modify is by a RGB or Hexa value if you want*/
+.standardSidebarView__1129a, /*don't delete this */
+.sidebarRegionScroller__1fa7e, /* this modify the side bar you can delet/change it if you want*/
+.contentRegion__0bec1,/*this is for the main region, you can delet/modify it but it can look strange*/
+.bg__12180, /*this is the background, if you delete it, you will get a true black background*/
+.theme-dark .layer__2efaa , /*parameter for dark mode*/
+.contentRegionScroller__86c79, /*I don't remember what is the purpose fo this line xD*/
+.scroller__52680 { /*scroller zone is set to transparent, you can modify is by a RGB or Hexa value if you want*/
   background-color: transparent;/*remove the standard background*/
 
 }
-.container-ZMc96U.themed-Hp1KC_ {
+.container__11d72.themed_b152d4 {
     background: transparent; /*make the header, channel description, transparent*/
 }
-.children-3xh0VB:after { /*fade effect in the description*/
+.children__32014:after { /*fade effect in the description*/
     display: none; /*geting a ride of the fade effect because this doesn't match with the theme plus ugly*/
 }
 
-.content-1jQy2l::before {
+.content__1a4fe::before {
   display: none; /*get ride of the weird bar at the top*/
 }
 
 /*----------------Selected option / item in a list----------*/
-.link-1_kTxV:hover{/*change the color of items in the channel list when hovering them */
+.link__95dc0:hover{/*change the color of items in the channel list when hovering them */
   background-color:var(--color-transparency) !important; 
 }
 
-.modeSelected-3DmyhH .link-1_kTxV{ /*object selected in the channel list*/
+.modeSelected__487d6 .link__95dc0{ /*object selected in the channel list*/
   background-color: var(--color-transparency);
   border: none; /*remove the border*/
         box-shadow: /*add a neon instead of the legacy border*/
@@ -110,22 +118,22 @@
   backdrop-filter: blur(3px);
 }
 
-.content-yjf30S {
+.content__23cab {
   padding-right: 2px; /*made teh panel wider to avoid a visual bug */
 }
 
-.actionIcon-2sw4Sl{ /*button in the selected channel (settings, invit friend), color set to default*/
+.actionIcon_d679b5{ /*button in the selected channel (settings, invit friend), color set to default*/
   color:none;
 }
 
 /*Friends list and MP channels pannel*/
-.privateChannels-oVe7HL, .theme-dark .scroller-WSmht3, .theme-dark .container-2cd8Mz,
-.nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
-.scroller-29cQFV, .container-1oAagU, .theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2, .theme-dark .panel-ufc1-o {
+.privateChannels__93473, .theme-dark .scroller__4b984, .theme-dark .container__5c7e7,
+.nowPlayingColumn_f5023f, .scroller__311cd, .scroller__9c698, .applicationStore_fc7d76,
+.scroller__244e5, .container__0a6a9, .theme-dark .inset__0bfb3, .section_efc22d, .header__63c59, .titleContainer_e558ff, .theme-dark .panel_bd8c76 {
   background: none;  /* remove the legacy background of the friends pannels*/
 }
 
-.akaBadge-3i7V3p { /*Friend Alias badge effect*/
+.akaBadge__7df41 { /*Friend Alias badge effect*/
   background-color: rgba(0, 0, 0, 0.096);
   backdrop-filter: blur(5px);
   border: none;
@@ -136,58 +144,58 @@
       inset 0 0 .5rem #08f;
 }
 
-.wrapper-2RrXDg {
+.wrapper__6e669 {
   background-color: rgba(0, 0, 0, .23);
 } /* online friend's activity card, you can edit it */
 
-.theme-dark .form-3qe0Ni:before {
+.theme-dark .form__13a2c:before {
   display:none; /*fix a visual bug caused to the legacy fade between your activity and the feed in the bottom left */
 }
 /*---------------------------friend search bar---------------*/
-.searchBar-2aylmZ {
+.searchBar_ff8800 {
   background-color: var(--color-white); /*search bar color*/
   border-radius: 17px; /*border radius of the search bar*/
   transition: .4s; /*transition time with the hover mode is secondes*/
 }
-.searchBar-2aylmZ:hover {
+.searchBar_ff8800:hover {
  background-color: rgba(255, 255, 255, 0.171);/*color of the hover search bar*/
   transition: .4; /*transition time of the hover search bar*/
 }
 
-.icon-3CDcPB{ /*color of the search button*/
+.icon__37cc1{ /*color of the search button*/
   color: white;
 }
 
 /*button over the search bar in friend tab*/
-.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
+.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
   background-color: var(--color-transparency);
   color: rgba(255, 255, 255, .7);
   transition: .4s;
 } /*hover button color over the search bar*/
-.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF {
+.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF {
 transition: .4s; /*transition when unhover*/
 }
-.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
   background-color: var(--color-light);
 } /*button color over the search bar*/
 
 /*standard button (friends, options etc...*/
-.interactiveSelected-29CP8y{ /*selected button color*/
+.interactiveSelected_ec846b{ /*selected button color*/
   background-color: var(--color-light);
 }
-.interactive-iyXY_x:hover, .peopleListItem-u6dGxF:hover{ /*when you hover a standard button, this will change his color to blue from the default --iteractive-active color */
+.interactive_a868bc:hover, .peopleListItem_d14722:hover{ /*when you hover a standard button, this will change his color to blue from the default --iteractive-active color */
   background-color: var(--color-transparency);
 }
 
-.actionButton-3-B2x-,.actionButton-3-B2x-.highlight-3DSi7b{ /*action button in your friends menu, chat and burger menu*/
+.actionButton__23182,.actionButton__23182.highlight__5b64b{ /*action button in your friends menu, chat and burger menu*/
   background-color: var(--color-transparency);
   color:aqua /*color of the .icon*/
   }
-.actionButton-3-B2x-:hover,.actionButton-3-B2x-.highlight-3DSi7b:hover{
+.actionButton__23182:hover,.actionButton__23182.highlight__5b64b:hover{
   background-color: var(--color-secondary); /*color of the buttons when hovered*/
 }
 
-.layout-1qmrhw:hover{ /*hovering people in the guild members panel*/
+.layout_bb8e67:hover{ /*hovering people in the guild members panel*/
   background-color: var(--color-transparency)!important;
   border-radius: 13px;
   transition: all 0.3s;
@@ -195,36 +203,36 @@ transition: .4s; /*transition when unhover*/
 
 /*--------------------------------*/
 
-.searchBar-3TnChZ .searchBarComponent-3N7dCG{ /*color of the quickswitcher bar*/
+.searchBar_e4ea2a .searchBarComponent__22760{ /*color of the quickswitcher bar*/
  font-size: 13px; /*reduce the font size to avoid bug in some language*/
  background-color: var(--color-white);
  color: var(--color-cyan);
 }
 
-.quickswitcher-pKcM9U{ /*quickswitcher menu*/
+.quickswitcher_a3d29a{ /*quickswitcher menu*/
   background-color: var(--color-transparency); /*background color of the quickswitcher */
   backdrop-filter: blur(6px); /*adding a blur effect*/
   box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff; /*color of the shadow box*/
 } /*adding a neon as border*/
 
-.scroller-2qwVWY{
+.scroller__52ae7{
   background-color: transparent; /*removing the color of the center in the quickswitcher menu */
   scrollbar-color: var(--color-transparency);
 }
 
-.contentDefault-17ewQQ, .miscContainer-33U-X-, .header-1ZpMzy, .icon-12xJtb{ /*title, channel name, server name, icon color*/
+.contentDefault_f2e62d, .miscContainer__3e350, .header_a2a437, .icon_f8a8b6{ /*title, channel name, server name, icon color*/
   color:white;
 }
 
-.input-3r5zZY{/*input of the quickswitcher search menu*/
+.input__848cd{/*input of the quickswitcher search menu*/
 background-color: transparent;
 }
 
-.scroller-2qwVWY::-webkit-scrollbar-track {
+.scroller__52ae7::-webkit-scrollbar-track {
   background-color: transparent !important; /*color of the track scrolling quickswitcher*/
 }
 
-.result-u66Ywh[aria-selected=true]{ /*color of the selcted item / hovering the item you want select*/
+.result__25f11[aria-selected=true]{ /*color of the selcted item / hovering the item you want select*/
   background-color: var(--color-secondary);
 }
 
@@ -256,35 +264,35 @@ background-color: var(--card-color) !important;
 /*------TCHAT ZONE------*/
 
 /*BIGGER MESSAGE AREA / FEED IS MORE WIDH */
-.wrapper-30-Nkg {
+.wrapper__09ecc {
   border-radius: var(--messages-radius); }
-  .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+  .wrapper__09ecc.cozy_f5c119, .wrapper__09ecc.compact__54ecc {
     margin-left: 47px; /*larger zone for tchat*/
 
     padding: var(--messages-padding);
     padding-right: 8px !important;
     border: 2px solid transparent; }
-    .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m, .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m.alt-1dvXnH {
+    .wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93, .wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93.alt__6c563, .wrapper__09ecc.compact__54ecc .timestamp_cdbd93, .wrapper__09ecc.compact__54ecc .timestamp_cdbd93.alt__6c563 {
       color: var(--text-normal); }
 
 
-.wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+.wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93.alt__6c563 {
   left: -65px; /*timestamp in the following messages in -65px to avoid bug this the larger zone*/
 }
 
-.messageListItem-ZZ7v6g{
+.messageListItem__6a4fb{
   margin-left: 19px /*mooving message to the right to avoid bug,  this reduce a little bit the text area*/
 }
 
 /*messages*/
 
-.wrapper-30-Nkg:hover { /*animation when you hover a message*/
+.wrapper__09ecc:hover { /*animation when you hover a message*/
     background-color: var(--color-transparency) !important; /*change the color to the var set in root*/
   border-radius: var(--popout-radius); /*change the border radius to the var set in root*/
   transition: .4s; /*transition time when you hover a message*/
 }
 /*time / date of messages*/
-.content-3spvdd, .divider-2rZFJK{
+.content_d67847, .divider_b9338f{
   background-color: var(--color-transparency); /*background color set to semi transparent*/
   color: rgba(255, 255, 255, 0.83); /*color of the text*/
   border: none;
@@ -296,7 +304,7 @@ background-color: var(--card-color) !important;
       position: relative;
 }
 
-.divider-2rZFJK::before { /*divider for the time / new day*/
+.divider_b9338f::before { /*divider for the time / new day*/
   content: "";
   display: block;
   position: absolute;
@@ -307,15 +315,15 @@ background-color: var(--card-color) !important;
 }
 
 
-.wrapper-30-Nkg{
+.wrapper__09ecc{
   transition: .4s; /*transition when you hover out a message*/
 }
 
-.wrapper-30-Nkg:not(.groupStart-3Mlgv1), .wrapper-30-Nkg.compact-2Nkcau {
+.wrapper__09ecc:not(.groupStart__56db5), .wrapper__09ecc.compact__54ecc {
   margin-top: 3px; /*give more space between message to avoid visual gitch*/
 }
 /*code in message*/
-.markup-eYLPri code { /*Markup for code in message*/
+.markup_a7e664 code { /*Markup for code in message*/
   background-color: rgba(45, 111, 131, 0.438);
   border-color: rgb(0, 0, 0);
 }
@@ -331,20 +339,20 @@ background-color: var(--card-color) !important;
 }
 
 /*---------------------Typing zone----------------------*/
-.theme-dark .scrollableContainer-15eg7h {
+.theme-dark .scrollableContainer__33e06 {
   background-color: transparent; /*typing zone  set to be transparent*/
 }
-.channelTextArea-1VQBuV {
+.channelTextArea__56a36 {
   background-color: rgba(0, 0, 0, .3); /*text bar color*/
   border-radius: 20px; /*make the input text bar more smooth*/
 }
 
-.form-3gdLxP { /*the "border" between tchat zone feed and input text zone*/
+.form__13a2c { /*the "border" between tchat zone feed and input text zone*/
   margin-top: 0px; /*taller, this prevent a visual bug*/
    margin-left: -13px; /*widder, this prevent a visual bug*/
 }
 
-.theme-dark .autocomplete-3NRXG8 { /*the box pop up when you @ or mention someone*/
+.theme-dark .autocomplete_df266d { /*the box pop up when you @ or mention someone*/
   background-color: rgba(0, 0, 0, 0.096); /*color of the background thread chat zone*/
   backdrop-filter: blur(5px); /*blur filter for the thread zone chat */
   border: none; /*remove the border*/
@@ -355,15 +363,15 @@ background-color: var(--card-color) !important;
               inset 0 0 1.5rem #08f;  /*glowing intensity*/
             }  
 
-.contentTitle-3CylD3 { /*color of the text*/
+.contentTitle_b7c496 { /*color of the text*/
   color: white;
 }
 
 /*------------button in channel---------------------*/
-.card-PQEqCK {
+.card__3662a {
   background-color: var(--color-light);
 }
-.card-PQEqCK:hover{
+.card__3662a:hover{
   background-color: var(--color-transparency);
 }
 .lookFilled-yCfaCM.colorPrimary-2AuQVo{ /*welcome/greeting button*/
@@ -376,32 +384,32 @@ background-color: var(--card-color) !important;
   border-radius: 5px;
 }
 
-.lookFilled-1H2Jvj.colorPrimary-2-Lusz{ /*button in chat*/
+.lookFilled__19298.colorPrimary__6ed40{ /*button in chat*/
   background-color: var(--color-light);
   border-radius: var(--card-radius);
   border-color: var(--color-cyan);
 }
 
-.lookFilled-1H2Jvj.colorPrimary-2-Lusz:disabled { /*FIX THIS BUG*/
+.lookFilled__19298.colorPrimary__6ed40:disabled { /*FIX THIS BUG*/
   border-color: 1px(red);
   border-radius: 13px;
 }
 
-.lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover {
+.lookFilled__19298.colorPrimary__6ed40:hover {
   background-color: var(--color-transparency);
   border: 2px solid rgb(0, 225, 255); /* border and become transparent when hovering the button */
 }
 
 
 /*-------------------------UNREAD SPAN-------------------------*/
-.group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt { /*Undread banner or "new message span"*/
+.group-spacing-16 .divider__8cf56.beforeGroup__1e5e5 { /*Undread banner or "new message span"*/
     margin-bottom: 35px; /*Higher from the new message*/
     top: .8rem; /*lower from the old message*/
 }
 
 /*--------------------Jump to present bar----------------------*/
 
-.jumpToPresentBar-1cEnH0 {
+.jumpToPresentBar__0ff7f {
   background: var(--color-light); /*main color*/
   border-radius: 3px; /*smooth the border */
   padding-bottom: 4px; /*change the height of the bar*/
@@ -411,34 +419,34 @@ background-color: var(--card-color) !important;
  margin-right: 20px;
 }
 
-.jumpToPresentBar-1cEnH0>button {
+.jumpToPresentBar__0ff7f>button {
   color: rgba(255, 255, 255, 0.7); /*change the color of the button's text*/
 }
 
-.jumpToPresentBar-1cEnH0:hover {
+.jumpToPresentBar__0ff7f:hover {
   background: var(--color-secondary); /*change the color when hovered*/
   border-radius: 15px; /*change the border radius for the hovered form*/
 }
 
 /*-----------------Avatar position in the feed-------------------*/
-.avatar-2e8lTP {
+.avatar__08316 {
     left: -49px; /*honrizontal position, negative value =  move to left*/
 }
 
 /*-------------------Quote Response--------------------------------*/
-.repliedMessage-3Z6XBG:before {
+.repliedMessage_e2bf4a:before {
   transform: translateX(38px); /*bar of the quoted message, push it to the right to avoid colision with the user avatar*/
 }
-.repliedMessage-3Z6XBG .replyAvatar-sHd2sU,
-.repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
+.repliedMessage_e2bf4a .replyAvatar_cea07c,
+.repliedMessage_e2bf4a .replyBadge__3d01e {
   margin-left: 5px; /*push the quote to the right to avoid colision with other item such as the username*/
 }
 
-.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*this use the var to avoid bug, aligne to the right item to avoid colision*/
+.wrapper__09ecc.cozy_f5c119, .wrapper__09ecc.compact__54ecc { /*this use the var to avoid bug, aligne to the right item to avoid colision*/
   padding: var(--message-padding-top) var(--message-padding-side);
 }
 
-.repliedMessage-3Z6XBG:before { /*Quote reply and/or with slash command */
+.repliedMessage_e2bf4a:before { /*Quote reply and/or with slash command */
       top: -49%; /*move the bar/span higher to avoid colision with the quoted message*/
     right: 100%; /*modify the length of the bar*/ 
     left: -48px; /*modify the horizontal starting point of the bar */
@@ -447,7 +455,7 @@ background-color: var(--card-color) !important;
     transition: .6s;
 }
 
-.repliedMessage-3Z6XBG:hover:before { /*Quote reply and/or with slash command */
+.repliedMessage_e2bf4a:hover:before { /*Quote reply and/or with slash command */
 right: 95%;
 top: -90%;
 transition: .6s;
@@ -455,23 +463,23 @@ transition: .6s;
 
 
 /*--------------------THREAD------------------------------*/
-.cozy-VmLDNB.hasThread-3h-KJV:after{
+.cozy_f5c119.hasThread__58ee2:after{
   left: -29px!important; /*change the location of the thread bar in the feed*/
   border-color: var(--color-light); /*change the color of the thread bar*/
 }
 
-.container-3i3IzO{
+.container__767d1{
   background-color: var(--color-transparency)!important; /*background color thread overview under a message in the feed*/
   border-radius: 15px; /*change its shape*/
 }
 
-.container-3i3IzO::after{
+.container__767d1::after{
   background-color: var(--color-transparency)!important; /*background color thread overview under a message in the feed*/
   border-radius: 15px; /*change its shape*/
   backdrop-filter: blur(2px); /*add a blur filter*/
  z-index: -999;
 }
-.container-3XgAHv{
+.container_def45c{
 background-color: rgba(0, 0, 0, 0.096); /*color of the background thread chat zone*/
 backdrop-filter: blur(5px); /*blur filter for the thread zone chat */
 border: none; /*remove the border*/
@@ -483,11 +491,11 @@ border: none; /*remove the border*/
             }
 
 
-.quotedChatMessage-PxNsZi{ /*readjust thee location of the quoted message in the thread window*/
+.quotedChatMessage__2b128{ /*readjust thee location of the quoted message in the thread window*/
   margin-left: 18px; /*mooving to the right*/
 }
 
-.resizeHandle-PBRzPC {
+.resizeHandle_f1a098 {
   display: none;
 }
 
@@ -500,34 +508,34 @@ border: none; /*remove the border*/
 }
 
 .localBot-GrCgVt:before,
-.mentioned-Tre-dv:before {
+.mentioned__58017:before {
   display: none;  /*remove the yellow bar when you got a mention*/
   }
-.mentioned-Tre-dv {
+.mentioned__58017 {
     background-color: transparent!important; /*remove the orange filter in the message where you were mentionned, if you want a color you can remove the "transparent" value by a color */
  }
 
 
-.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau { /*to solve a visual bug with the animation above, the message border is smaller, doesn't affect message width*/
+.wrapper__09ecc.cozy_f5c119, .wrapper__09ecc.compact__54ecc { /*to solve a visual bug with the animation above, the message border is smaller, doesn't affect message width*/
     margin-left: 47px;
     margin-right: 15px;
 }
 
-.mentioned-Tre-dv, .mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv {
+.mentioned__58017, .mouse-mode.full-motion .message__80c10.mentioned__58017 {
 padding-bottom: 7px;
 padding-top: 4px;
 } /*give more space between the neon and the message to avoid colision*/
 
 
 /*---------------------EMBED---------------------*/
-.embedFull-1HGV2S {
+.embedFull__8dc21 {
  background-color: var(--color-transparency)!important; /*change the color of the embed*/
   backdrop-filter: blur(2px); /*add a blur filter to the embed*/
     border-radius: 25px; /*make the embed more round to avoid colision with the neon of the mention*/
 }
 
 /*-----------------Embed Discord Invit---------------*/
-.wrapper-1HIH0j{
+.wrapper_efe67f{
   background-color: var(--color-secondary);
   border-radius: 13px;
   backdrop-filter: blur(3px);
@@ -545,7 +553,7 @@ padding-top: 4px;
 /*IMAGES*/
 
 /*remove button*/
-.removeAttachmentButton-1iO1qS{
+.removeAttachmentButton__72505{
  opacity: 0;
     position: sticky; /*moving the remove button under the image instead of on an another continent*/
     top: -2px;
@@ -557,12 +565,12 @@ padding-top: 4px;
 
 
 /* -----------UPLOAD FILES------------*/
-.upload-vLbqu- {
+.upload_c98ecb {
     border-radius: var(--popout-radius); /*border radius of the*/
     background-color: #00a2ff0a;
 }
 
-.attachment-1PZZB2 { /*uploading file in the feed AND uploaded*/
+.attachment_f3cf2c { /*uploading file in the feed AND uploaded*/
   background-color: var(--color-transparency); /*change the background color*/
   border-color: transparent; /*remove the black/grey border*/
   backdrop-filter: blur(3px); /*add a blur filter*/
@@ -571,57 +579,57 @@ padding-top: 4px;
 
 
 /*------EMOJI AND REACTION----*/
-.reaction-3vwAF2 {
+.reaction_b90ab0 {
   background-color: rgba(54, 77, 121, 0.349); /*change the color of an unreacted reaction */
   border-radius: 15px; /*change the border radius of all reactions*/
   border-color: var(--color-secondary);
 }
 
-.reaction-3vwAF2:hover {
+.reaction_b90ab0:hover {
    background-color: var(--color-secondary) ; /*color of a reaction on hover*/
    }
 
-.wrapper-2vIMkT {
+.wrapper_c727b6 {
    background-color: rgba(18, 79, 128, 0.315); /*quick reaction menu/ quote, create a thread and more menu. Change the main color*/
    backdrop-filter: blur(2px); /*add a blur filter*/
    border-radius: 15px; /*border radius set to 15px to get a more rounded menu*/
  }
 
 
-.button-3bklZh {
+.button_d553e5 {
   transition: .5s; /*animation hover out of the quick menu*/
 }
 
-.button-3bklZh.selected-69H4ua{ /*when a button is selected, change its color*/
+.button_d553e5.selected__63428{ /*when a button is selected, change its color*/
   background-color: var(--color-secondary);
 }
 
- .button-3bklZh:hover {
+ .button_d553e5:hover {
    background-color: var(--color-light); /*color of the menu when you hover it*/
    transition: .5s; /*animation when you hover it */
  }
 
 
- .button-1zW0-r{
+ .button__3ecb4{
   background-color: var(--color-transparency); /*emoji button selector*/
 }
 
-.button-1zW0-r:hover{
+.button__3ecb4:hover{
   background-color: var(--color-secondary); /*hover the emoji button selector*/
 }
 
-.icon-tZV_7s, .icon-1zidb7{ /*fix the color of the button*/
+.icon_bdb038, .icon_d1ac81{ /*fix the color of the button*/
   color :lightblue;
 }
 
-.icon-tZV_7s:hover, .icon-1zidb7:hover{ /*added a quick animation to fix a visual bug*/
+.icon_bdb038:hover, .icon_d1ac81:hover{ /*added a quick animation to fix a visual bug*/
   color : var(--color-cyan);
   transition: color 0.3s ease;
 }
 
 
 /*--------------------all emoji selector-------------*/
-.contentWrapper-3vHNP2, .contentWrapper-2f9yME{ /*emoji picker menue*/
+.contentWrapper__321ed, .contentWrapper_eab878{ /*emoji picker menue*/
   background-color: var(--color-transparency);
   border: none; /*remove the border*/
         box-shadow: /*add a neon instead of the legacy border*/
@@ -632,70 +640,70 @@ padding-top: 4px;
   backdrop-filter: blur(3px);
 }
 
-.categoryItemDefaultCategorySelected-2YeRUu /*favorite icon*/{
+.categoryItemDefaultCategorySelected__8245a /*favorite icon*/{
   background-color: var(--color-transparency);
   transition: color 0.3s ease;
 }
 
-.categoryItemDefaultCategorySelected-2YeRUu:hover { /*change the background of the icon to match to the theme*/
+.categoryItemDefaultCategorySelected__8245a:hover { /*change the background of the icon to match to the theme*/
   background-color: transparent;
 }
 
-.categoryItemDefaultCategorySelected-2YeRUu .categoryIcon-2cYeku:hover {/*change the color of the icon when hovered*/
+.categoryItemDefaultCategorySelected__8245a .categoryIcon__7d3fc:hover {/*change the color of the icon when hovered*/
   color:gold;
   transform: scale(1.1);
 }
 
-.inspector-2A2Chb,.inspector-2A2Chb, .list-obNEuP, .scroller-2MALzE, .wrapper-22rqw6{ /*warpers and other element of the selector*/
+.inspector__17331,.inspector__17331, .list-obNEuP, .scroller_e89578, .wrapper__4f229{ /*warpers and other element of the selector*/
   background-color: var(--color-transparency);
 }
-.header-1ULbqO{ 
+.header_c3c744{ 
   background-color: rgba(0, 128, 255, 0.427); /*title / name of the serveur*/
   border-radius: 13px;
 }
 
-.wrapper-1NNaWG:after{ /*remove a weird bar that come out from no where*/
+.wrapper__7a35f:after{ /*remove a weird bar that come out from no where*/
   display: none;
 }
 
-.unicodeShortcut-3N8oDe,.categoryItemRecentEmoji-Rk8CU1, .guildIcon-2SUGiq{
+.unicodeShortcut__1dd6b,.categoryItemRecentEmoji__863e3, .guildIcon__4d796{
   background-color: var(--color-transparency);
 }
 
-.categoryIcon-2cYeku:hover{ /*tick tack emoji recent picked*/
+.categoryIcon__7d3fc:hover{ /*tick tack emoji recent picked*/
   color: white;
   border: 1px var(--color-cyan);
 }
-.navButtonActive-1EqC5l{
+.navButtonActive__735cb{
   color: var(--color-cyan);
   background-color: transparent;
   border: 1px solid var(--color-cyan);
 }
 
-.unicodeShortcut-3N8oDe{ /*the emoji in the lower corner left*/
+.unicodeShortcut__1dd6b{ /*the emoji in the lower corner left*/
   backdrop-filter: blur(19px);
   color : white;
 }
 
-.container-1SX9VC {
+.container_e4c233 {
   background-color: rgba(0, 0, 0, 0.429);
 } /*search bar*/
 
-.icon-18rqoe, .searchIcon-2Nw0OL { /*search icon*/
+.icon_f50f05, .searchIcon-2Nw0OL { /*search icon*/
   color: white;
 }
 
-.emojiItem-277VFM.emojiItemSelected-2Lg50V { /*animation of the emoji when hovered for selection*/
+.emojiItem_b15dee.emojiItemSelected__1a09a { /*animation of the emoji when hovered for selection*/
   background-color: var(--color-secondary);
   transition: background-color 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transition of the color, background and size*/
 }
 
-.emojiItem-277VFM.emojiItemSelected-2Lg50V:hover {
+.emojiItem_b15dee.emojiItemSelected__1a09a:hover {
   transform: scale(1.1); /* the item grow for animation / transition */
 }
 
 /*text color*/
-.headerIcon-2Gk2OH+.headerLabel-1g790w{
+.headerIcon_db8220+.headerLabel_e9f74f{
   color: white; /*change text to white, else we can't read those little funny text --" */
 }
 
@@ -703,12 +711,12 @@ padding-top: 4px;
 
 
 /*USERS IN GUILD PANNEL*/
-.members-3WRCEx, .container-2vWgD2, .members-3WRCEx>div,.member-2iQhp7, .members-2y1nVj {
+.members__9f47b, .container_b2ce9c, .members__9f47b>div,.member_b44d5d, .members__9f47b {
     background-color: rgba(31, 81, 114, 0); /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
     transition: .7s;
 }
- .container-2vWgD2:hover{
+ .container_b2ce9c:hover{
     background-color: rgba(31, 81, 114, 0)!important; /*color of the members list in the guild right pannel*/
     border-top-left-radius:var(--popout-radius) ;
     backdrop-filter: blur(3px)!important;
@@ -724,14 +732,14 @@ padding-top: 4px;
 
 
 
-.membersWrap-3NUR2t { /*smaller pannel for the guild members*/
+.membersWrap__90226 { /*smaller pannel for the guild members*/
     min-width: 240px;
     margin-right: -10px;
     max-height: 100%;
 }
 
 /*----searchbar head-----*/
-.searchBar-jGtisZ {
+.searchBar_e0c60b {
   padding: 0 8px;
   background-color: rgba(55, 48, 159, 0.229);
 }
@@ -742,7 +750,7 @@ padding-top: 4px;
 
 /*menu pop out*/
 
-.menu-2TXYjN { /*server menu*/
+.menu_dc52c6 { /*server menu*/
     -webkit-box-shadow: var(--elevation-high); /*legacy value, keep it to prevent bug*/
     box-shadow: var(--elevation-high); /*box shadow around the frame*/
     background: var(--color-transparency); /*change the color */
@@ -750,7 +758,7 @@ padding-top: 4px;
     
 }
 
-.menu-2TXYjN::after{ 
+.menu_dc52c6::after{ 
     content: '';
     width: 100%; /*position of the pop out*/
     height: 100%; 
@@ -760,10 +768,10 @@ padding-top: 4px;
   border-radius: 20px; /*change the border radius*/
 }
 /*FOLLOW THIS CHANNEL POP OUT*/
-.wrapper-IjGAlW {
+.wrapper_fbbb73 {
   background-color: var(--color-secondary);
 }
-.button-cO0-d9{
+.button__2b3a3{
   background-color: var(--color-button)!important;
 }
 /*
@@ -772,31 +780,31 @@ padding-top: 4px;
  *
  */
 
- .scroller-15bIdk { /*prevent the user pop out to be longer than the discord window*/
+ .scroller__83262 { /*prevent the user pop out to be longer than the discord window*/
   overflow-y: auto;
   max-height: 500px; /* max height here */
 }
 
 
 /**------------role user--------------**/
-.role-2TIOKu {
+.role__631a3 {
     transform: translate(0);
     overflow: hidden;
 
     --transparency: .4;
     border-radius: 13px;
 }
-.role-2TIOKu .roleRemoveIcon-387wKV { /*readjust the positin of the remove icon in user pop out*/
+.role__631a3 .roleRemoveIcon__7f63d { /*readjust the positin of the remove icon in user pop out*/
     margin: 0;
     left: 2px;
     top: 14px;
     transform: translate(50%,-50%);
 }
-.role-2TIOKu .roleRemoveButton-17oXnT {/*readjust the position of the remove BUTTON in user pop out*/
+.role__631a3 .roleRemoveButton__737f2 {/*readjust the position of the remove BUTTON in user pop out*/
     position: static;
     left: 5px;
 }
-.role-2TIOKu .roleCircle-3K9O3d:before {
+.role__631a3 .roleCircle-3K9O3d:before {
     content: '';
     top: 0;
     left: 0;
@@ -822,11 +830,11 @@ padding-top: 4px;
     transition: border-color .2s ease-in-out;
 }
 
-.textarea-_59yqs:focus {
+.textarea_c5a7a3:focus {
       background-color: rgba(0, 219, 248, 0.096);
 }
 /*------------Send DM in user pop out------------*/
-.input-2z42oC {
+.input__95bc4 {
     font-size: 14px;
     border-radius: var(--popout-radius);
     background-color: var(--color-transparency);
@@ -834,35 +842,35 @@ padding-top: 4px;
 
 
 /*---SERVERS FOLDER----*/
-.folder-241Joy, .expandedFolderBackground-1kSAf6, .folder-241Joy:hover{
+.folder__17546, .expandedFolderBackground__1bec6, .folder__17546:hover{
   background-color: var(--color-light); /*change the background color of folders, opened and closed*/
   border-radius: 15px; /*change the shape of eextended folder to avoid visual bug*/
 }
 
 /*DEFAULT ICON FOR IMAGELESS SERVERS*/
-.childWrapper-1j_1ub{
+.childWrapper__01b9c{
   background-color: rgba(84, 151, 228, 0.524); /*basic color*/
   backdrop-filter: blur (5px);
 }
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub{
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c, .wrapper_d281dd:hover .childWrapper__01b9c{
   background-color:rgba(0, 255, 255, 0.671)!important; /*color on hover*/
 }
 
-.circleIconButton-1VxDrg { /*add server and discover button*/
+.circleIconButton_d8df29 { /*add server and discover button*/
   background-color: var(--color-transparency);
 }
 
-.circleIconButton-1VxDrg:hover{ /*hover  button*/
+.circleIconButton_d8df29:hover{ /*hover  button*/
 background-color: var(--color-secondary);
 }
 
 /*-------STANDARD ICON LOOK--------*/
-.iconWrapper-3plkqh, .emptyChannelIcon-1YdEz2, .role-23oyrw, .iconWrapper-3FqQ75, .pill-3pRQlO {
+.iconWrapper__85630, .emptyChannelIcon__1a1ba, .role__88585, .iconWrapper__3e4a9, .pill_f055c3 {
   background-color: var(--color-transparency);
   border-radius: var(--card-radius);
 }
 
-.disableColor-1nVFoH{
+.disableColor__9f5b9{
 color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
 } /*return the verified badge server to the original green*/
 
@@ -898,52 +906,52 @@ color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
 }
 
 /*text color*/
-.subtitle-2SfoOV{
+.subtitle__1eabe{
   color: white;
 }
 
 /*QUICK USER SETTINGS / SATUES*/
-.withTagAsButton-OsgQ9L:hover, .withTagless-10ooWt:hover{
+.withTagAsButton_cc125f:hover, .withTagless__98b7d:hover{
   background-color: var(--color-secondary);/*change the text color*/
 }
 
 /*TESTING ZONE TESTING ZONE TESTING ZONE*/
-.defaultColor-HXu-5n,.username-Qpc78p,.textContent-TsKzji,.title-338goq,.name-2m3Cms{
+.defaultColor-HXu-5n,.username__81ee6,.textContent__45dd0,.title__10613,.name__02dbd{
   color: var(--color-cyan);
 } /*change the text color*/
 
-.clickable-ZD7xvu .icon-2xnN2Y,.app-2CXKsg button,.linkButtonIcon-7rsZcu,.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF, .title-x4dI75{
+.clickable_d23a1a .icon__4cb88,.app_de4237 button,.linkButtonIcon__2f35b,.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF, .title_dc625c{
   color: aqua;/*change the icon color*/
 }
 
-.subtext-14b69p, .container-q97qHp{
+.subtext__623a0, .container-q97qHp{
   color: rgb(245, 245, 245)/*change the text color*/
 }
 
-.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1, .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover{
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542, .tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542:hover{
   background-color: transparent;
   border-color: var(--color-button);
   border: 1px solid ;
   transition: all .4s; /*change the "add friend" button in the friend menu*/
 }
 
-.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover{
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542:hover{
 border: 1px solid var(--color-button);
 color: greenyellow;
 border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
-.topPill-2vcLsa .themed-qqoYp3.selected-1sf9UK.item-2GWPIy{
+.topPill__0cdf1 .themed_b957e8.selected__5711d.item__48dda{
   background-color: transparent;
   border: 2px solid var(--color-cyan);
 }
 
-.side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover, .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
+.side_b4b3f6 .themed_b957e8.item__48dda:hover, .topPill__0cdf1 .themed_b957e8.item__48dda:hover:not(.disabled__85bca) {
   background-color: var(--color-transparency); /*buttons in the bar at the top in the friends tabs*/
 }
 
 /*------------EVENT-----------------*/
-.avatarDecoration-34OC0G {
+.avatarDecoration__14b3c {
     position: absolute;
     z-index: 2;
     left: calc(-29px - 40px*var(--decoration-to-avatar-ratio)/2);
@@ -957,39 +965,39 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
     user-select: none;
 }
 
-.avatarDecoration-2Wb1Au {
+.avatarDecoration_ae35e3 {
   display: all;
 }
 
-.profileEffects-km5xa2 {
+.profileEffects_fd33f6 {
   display: all;
 }
 
 /*------------DISCOVER----------------*/
 
-.new-3EJMgr {
+.new__5e6ab {
   background-color: #1d18b394;
   backdrop-filter: blur(2px);
 }
 
-.theme-dark .pageWrapper-eg3-6i {
+.theme-dark .pageWrapper_fef757 {
     background-color: #1a326246;
     backdrop-filter: blur(var(--popout-blur));
 }
 
-.theme-dark .card-2TuZPZ:hover .iconMask-2fMR98, .theme-dark .iconMask-2fMR98:hover .iconMask-2fMR98 { /*image mask on hover*/
+.theme-dark .card__86773:hover .iconMask__1aff7, .theme-dark .iconMask__1aff7:hover .iconMask__1aff7 { /*image mask on hover*/
   background-color: var(--color-secondary);
 }
 
-.theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
+.theme-dark .card__86773, .theme-dark .iconMask__1aff7 {
     background-color: #07112c62;
 } 
 
-.theme-dark .card-2TuZPZ:hover {
+.theme-dark .card__86773:hover {
     background-color: #4d587533!important;
 } 
 
-.theme-dark .searchBox-pyIJJj {
+.theme-dark .searchBox_a63854 {
     background-color: #ffffff; /*search bar*/
 }
 
@@ -1024,27 +1032,27 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   background-color: transparent;
 }
 
-.chatContent-2O4SXb{ /*Chat zone in the forum*/
+.chatContent__5dca8{ /*Chat zone in the forum*/
   background: transparent; 
 }
-.container-3YcgdM, .buttonInner-3aRbcx, .sortDropdown-hY93nR, .tagsButton-4pwOKH { /*the bar for the buttons in forum post*/
+.container__8ee50, .buttonInner__2771e, .sortDropdown-hY93nR, .tagsButton-4pwOKH { /*the bar for the buttons in forum post*/
   background-color: var(--color-transparency);
   border-color: transparent;
   border-radius: 15px;
 }
 
-.buttonInner-3aRbcx:hover, .sortDropdown-hY93nR:hover, .tagsButton-4pwOKH:hover, .tag-19iIl1:hover, .tagsButton-4pwOKH:hover { /*the bar for the buttons in forum post*/
+.buttonInner__2771e:hover, .sortDropdown-hY93nR:hover, .tagsButton-4pwOKH:hover, .tag-19iIl1:hover, .tagsButton-4pwOKH:hover { /*the bar for the buttons in forum post*/
   background-color: var(--color-secondary)!important;
   border-color: transparent;
   border-radius: 15px;
 }
 
-.active-OdlCV-{ /*follow this thread/post*/
+.active_f1266e{ /*follow this thread/post*/
   border-color: greenyellow !important;
   color: greenyellow; 
 }
 
-.theme-dark .active-OdlCV-:hover{ /*when you hover the button, it change its color*/
+.theme-dark .active_f1266e:hover{ /*when you hover the button, it change its color*/
   border-color: white;
   color: white;
 }
@@ -1056,7 +1064,7 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*tags hover*/
-.pill-3pRQlO.clickable-3YTfAq:not(.disabled-3Rezaw):hover{
+.pill_f055c3.clickable__8b375:not(.disabled__70fda):hover{
   background-color: var(--color-transparency);
   border-color: var(--color-cyan);
 }
@@ -1075,21 +1083,21 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*text in the button*/
-.text-sm-medium-2-Xzsi{
+.text-sm-medium_bc6ffc{
   display: none;
 }
 
 /*hovering reply and copy link button*/
-.buttonInner-3aRbcx:hover{
+.buttonInner__2771e:hover{
 background-color: transparent;
 border-color: var(--color-cyan);
 }
 
-.button-f2h6uQ .contents-3ca1mk{ /*button "follow" and copy link in forum header chat post*/
+.button_afdfd9 .contents-3ca1mk{ /*button "follow" and copy link in forum header chat post*/
   border-color: var(--color-cyan);
 }
 
-.divider-AZrXIA{ /*divider under the bar*/
+.divider_ffec75{ /*divider under the bar*/
   background-color: transparent;
 }
 
@@ -1099,7 +1107,7 @@ border-color: var(--color-cyan);
 }
 
 /*the chat of the post on the right*/
-.container-3s2w-i {
+.container_def45c {
   background-color: var(--color-transparency);
   backdrop-filter: blur(8px);
   border: none; /* Supprimer la bordure */
@@ -1112,14 +1120,14 @@ border-color: var(--color-cyan);
 }
 
 /*search bar - Post cards*/
-.mainCard-3KBsBI,.increasedActivityMainCard-2ry6hI {
+.mainCard__8a660,.increasedActivityMainCard-2ry6hI {
   background-color: var(--color-transparency);
   transition: .4s;
   backdrop-filter: blur(8px);
   border: 2px solid var(--color-cyan);
 }
 
-.mainCard-3KBsBI:hover,.increasedActivityMainCard-2ry6hI:hover{ /*hover the search bar*/
+.mainCard__8a660:hover,.increasedActivityMainCard-2ry6hI:hover{ /*hover the search bar*/
   background-color: var(--color-darkerblue);
   border-color: var(--color-cyan);
    backdrop-filter: blur(20px);
@@ -1127,11 +1135,11 @@ border-color: var(--color-cyan);
 }
 
 
-.replies-15QcwL{
+.replies_c11247{
   background-color: var(--color-transparency); /*reply in the card of the post*/
 }
 
-.replies-15QcwL:hover{
+.replies_c11247:hover{
   background-color: var(--color-light);
 }
 
@@ -1143,7 +1151,7 @@ border-color: var(--color-cyan);
   color: var(--color-cyan);
 } 
 
-.matchingPostsRow-2IiEQ1 {
+.matchingPostsRow__510be {
   background-color: var(--color-transparency);
 }
 
@@ -1151,7 +1159,7 @@ border-color: var(--color-cyan);
 /*see the file "animation for this item*/
 
 /*POP UP UPDATE*/
-.root-1CAIjD{ /*pop up better discord upadte and other pop up that use this root*/
+.root_a28985{ /*pop up better discord upadte and other pop up that use this root*/
   background-color: var(--color-light); /*does not affect the footer*/
   border-radius: 15px; /*does not affect the footer*/
 }
@@ -1160,41 +1168,41 @@ border-color: var(--color-cyan);
 border-radius: 15px;
 }
 
-.theme-dark .footerSeparator-3U8YsT{ /*make the footer transparent*/
+.theme-dark .footerSeparator__57d95{ /*make the footer transparent*/
   background-color: transparent;
 }
 
-.emptyCard-KDifrB{
+.emptyCard_f82dde{
   background-color: var(--color-light);
 }
 
 /*Parameters*/
-.themed-qqoYp3.item-2GWPIy{ /*text color*/
+.themed_b957e8.item__48dda{ /*text color*/
   color: lightgrey;
 }
 
-.headerText-10ez_d{ /*color tittle*/
+.headerText__94c22{ /*color tittle*/
   color: var(--color-cyan);
 }
 
-.closeButton-PCZcma, .keybind-13vtq8 { /*close button*/
+.closeButton__34341, .keybind__57645 { /*close button*/
   color: lightgrey;
 }
 
-.closeButton-PCZcma:hover{ /*close button in hovering mode*/
+.closeButton__34341:hover{ /*close button in hovering mode*/
   color: var(--color-cyan);
   background-color: var(--color-transparency);
 }
 
 /*DEV ZONE*/
-.theme-dark .container-1CH86i, .theme-dark .panel-2ZFCRb{ /*USER settings box and activity in the lower left of the screen*/
+.theme-dark .container_ca50b9, .theme-dark .panel_bd8c76{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
 
-.reactionCount-26U4As, .reactionBtn-3I19bq .icon-1q31jb{ /*add reaction to a message in the feed, button in white*/
+.reactionCount__60448, .reactionBtn__46474 .icon_b0b9a4{ /*add reaction to a message in the feed, button in white*/
   color:lightgray;
 }
 
-.reactionBtn-3I19bq:hover .icon-1q31jb{ /*hover of thoses buttons*/
+.reactionBtn__46474:hover .icon_b0b9a4{ /*hover of thoses buttons*/
   color : var(--color-cyan);
 }
