@@ -6,23 +6,23 @@
 
 /*----------------input text bar button---------------*/
 
-.buttonWrapper-3YFQGJ svg, .attachButtonPlus-3IYelE {
+.buttonWrapper__69593 svg, .attachButtonPlus_bf89ca {
   color: lightgrey;
   fill: lightgrey;
   transition: transform 0.3s ease; /* Transition for jump animation */
 }
 
-.attachButton-_ACFSu:hover .attachButtonPlus-3IYelE {
+.attachButton_b1db83:hover .attachButtonPlus_bf89ca {
  border-color: gold;
  fill: var(--color-cyan); /*the plus button*/
 }
 
-.buttonWrapper-3YFQGJ svg:hover {
+.buttonWrapper__69593 svg:hover {
   transform: translateY(-5px); /* moove the item above in hover mode */
   color: var(--color-cyan);
 }
 
-.buttonWrapper-3YFQGJ svg, .attachButtonPlus-3IYelE {
+.buttonWrapper__69593 svg, .attachButtonPlus_bf89ca {
   transform: translateY(0); /* reset the animation to avoid bug in hover when the mouse ins't in the right place or too slow */
 }
 /*------------------FORUM NEW POST NOTIFICATION--------------------*/
