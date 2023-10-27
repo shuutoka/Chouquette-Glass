@@ -34,63 +34,63 @@
     opacity: var(--bg-opacity);
 }
 /*Transparent panels*/
-.appMount-2yBXZl, body {
+.appMount_fae9dd, body {
     background-color: var(--bg-main-panels);
 }
-.app-2CXKsg { /*Discord Background*/
+.app_de4237 { /*Discord Background*/
     background-color: var(--bg-main-panels);
 }
 
-.layers-OrUESM {/*don't delete this line*/
+.layers__1c917 {/*don't delete this line*/
   background-color: rgba(0, 0, 0, 0.527); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
 }/*don't delete this line*/
 
-.standardSidebarView-E9Pc3j, /*don't delete this */
-.sidebarRegionScroller-FXiQOh, /* this modify the side bar you can delet/change it if you want*/
-.contentRegion-3HkfJJ,/*this is for the main region, you can delet/modify it but it can look strange*/
-.bg-1QIAus, /*this is the background, if you delete it, you will get a true black background*/
-.theme-dark .layer-86YKbF,
-.contentRegionScroller-2_GT_N, /* oh hey, this code isn't so complicated right ?*/
-.scroller-3_YDR2 { /*don't delete this line*/
+.standardSidebarView__1129a, /*don't delete this */
+.sidebarRegionScroller__1fa7e, /* this modify the side bar you can delet/change it if you want*/
+.contentRegion__0bec1,/*this is for the main region, you can delet/modify it but it can look strange*/
+.bg__12180, /*this is the background, if you delete it, you will get a true black background*/
+.theme-dark .layer__2efaa ,
+.contentRegionScroller__86c79, /* oh hey, this code isn't so complicated right ?*/
+.scroller__52680 { /*don't delete this line*/
   background-color: transparent;/*don't delete this line*/
 }/*don't delete this line*/
 
 
-.guildSeparator-33mFX6, .scroller-3X7KbA, .wrapper-1_HaEi { /* allow you to see your image*/
+.guildSeparator-33mFX6, .scroller__3d071, .wrapper_a7e7a8 { /* allow you to see your image*/
   background: none;
 }
 
 /*you will see your image trough the text bar, delet it to recover the legacy one*/
-.scrollableContainer-15eg7h {
+.scrollableContainer__33e06 {
   background-color: transparent;
 }
 
-.channelTextArea-1FufC0 {
+.channelTextArea__2e60f {
   background-color: rgba(0, 0, 0, .3); /*text bar color*/
 }
 
 /*searchbar head*/
-.searchBar-jGtisZ {
+.searchBar_e0c60b {
   padding: 0 8px;
   background-color: rgba(159, 48, 48, 0.229);
 }
 
 /*friend list search bar*/
-.searchBar-2aylmZ {
+.searchBar_ff8800 {
   background-color: rgba(255, 255, 255, 0.096);
   border-radius: 17px;
 }
 /*button over the search bar in friend tab*/
-.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
+.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF:hover {
   background-color: rgba(165, 22, 22, 0.723);
   color: rgba(255, 255, 255, .7)
 } /*hover button color over the search bar*/
 
-.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
   background-color: var(--card-color);
 } /*button color over the search bar*/
 
-.searchBar-3TnChZ .searchBarComponent-3N7dCG { /*the second friend search bar*/
+.searchBar_e4ea2a .searchBarComponent__22760 { /*the second friend search bar*/
     width: 100%;
     height: 30px;
     border-radius: 18px;
@@ -101,33 +101,33 @@
 }
 
 /*result searchbar*/
- .container-2McqkF {
+ .container_d6dad3 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
   box-shadow: var(--popout-shadow) !important;
   backdrop-filter: blur(var(--popout-blur));
 }
 
-.option-ayUoaq {
+.option_b5597b {
   border-radius: var(--popout-radius);
 }
-.option-ayUoaq:after {
+.option_b5597b:after {
   display: none;
 }
-[aria-selected=true].option-ayUoaq {
+[aria-selected=true].option_b5597b {
   background-color: var(--background-modifier-hover);
 }
 
-.focused-2FU0YH {
+.focused_f9cf2c {
   background-color: transparent !important;
 }
 
-.queryContainer-ZunrLZ {
+.queryContainer_c359fe {
   border: none;
   box-shadow: var(--popout-header-shadow);
 }
 
-.resultsGroup-cfY57t:before {
+.resultsGroup_ea9b64:before {
   display: none;
 }
 
@@ -137,45 +137,45 @@
   color: rgba(255, 255, 255, 0.726); /* search inscription (top right)*/
 }
 
-.container-1NXEtd, .sidebar-1tnWFu, .panels-3wFtMD, .chat-2ZfjoI, .messages-3amgkR {
+.container__590e2, .sidebar_ded4b5, .panels__58331, .chat__52833, .messages-3amgkR {
   background-color: transparent; /* main space of discord, don't delete this line*/
 }
 
-.theme-dark .container-ZMc96U {
+.theme-dark .container__11d72 {
   color: white;
   background-color: transparent; /* channel name& info*/
 }
-.children-3xh0VB:after,
-.form-3gdLxP:before {
+.children__32014:after,
+.form__13a2c:before {
     display: none !important
 } /*fix a bug with panels*/
 
-.childWrapper-1j_1ub {
+.childWrapper__01b9c {
   background-color: #b72a2a4d;; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
   color: white;
 }
 
-.circleIconButton-1VxDrg {
+.circleIconButton_d8df29 {
      background-color: #6423238f; /*server discover and add button color*/
 }
 
-.folder-241Joy {
+.folder__17546 {
     cursor: pointer;
     background-color: #8f333326; /*folder icon background*/
 }
 
-.expandedFolderBackground-1kSAf6 {
+.expandedFolderBackground__1bec6 {
        background-color: #93464659; /*folder server in the bar*/
 }
 
-.menu-1QACrS { /*server menu*/
+.menu_dc52c6 { /*server menu*/
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     background: var(--card-color);
     border-radius: 20px;
 }
 
-.menu-1QACrS::after{ 
+.menu_dc52c6::after{ 
     content: '';
     width: 100%;
     height: 100%; /* Bug fix by carrot#8812 !  many thanks ! */
@@ -185,87 +185,87 @@
   border-radius: 20px;
 }
 
-.children-3xh0VB:after, .theme-dark .form-3gdLxP:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
-.theme-dark .option-2KkUJO:after, .divider-q3P9HC {
+.children__32014:after, .theme-dark .form__13a2c:before, .theme-dark .option-2KkUJO.selected-rZcOL-:after,
+.theme-dark .option-2KkUJO:after, .divider_c09b64 {
   background: none; /* if you delete, the search bar will be ugly... i guess */
 }
 
 
-.members-3WRCEx {
+.members__9f47b {
   background-color: rgba(0,0,0,.3);/* don't delete this... it's gonna be ugly*/
 }
 
-.members-3WRCEx>div {
+.members__9f47b>div {
   background-color: transparent; /* don't delete this... it's gonna be ugly*/
 }
 
-.container-2o3qEW {
+.container_b2ce9c {
   background-color: transparent;
 }
 
-.body-GBnhET, .activity-2EQDZv, .member-2gU6Ar, .clickable-28SzVr.container-1oeRFJ:hover, .clickable-28SzVr.container-1oeRFJ:hover .muted-14PyqW {
+.body__13cde, .activity__3cbac, .member_aa4760, .clickable__17ccb.container__4f20e:hover, .clickable__17ccb.container__4f20e:hover .muted__7327f {
   color: rgb(228, 228, 228); /*change the global color of people. activate it by delete the "@". you can also edit it if you want */
 }
 
-.contentWrapper-3vHNP2,
-.emojiPicker-6YCk8a {
+.contentWrapper__321ed,
+.emojiPicker_b65ce9 {
   border-radius: 0 0 7px 7px;
   background:  rgba(0, 0, 0, 0.719); /*adjust the color for the emote box*/
 }
 
-.diversityEmojiItem-2bgZKv:hover {  /* the zone were the server name is displayed*/
+.diversityEmojiItem__6505f:hover {  /* the zone were the server name is displayed*/
   background-color: rgba(0, 0, 0, 0.288);
 }
 
-.wrapper-1NNaWG {
+.wrapper__7a35f {
   background-color: rgba(0, 0, 0, 0.048); /*wrapper*/
 }
 
-.inspector-DFKXwB, .wrapper-22rqw6 { /*emoji inspector*/
+.inspector__993e1, .wrapper__4f229 { /*emoji inspector*/
   background: none;
 }
  
 .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, /* top buttons color in the "friends menu"*/
 .theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected,
-.theme-dark .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy {
+.theme-dark .header__28ebb .tabBar__2aa8e .tab_a8a066.active__7e7af {
   background-color: #5c5859;
 }
 
-.privateChannels-oVe7HL, .scroller-WSmht3, .theme-dark .container-2cd8Mz,
-.nowPlayingColumn-1eCBCN, .scroller-2XLwLg, .scroller-1TOeMq, .applicationStore-2nk7Lo,
-.scroller-29cQFV {
+.privateChannels__93473, .scroller__4b984, .theme-dark .container__5c7e7,
+.nowPlayingColumn_f5023f, .scroller__311cd, .scroller__9c698, .applicationStore_fc7d76,
+.scroller__244e5 {
   background: none;  /* background in the "friend menu"*/
 }
 
-.wrapper-2RrXDg {
+.wrapper__6e669 {
   background-color: rgba(0, 0, 0, .23);
 } /* online friends card, you can edit it */
 
 
-.container-1oAagU {
+.container__0a6a9 {
   background-color: rgba(0, 0, 0, .23);
 } /* container for online friend you can edit it if you want*/
 
-.theme-dark .inset-SbsSFp, .section-3G9aLW, .header-JUTO-g, .titleContainer-3fPic2 {
+.theme-dark .inset__0bfb3, .section_efc22d, .header__63c59, .titleContainer_e558ff {
   background: none;
 } /* activity of your friends (like "Play on Xbox") in the container, you can edit/delete it if you want*/
 
-.actionButton-3-B2x- { /*buttons shape and color. 0xp = square, 20 = round*/
+.actionButton__23182 { /*buttons shape and color. 0xp = square, 20 = round*/
   border-radius: 14px;
   color: white;
   background-color: rgba(37, 36, 36, 0.6);
 }
 
-.actionButton-3-B2x-:hover, .actionButton-3-B2x-.highlight-3DSi7b {
+.actionButton__23182:hover, .actionButton__23182.highlight__5b64b {
   background-color: #5a5a5a;
 } /* Hover action buttons color */
 
-.theme-dark .attachment-1PZZB2, .embedFull-1HGV2S, .wrapper-1HIH0j {
+.theme-dark .attachment_f3cf2c, .embedFull__8dc21, .wrapper_efe67f {
   border-color: transparent;
   background-color: rgba(0,0,0,0.3);
 } /* attachement and link, you can edit the color*/
 
-.theme-dark .autocomplete-3NRXG8, .theme-dark .uploadModal-2ie9O_ {
+.theme-dark .autocomplete_df266d, .theme-dark .uploadModal_eae2a0 {
   background: rgba(0, 0, 0, 0.842);
 } /*emoji selector in the text bar*/
 
@@ -273,56 +273,56 @@
   background-color: #3b3834e5;
 } /* hover in the emoji selector of the text bar*/
 
-.reaction-2A2y9y {
+.reaction_b90ab0 {
   border-radius: 1px;
   background-color: rgba(82, 78, 78, 0.671); /*reaction color and shape*/
 }
 
-.button-1zW0-r {
+.button__3ecb4 {
     background-color: #0d0d326b; /*emoji reaction button in the menu*/
 }
 
-.button-1zW0-r:hover {
+.button__3ecb4:hover {
     background-color: #b937376b; /*emoji reaction button on hover in the menu*/
 }
 
 
-.wrapper-2vIMkT {
+.wrapper_c727b6 {
   background-color: #080808cc;
   box-shadow: none;
 } /*reaction reply and more box*/
 
-.reaction-2A2y9y {
+.reaction_b90ab0 {
   border-radius: 7px;
   background-color: rgba(204, 17, 79, 0.6);
 } /*reaction shape and color*/
 
-.modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg,
-.modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV {
+.modeUnread_f74c03 .icon_eff5d4, .modeUnread_f74c03:hover .icon_eff5d4,
+.modeUnread_f74c03 .name__8d1ec, .modeUnread_f74c03:hover .name__8d1ec {
   color: #e0e0e0d7;
 } /*unread channel*/
 
 /*sidebar update*/
-.standardSidebarView-E9Pc3j a, .imageDetails-1t6Zms a, .primary-jw0I4K a, .footer-1Ip3Sd a, .lookLink-15mFoz.colorLink-1Md3RZ,
-.bda-slist .bda-footer a, .markup-eYLPri a, .welcomeMessage-ULm0mo a, .theme-dark .filenameLinkWrapper-3Rc6sk, .theme-dark .filenameLinkWrapper-3Rc6sk a,
-.topic-11NuQZ a, .emptyStateCTA-206J-N a, .helpText-h3r3wC a, .colorStandard-21JIj7 a,
-.editChannelButton-1dYN-G, .fakeLink-2FvUR7, .button-1kija8,
+.standardSidebarView__1129a a, .imageDetails-1t6Zms a, .primary-jw0I4K a, .footer__09373 a, .lookLink-15mFoz.colorLink-1Md3RZ,
+.bda-slist .bda-footer a, .markup_a7e664 a, .welcomeMessage-ULm0mo a, .theme-dark .filenameLinkWrapper__56a0d, .theme-dark .filenameLinkWrapper__56a0d a,
+.topic__16ae3 a, .emptyStateCTA_e6bca2 a, .helpText-h3r3wC a, .colorStandard-21JIj7 a,
+.editChannelButton-1dYN-G, .fakeLink-2FvUR7, .button_fb39e8,
 .footerText-2QLGHU a {
   color: rgba(255, 51, 51, 0.74);
 } 
 /* TITLEBAR */
-.typeWindows-2-g3UY > .wordmark-2u86JB:before {
+.typeWindows__5fa63 > .wordmark__0d178:before {
   content: " Chouquette Glass"; /*name of the theme*/
   color: rgba(255, 255, 255, 0.7);
   font-size: 17px;
   text-shadow: 0 0 3px #000;
 }
-.typeWindows-2-g3UY > .wordmark-2u86JB > svg {
+.typeWindows__5fa63 > .wordmark__0d178 > svg {
   filter: drop-shadow(0 0 5px var(--main-color));
   margin-top: 0px;
 }
 
-.titleBar-1it3bQ {
+.titleBar__01af6 {
   height: 23px; }
 
 
@@ -340,32 +340,32 @@
 } /*make invisible the "rail"*/
 
 /* CHAT AREA -> MESSAGES */
-.wrapper-30-Nkg {
+.wrapper__09ecc {
   border-radius: var(--messages-radius); }
-  .wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+  .wrapper__09ecc.cozy_f5c119, .wrapper__09ecc.compact__54ecc {
     margin-left: 47px; /*larger zone for tchat*/
 
     padding: var(--messages-padding);
     padding-right: 8px !important;
     border: 2px solid transparent; }
-    .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m, .wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m, .wrapper-30-Nkg.compact-2Nkcau .timestamp-p1Df1m.alt-1dvXnH {
+    .wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93, .wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93.alt__6c563, .wrapper__09ecc.compact__54ecc .timestamp_cdbd93, .wrapper__09ecc.compact__54ecc .timestamp_cdbd93.alt__6c563 {
       color: var(--text-normal); }
-.avatar-2e8lTP { /*avatar position*/
+.avatar__08316 { /*avatar position*/
   top: -14px;
   left: -49px; }
 
-.wrapper-30-Nkg.cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH {
+.wrapper__09ecc.cozy_f5c119 .timestamp_cdbd93.alt__6c563 {
   left: -65px; /*timestamp in the following messages*/
 }
 
 /*EMBEDDED */
 
-.textContainer-36wgKK {
+.textContainer__709ff {
   background-color: var(--card-color);
   border-radius: var(--messages-radius) var(--messages-radius) 0 0;
   border: none; }
 
-.footer-GXWBBp {
+.footer__06f4b {
   background-color: var(--card-color);
   border-radius: 0 0 var(--messages-radius) var(--messages-radius);
   border: none;
@@ -373,7 +373,7 @@
 
 /*Code Embed*/
 
-.markup-eYLPri code {
+.markup_a7e664 code {
     background: var(--card-color);
     border: 0px ;
     border-radius: 20px;;
@@ -384,47 +384,47 @@
 /*mention*/
 
 
-.mentioned-Tre-dv,
-.mouse-mode.full-motion .message-2CShn3.mentioned-Tre-dv:hover {
+.mentioned__58017,
+.mouse-mode.full-motion .message__80c10.mentioned__58017:hover {
   background-color: var(--messages-color);
   border-color: rgb(var(--mention-rgb)) !important;
   box-shadow: inset 0px 0px 7px 1px rgb(var(--mention-rgb)), 0px 0px 9px 2px rgb(var(--mention-rgb)); }
 
 .localBot-GrCgVt:before,
-.mentioned-Tre-dv:before {
+.mentioned__58017:before {
   display: none; }
 
   /*THREADS*/
-  .container-3XgAHv {
+  .container_def45c {
   background-color: rgba(8, 8, 8, 0.445);
   border-radius: var(--app-radius);
 }
 
 
-.hasThread-3h-KJV:after {
+.hasThread__58ee2:after {
   display: none;
 }
 
-.attachment-1PZZB2,
-.embedFull-1HGV2S,
-.container-3i3IzO {
+.attachment_f3cf2c,
+.embedFull__8dc21,
+.container__767d1 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
 }
 /*REPLY*/
-.repliedMessage-3Z6XBG:before {
+.repliedMessage_e2bf4a:before {
   transform: translateX(38px);
 }
-.repliedMessage-3Z6XBG .replyAvatar-sHd2sU,
-.repliedMessage-3Z6XBG .replyBadge-LMm_Ic {
+.repliedMessage_e2bf4a .replyAvatar_cea07c,
+.repliedMessage_e2bf4a .replyBadge__3d01e {
   margin-left: 4px;
 }
 
-.wrapper-30-Nkg.cozy-VmLDNB, .wrapper-30-Nkg.compact-2Nkcau {
+.wrapper__09ecc.cozy_f5c119, .wrapper__09ecc.compact__54ecc {
   padding: var(--message-padding-top) var(--message-padding-side);
 }
 
-.repliedMessage-3Z6XBG:before { /*replied slash command */
+.repliedMessage_e2bf4a:before { /*replied slash command */
     --spine-width: 2px;
     top: -49%;
     right: 95%;
@@ -437,30 +437,30 @@
 }
 
 /*REACTION*/
-.reaction-3vwAF2{background-color:rgba(255,255,255,.05);
+.reaction_b90ab0{background-color:rgba(255,255,255,.05);
 
 }
-.reaction-3vwAF2 {
+.reaction_b90ab0 {
 	background-color: rgba(255, 255, 255, .05);
 	border-radius: 3px;
 	transition: all .15s ease-in-out
 }
 
-.reaction-3vwAF2:hover {
+.reaction_b90ab0:hover {
     background-color: rgba(255, 255, 255, .2)
 }
 
 /*settings and non-feed panels*/
 
 /*ACOUNT SETTINGS*/
-.accountProfileCard-lbN7n- {
+.accountProfileCard__22589 {
     background-color: #5425256e;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
 }
 
-.background-3d_SjE {
+.background_b61fcc {
     border-radius: 8px;
     background-color: var(--card-color);
     padding: 16px;
@@ -468,7 +468,7 @@
     
 }
 
-.fieldList-in8WkP {
+.fieldList_aab0de {
     border-radius: 8px;
     background-color: var(--card-color);
     
@@ -486,16 +486,16 @@
     border: 4px solid rgba(192, 64, 64, 0.425); /*color of the border */
 }
 
-.attachedBars-2BCP3l {
+.attachedBars_da3c74 {
 	background: rgba(0, 0, 0, 0)
 }
 
-.attachedBars-2BCP3l .replyBar-1oi75v,
-.attachedBars-2BCP3l .threadSuggestionBar-3ExSyc {
+.attachedBars_da3c74 .replyBar_b64d74,
+.attachedBars_da3c74 .threadSuggestionBar_b633f7 {
   background-color: transparent;
 }
 
-.root-g14mjS {
+.root_a28985 {
     background-color: #111c3261; /*color of the message box*/
     border-radius: 30px;  /*border radius of the message box*/
     /*Error theme broken message when you open discord*/
@@ -519,26 +519,26 @@
 
 /*Discord nitro history*/
 
-.theme-dark .codeRedemptionRedirect-2hYMSQ { /*footer tips message*/
+.theme-dark .codeRedemptionRedirect_bc7f36 { /*footer tips message*/
     color: #fff;
     background-color: #561f1f80;
     border-color: #411717;
 }
 
-.theme-dark .paymentPane-ut5qKZ,
-.theme-dark .paginator-1eqD2g {
+.theme-dark .paymentPane__9cf01,
+.theme-dark .paginator_e620d3 {
   background-color: rgba(0, 0, 0, 0.226)
 }
 
-.theme-dark .bottomDivider-ZmTm-j {
+.theme-dark .bottomDivider_a59d97 {
   border-color: rgba(0, 0, 0, 0)
 }
 
-.theme-dark .hoverablePayment-lE1s4t:hover {
+.theme-dark .hoverablePayment__3ea24:hover {
   background-color: rgba(216, 54, 54, 0.055)
 }
 
-.theme-dark .payment-2bOh4k {
+.theme-dark .payment__7d702 {
   background-color: rgba(29, 28, 82, 0.158)
 }
 
@@ -553,27 +553,27 @@
 }
 
 /*Follow channel pop up*/
-.wrapper-2SplAX {
+.wrapper_fbbb73 {
     background-color: #771d1d3a;
     backdrop-filter: blur(var(--popout-blur));
 }
 /*SERVER items*/
-.communityInfoPill-2Mll66 {
+.communityInfoPill_d3f445 {
     background: var(--card-color);
     backdrop-filter: blur(var(--popout-blur)); /* Public badge on discord server banner*/
 }
 
-.emptyChannelIcon-1YdEz2 {
+.emptyChannelIcon__1a1ba {
     background-color: #ae474746;
     backdrop-filter: blur(var(--popout-blur)); /*icon empty channel "#"*/
 }
 
-.unreadBar-elBRZx {
+.unreadBar__6ecda {
   background-color: #ab34346d;
   backdrop-filter: blur(1px); /*un read bar*/
 }
 
-.role-23oyrw {
+.role__88585 {
     /*color: */
     background-color: var(--card-color); /*Roles that have persmission to access to this channel. information at the top of a new channel*/
     border-radius: 20px;
@@ -589,16 +589,16 @@
     color: #e83c3c;
 }
 /*discorver menu*/
-.theme-dark .pageWrapper-2PwDoS {
+.theme-dark .pageWrapper_fef757 {
     background-color: #621a1a46;
     backdrop-filter: blur(var(--popout-blur));
 }
 
-.theme-dark .card-2TuZPZ, .theme-dark .iconMask-2fMR98 {
+.theme-dark .card__86773, .theme-dark .iconMask__1aff7 {
     background-color: #2c070762;
 } 
 
-.theme-dark .searchBox-pyIJJj {
+.theme-dark .searchBox_a63854 {
     background-color: #991c1c41; /*search bar*/
 }
 
@@ -630,7 +630,7 @@
 
 /*Jump to present bar*/
 
-.jumpToPresentBar-1cEnH0 {
+.jumpToPresentBar__0ff7f {
   background: var(--card-color);
   border-radius: 20px;
   padding-bottom: 4px;
@@ -638,11 +638,11 @@
   backdrop-filter: blur(var(--popout-blur));
 }
 
-.jumpToPresentBar-1cEnH0>button {
+.jumpToPresentBar__0ff7f>button {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.jumpToPresentBar-1cEnH0:hover {
+.jumpToPresentBar__0ff7f:hover {
   background: rgba(174, 10, 10, 0.329);
 }
 
