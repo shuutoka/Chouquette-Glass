@@ -5,38 +5,38 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 
-.defaultColor-HXu-5n,.username-Qpc78p,.textContent-TsKzji,.title-338goq,.name-2m3Cms{
+.defaultColor-HXu-5n,.username__81ee6,.textContent__45dd0,.title__10613,.name__02dbd{
   color: var(--color-cyan);
 } /*change the text color*/
 
-.clickable-ZD7xvu .icon-2xnN2Y,.app-2CXKsg button,.linkButtonIcon-7rsZcu,.container-ZMc96U .topPill-3DJJNV .item-3XjbnG.themed-2-lozF, .title-x4dI75{
+.clickable_d23a1a .icon__4cb88,.app_de4237 button,.linkButtonIcon__2f35b,.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF, .title_dc625c{
   color: aqua;/*change the icon color*/
 }
 
-.subtext-14b69p{
+.subtext__623a0{
   color: rgb(245, 245, 245)/*change the text color*/
 }
 
-.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1, .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover{
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542, .tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542:hover{
   background-color: transparent;
   border-color: var(--color-button);
   border: 1px solid ;
   transition: all .4s; /*change the "add friend" button in the friend menu*/
 }
 
-.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover{
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542:hover{
 border: 1px solid var(--color-button);
 color: greenyellow;
 border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
-.topic-11NuQZ {
+.topic__16ae3 {
   color: white; /*change the color of the channel's topic*/
 }
 
 /*---------boost objective------*/
  
-.text-xs-normal-3O7EaX, .count-e4ipkH{
+.text-xs-normal_ccc5fb, .count_fe6538{
   font-family: 'Baloo Bhaijaan 2';
     font-size: 12px;
     line-height: 16px;
