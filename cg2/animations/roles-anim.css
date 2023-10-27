@@ -1,7 +1,7 @@
 .rolesList-3uZoaa {
   gap: 8px;
 }
-.role-2TIOKu {
+.role__631a3 {
   margin: 0;
   height: auto;
   padding: 6px 8px;
@@ -10,11 +10,11 @@
   position: relative;
   overflow: hidden;
 }
-.role-2TIOKu:hover .roleCircle-1EgnFN {
+.role__631a3:hover .roleCircle-1EgnFN {
   width: 100%;
   opacity: 1;
 }
-.role-2TIOKu:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName-2ZJJYR {
+.role__631a3:hover .roleCircle-1EgnFN:not(:empty) ~ .roleName_d19d33 {
   margin-left: 22px;
 }
 .roleCircle-1EgnFN {
@@ -34,12 +34,12 @@
   box-sizing: border-box;
   transition: 0.15s ease;
 }
-.roleName-2ZJJYR {
+.roleName_d19d33 {
   position: relative;
   margin: 0;
   transition: margin-left 0.15s ease;
 }
-.roleRemoveIcon-387wKV {
+.roleRemoveIcon__7f63d {
   width: 16px;
   height: 16px;
 }
