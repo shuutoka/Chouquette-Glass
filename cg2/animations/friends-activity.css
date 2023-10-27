@@ -1,9 +1,9 @@
 /*Add a neon animation when you hover the friend's activity card board in your "friends menu" / DM*/
-.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a{
+.theme-dark .outer_a41cf3.active__76f42, .theme-dark .outer_a41cf3.interactive__01cfa{
   transition: .6s;
 }
 
-.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+.theme-dark .outer_a41cf3.active__76f42, .theme-dark .outer_a41cf3.interactive__01cfa:hover {
     background-color: rgba(31, 88, 102, 0.4); /*background color during the hover*/
     transition: .6s; /*speed of the transition between nothing and hover*/
     cursor: pointer; /*mouse type in hover*/
