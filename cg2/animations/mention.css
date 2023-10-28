@@ -1,24 +1,23 @@
-/*this file add a glowning neon to the message where you are mentioned*/
-
-/*higlighted message where you were mentioned*/
-/*main setting of the neon*/
 .mentioned__58017,
 .mouse-mode.full-motion .message__80c10.mentioned__58017 {
-  border-radius: 0.5rem; /*angle smoothness of the neon*/
-  animation: flicker 1.5s infinite alternate;    /*type of animation*/
-  border: 0.1rem  var(--color-light); /*color of the center of the neon*/
-} 
+  border-radius: 0.5rem; /* Angle smoothness of the neon */
+  animation: flicker 1.5s infinite alternate; /* Type of animation */
+  border: 0.1rem solid var(--color-light); /* Color of the center of the neon */
+  box-shadow: 0 0 .1rem var(--neon-color); /* Initial box-shadow */
+}
+
 /* Animation of the neon */
 @keyframes flicker {
-    
-    100%{
-      
-        box-shadow:
-            0 0 .2rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 .1rem var(--neon-color), /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            inset 0 0 .1rem var(--neon-color), /*in glowing*/
-            0 0 .9rem var(--neon-color),
-            inset 0 0 1rem var(--neon-color);  /*glowing intensity*/
- }
+  0% {
+    box-shadow: 0 0 .1rem var(--neon-color); /* Initial box-shadow */
+  }
+  100% {
+    box-shadow:
+      0 0 .2rem #fff,
+      inset 0 0 .5rem #fff,
+      0 0 .1rem var(--neon-color), /* Offset brightness of neon, or in another word, the "glowing intensity" */
+      inset 0 0 .1rem var(--neon-color), /* In glowing */
+      0 0 .9rem var(--neon-color),
+      inset 0 0 1rem var(--neon-color); /* Glowing intensity */
+  }
 }
