@@ -1,7 +1,7 @@
 /**
  * @name Chouquette Glass
  * @author @Shuutoka
- * @version EA 0.1
+ * @version EA 0.1.1.2
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -748,7 +748,9 @@ padding-top: 4px;
             inset 0 0 .2rem #08f;  /*glowing intensity*/
 }
 
-
+.container_de798d{
+  color: lightgrey
+}
 
 .membersWrap__90226 { /*smaller pannel for the guild members*/
     min-width: 240px;
