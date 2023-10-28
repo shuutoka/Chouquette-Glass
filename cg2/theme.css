@@ -42,7 +42,8 @@
     --color-darkerblue: rgba(3, 57, 96, 0.588);
     --card-radius: 8px /*thread smoothness*/;
     --interactive-normal: var(--color-white)
-  
+    --neon-color: #08f;
+      
 }
 
 /*IMAGE PARAMETERS*/
