@@ -238,7 +238,24 @@ background-color: var(--card-color) !important;
             inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
             0 0 .9rem #08f, /*offset glowing*/
             inset 0 0 1rem #08f;  /*glowing intensity*/
-  }
+}
+
+.bd-addon-header,.bd-addon-list .bd-addon-card, .bd-addon-list .bd-addon-header,.bd-search-wrapper{ /*items*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+}
+
+.bd-search-wrapper>svg, .bd-addon-views .bd-view-button svg, .bd-addon-list .bd-footer .bd-link svg{ /*color of the icon search and other icon*/
+  fill: lightgray
+}
+
+.bd-addon-views .bd-view-button:hover{
+  background-color: var(--color-secondary);
+}
+
+.bd-addon-list .bd-footer .bd-link svg:hover{ /*footer button become cyan*/
+  fill: var(--color-cyan)
+}
 
 /*---------SCROLLBAR --------- */
 
@@ -321,8 +338,9 @@ background-color: var(--card-color) !important;
 }
 
 /*spoiler images & texts*/
-.spoilerContainer-3wsC0k.hidden-3B-Rum{
- background-color: rgb(66, 80, 80);
+.spoilerContainer-3wsC0k.hidden-3B-Rum, .spoilerContent__37bfa.hidden_f44e41{
+ background-color: var(--color-secondary);
+ backdrop-filter: blur(13px);
 }
 
 .theme-dark .spoilerText-27bIiA.hidden-3B-Rum{
@@ -571,13 +589,13 @@ padding-top: 4px;
 
 
 /*------EMOJI AND REACTION----*/
-.reaction_b90ab0 {
+.reaction_b90ab0, .reaction_fef95b {
   background-color: rgba(54, 77, 121, 0.349); /*change the color of an unreacted reaction */
   border-radius: 15px; /*change the border radius of all reactions*/
   border-color: var(--color-secondary);
 }
 
-.reaction_b90ab0:hover {
+.reaction_b90ab0:hover, .reaction_fef95b:hover {
    background-color: var(--color-secondary) ; /*color of a reaction on hover*/
    }
 
@@ -746,9 +764,7 @@ padding-top: 4px;
     -webkit-box-shadow: var(--elevation-high); /*legacy value, keep it to prevent bug*/
     box-shadow: var(--elevation-high); /*box shadow around the frame*/
     background: var(--color-transparency); /*change the color */
-    border-radius: 20px; /*change the border radius*/
-    backdrop-filter: blur(13px);
-    
+    border-radius: 20px; /*change the border radius*/   
 }
 
 .menu_dc52c6::after{ 
@@ -1025,6 +1041,11 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   background-color: transparent;
 }
 
+.dots__2e6e2{
+  background-color: var(--color-transparency); /*Tiping dots*/
+}
+
+
 .chatContent__5dca8{ /*Chat zone in the forum*/
   background: transparent; 
 }
@@ -1076,11 +1097,6 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
             inset 0 0 .2rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
             0 0 .8rem #08f, /*offset glowing*/
             inset 0 0 .8rem #08f;  /*glowing intensity*/
-}
-
-/*text in the button*/
-.text-sm-medium_bc6ffc{
-  display: none;
 }
 
 /*hovering reply and copy link button*/
@@ -1190,15 +1206,289 @@ border-radius: 15px;
   background-color: var(--color-transparency);
 }
 
+/*profile parameters*/
+
+.accountProfileCard__22589 { /*your profile preview*/
+  background-color: var(--color-transparency); /* Slightly transparent background */
+  border: 1px solid var(--color-secondary); /* Solid border with your chosen color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
+}
+
+.background_b61fcc, .fieldList_aab0de{ /*inner container of the profile*/
+  background-color: transparent;
+}
+
+.input_d266e7 { /*names inputs*/
+  background: #1a1a1a5b; /* Darker background for better text visibility */
+  border-image: linear-gradient(45deg, #8A2BE2, #FF1493); /* Use more contrasting violet and pink colors */
+  border-image-slice: 1; /* Ensure the gradient applies to the entire border */
+  border-radius: 10px; /* Add a 10px border-radius */
+  backdrop-filter: blur(5px);
+}
+
+
+.lookFilled__3dba3.select__0eb48{ /*profile in another server scrolling list menue*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(var(--popout-blur));
+  border-color: var(--color-cyan);
+}
+
+.popout_a6e77f{ /*when you selection a server*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(var(--popout-blur));
+  border-color: var(--color-cyan);
+}
+
+.side_b4b3f6 .themed_b957e8.selected__5711d.item__48dda{ /*selected item in a menue*/
+    background-color: var(--color-secondary);
+}
+
+.searchableSelect__52dee .option_be8b2e:hover:not(.disabled__85bca){ /*when yu select a server in the list, it will change the color of that said item*/
+  background-color: var(--color-secondary);
+}
+.side_b4b3f6 .themed_b957e8.selected__5711d.item__48dda:hover, .side_b4b3f6 .themed_b957e8.item__48dda:hover:not(.disabled__85bca){ /*hovering the selected item or other*/
+  background-color: var(--color-transparency);
+}
+
+.dropdownIcon_d3bbbc{ /*icon of the arrow in the menue*/
+  z-index: 999;
+  backdrop-filter: blur(0px); /*the previous backdrop-filter make it disapear, this prevent this issue*/
+}
+
+.brand_ce3ecf.item__48dda{ /*text*/
+  color : var(--color-cyan)
+}
+
+.theme-dark .bioTextArea_a108c9, .theme-light .bioTextArea_a108c9{ /*edit the description of your profile*/
+  backdrop-filter: blur(10px);
+  border-radius: 6px;
+}
+
+.premiumFeatureBorder__9bbb3 { /*edit the profile effect with nitro*/
+  background: var(--color-transparency); /* Replace the background with --color-transparency */
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #8A2BE2, #FF1493); /* Use more contrasting violet and pink colors */
+  border-image-slice: 1; /* Ensure the gradient applies to the entire border */
+  border-radius: 10px; /* Add a 10px border-radius */
+}
+
+/*Confidenciality and security*/
+
+.itemFilled__373d7 {
+  background-color: var(--color-transparency); /*unselected filter*/
+  backdrop-filter: blur(3px);
+}
+
+.itemFilled__373d7[aria-checked=true]{
+  background-color: var(--color-secondary);/*selected filter*/
+}
+
+.cardPrimary_cb7a0e{ /*CLUF / EULA border color*/
+  border-color:var(--color-cyan);
+}
+
+/*Family Center*/
+
+.container__6968f, .container__9c82e, .container__9f90c, .box__6431e{ /*make all panels transparent*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(var(--popout-blur));
+  box-shadow: none;
+}
+
+.circle__7dd22,.iconContainer__82920{ /*change the color of the background icon in panels and informations*/
+  background-color: var(--color-secondary);
+}
+
+.row_c1b980{ /*change the color of imbed card information of panel of doom*/
+  background-color: var(--color-white);
+}
+
+.stepNumber_f429db{ /*steps icon color*/
+  background-color:var(--color-white)
+}
+
+/*Devices*/
+
+.sessionIcon__540be { /*color of device icon*/
+  color: var(--color-cyan); 
+}
+
+.sessionMoreButton__055f9{ /*color of delete icon*/
+  color:lightgray
+}
+
+.sessionMoreButton__055f9:hover{ /*color of delete icon when hovering it*/
+  color:rgb(219, 49, 49)
+}
+
+/*connection*/
+.connectContainer__8050b,.connectionHeader__3c82d,.connection_fff5f6, .metadataContainer__7b316, .integration_d2f026, .container__17965, .accountAddInner_d34c25, .accountButtonInner__80e3a{
+  background-color: var(--color-transparency); /*every item on this page*/
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+.accountAddInner_d34c25:hover, .accountButtonInner__80e3a:hover{ /*hover of the "more" & button in the top right*/
+  background-color: var(--color-secondary);
+}
+
+.connectionDelete__988b5{ /*color of delete account*/
+  color: lightgray;
+}
+
+.connectionDelete__988b5:hover{
+  color:rgb(219, 49, 49);
+}
+
+/*Nitro Page*/
+.giftCard__30972{
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  box-shadow:
+  0 0 .2rem #fff,
+  inset 0 0 .5rem #fff, /* Offset brightness of neon, or in other words, the "glowing intensity" */
+  0 0 1.5rem #8A2BE2, /* Offset glowing (violet) */
+  inset 0 0 1.5rem #FF1493; /* Glowing intensity (pink) */
+}
+
+.theme-dark .giftCardButton__12614 {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #8A2BE2, #FF1493);
+  border-image-slice: 1;
+  position: relative;
+  transition: transform 0.4s ease-out;
+}
+
+.theme-dark .giftCardButton__12614:hover {
+  animation: vibrate 0.4s ease forwards;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*Server Boost*/
+
+.wave_e98f7c { /*remove the wave in the banner*/
+  fill: none;
+}
+
+.guildContainer__9d362, .boostContainer__8cfa8, .appliedBoostContainer_d3ed2e, .wrapper__0df00,.wrapper_cf13f4,.list__80e1b {
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-secondary); /*panels color*//
+}
+
+.boostSlotMenuIcon__24128, .questionWrapper_cbf471{ /*icon menue color*/
+  color:lightgoldenrodyellow
+}
+.questionWrapper_cbf471:hover{/*color of the icon "+" on hover*/
+  color: var(--color-cyan)
+}
+
+.card__67edb{
+  background-color: var(--color-secondary); /*card "boost the community"*/
+  backdrop-filter: blur(3px);
+}
+
+.defaultColor__77578{
+  color: white /*color of their text*/
+}
+
+.listItem_df7f03 {
+  border-bottom: 1px solid var(--color-cyan);
+}
+
+/*subscription*/
+
+.detailsBlock__1191c{ /*panel make it them transparent and add a border to them*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-cyan)
+}
+
+.theme-dark .noItemsIcon__38ca2{
+ background-color: var(--color-transparency); /*add transparentcy to the icon "mario mistere"*/
+}
+
+/*Gift*/
+
+.promotionCard__8581c{/*panel make it them transparent and add a border to them*/
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-cyan)
+}
+
+.theme-dark .emptyStateImage__3e0a5 {
+  background: url(https://shuutoka.github.io/Chouquette-Glass/assets/b3dd9b1e282fff30af5b-svg.svg);
+}
+
+/*Bills*/
+
+/*the big panel*/
+.theme-dark .codeRedemptionRedirect_bc7f36, .theme-dark .paymentPane__9cf01, .theme-dark .defaultIndicator__855a2{
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-cyan)
+}
+
+.theme-dark .paginator_e620d3, .theme-dark .payment__7d702{
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+}
+.theme-dark .payment__7d702:hover{
+  background-color: var(--color-secondary);
+  backdrop-filter: blur(5px);
+}
+
+.theme-dark .bottomDivider_a59d97, .pageIndicator__973ca, .pageButtonPrev__9ee28, .theme-dark .bottomDivider_a59d97, .pageIndicator__973ca, .pageButtonPrev__9ee28, .pageButtonNext_b6c1ca, .pageButtonPrev__9ee28.disabled__238bc, .pageButtonNext_b6c1ca.disabled__238bc{
+  border-color:var(--color-cyan)
+} /*border of all thing above*/
+
+.pageButtonIcon_c5959a{ /*arrow ,next/ previous page color*/
+  color: var(--color-cyan)
+}
+
+/*COUNTRY*/
+.item_b7fb7e{
+  color:white
+}
+
+/*game activity no detected*/
+.theme-light .notDetected__2a0c9, .theme-dark .notDetected__2a0c9, .theme-dark .default__3e2f5, .theme-dark .gameName_aeeab5:hover {
+  background-color: var(--color-transparency);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-cyan)
+}
+
 /*DEV ZONE*/
 .theme-dark .container_ca50b9, .theme-dark .panel_bd8c76{ /*USER settings box and activity in the lower left of the screen*/
   background-color: transparent;
 }
 
-.reactionCount__60448, .reactionBtn__46474 .icon_b0b9a4{ /*add reaction to a message in the feed, button in white*/
+.reactionCount__60448, .reactionBtn__46474 .icon_b0b9a4, .reactionCount_b49901, .icon__9ea62{ /*add reaction to a message in the feed, button in white*/
   color:lightgray;
 }
 
-.reactionBtn__46474:hover .icon_b0b9a4{ /*hover of thoses buttons*/
-  color : var(--color-cyan);
+.reactionBtn__46474:hover .icon_b0b9a4, .icon__9ea62:hover{ /*hover of thoses buttons*/
+  color : var(--color-cyan)!important;
+}
+
+.text-sm-medium_bc6ffc{ /*fox an issue where txt disapear*/
+  display: flex;
+  color  : white;
 }
