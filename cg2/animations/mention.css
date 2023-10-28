@@ -16,9 +16,9 @@
         box-shadow:
             0 0 .2rem #fff,
             inset 0 0 .5rem #fff,
-            0 0 .1rem #08f, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            inset 0 0 .1rem #08f, /*in glowing*/
-            0 0 .9rem #08f,
-            inset 0 0 1rem #08f;  /*glowing intensity*/
+            0 0 .1rem var(--neon-color), /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            inset 0 0 .1rem var(--neon-color), /*in glowing*/
+            0 0 .9rem var(--neon-color),
+            inset 0 0 1rem var(--neon-color);  /*glowing intensity*/
  }
 }
