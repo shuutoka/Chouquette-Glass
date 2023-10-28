@@ -44,3 +44,18 @@
     --interactive-normal: var(--color-white)
   
 }
+
+/*IMAGE PARAMETERS*/
+#app-mount::before {
+    content: ""; /*void content*/
+    background: var(--background-image-Minsk);/*custom background*/
+    background-position: center; /*position of the background*/
+    background-size: cover; /*size of the background, i recommand "cover" */
+    position: absolute; /*position of the image*/
+    top: 0; /*position value*/
+    left: 0;/*position value*/
+    height: 100%; /*position value*/
+    width: 100%;/*position value*/
+    filter: blur(var(--bg-blur)); /*blur filter, the defalut value is in "root" and is set to "0"*/
+    opacity: var(--bg-opacity); /*opacity value is in "root", default is set to "80%"*/
+}
