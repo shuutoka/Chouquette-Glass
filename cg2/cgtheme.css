@@ -1,11 +1,3 @@
-/**
- * @name Chouquette Glass
- * @author @Shuutoka
- * @version Bêta 0.9.88
- * @description transparent & animated theme in bêta.
- * @source https://github.com/shuutoka/Chouquette-Glass/
-*/
-
 /*Import*/
 
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
@@ -755,6 +747,7 @@ padding-top: 4px;
     box-shadow: var(--elevation-high); /*box shadow around the frame*/
     background: var(--color-transparency); /*change the color */
     border-radius: 20px; /*change the border radius*/
+    backdrop-filter: blur(13px);
     
 }
 
@@ -1028,20 +1021,20 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*--------FORUM---------------*/
-.container-3wLKDe{ /*main zone of the forum panel / interface*/
+.container_b181b6{ /*main zone of the forum panel / interface*/
   background-color: transparent;
 }
 
 .chatContent__5dca8{ /*Chat zone in the forum*/
   background: transparent; 
 }
-.container__8ee50, .buttonInner__2771e, .sortDropdown-hY93nR, .tagsButton-4pwOKH { /*the bar for the buttons in forum post*/
+.container__8ee50, .buttonInner__2771e, .sortDropdown_ec3016, .tagsButton_e96762 { /*the bar for the buttons in forum post*/
   background-color: var(--color-transparency);
   border-color: transparent;
   border-radius: 15px;
 }
 
-.buttonInner__2771e:hover, .sortDropdown-hY93nR:hover, .tagsButton-4pwOKH:hover, .tag-19iIl1:hover, .tagsButton-4pwOKH:hover { /*the bar for the buttons in forum post*/
+.buttonInner__2771e:hover, .sortDropdown_ec3016:hover, .tagsButton_e96762:hover, .tag-19iIl1:hover { /*the bar for the buttons in forum post*/
   background-color: var(--color-secondary)!important;
   border-color: transparent;
   border-radius: 15px;
@@ -1057,9 +1050,12 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
   color: white;
 }
 
+.chatHeaderBar_c1df53{ /*sticky info above a feed in a post when an admin / moderator locked the chat*/
+  background-color: transparent;
+}
 
 /*pop out filter*/
-.container-2d0jMv{
+.container_dbdb0b{
   background-color: transparent;
 }
 
@@ -1070,7 +1066,7 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
 }
 
 /*all tags filter pop out / up*/
-.container-3kfp0r {
+.container_ae7412 {
   background-color: var(--color-transparency);
   backdrop-filter: blur(13px);
   border-radius: 20px;
@@ -1102,7 +1098,7 @@ border-color: var(--color-cyan);
 }
 
 /*svg in buttons*/
-.sortDropdownInner-1kHAUi, .tagsButton-4pwOKH .tagsButtonInner-2pvSm1{
+.sortDropdownInner__2456c, .tagsButton_e96762 .tagsButtonInner_a70c04{
   color: var(--color-cyan);
 }
 
@@ -1120,14 +1116,14 @@ border-color: var(--color-cyan);
 }
 
 /*search bar - Post cards*/
-.mainCard__8a660,.increasedActivityMainCard-2ry6hI {
+.mainCard__8a660,.increasedActivityMainCard__916ed {
   background-color: var(--color-transparency);
   transition: .4s;
   backdrop-filter: blur(8px);
   border: 2px solid var(--color-cyan);
 }
 
-.mainCard__8a660:hover,.increasedActivityMainCard-2ry6hI:hover{ /*hover the search bar*/
+.mainCard__8a660:hover,.increasedActivityMainCard__916ed:hover{ /*hover the search bar*/
   background-color: var(--color-darkerblue);
   border-color: var(--color-cyan);
    backdrop-filter: blur(20px);
