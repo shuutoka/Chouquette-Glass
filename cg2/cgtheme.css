@@ -14,7 +14,7 @@
 
 
 :root {
-    --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
+    --background-image: url('https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png');; /*Changes the background image*/
     --background-image-Minsk: url('https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig');;
     --background-image-Mikasa: url('https://wallpapercave.com/uwp/uwp423127.jpeg');;
     --background-image-Ibuki: url('https://i.imgur.com/wPsgn7Y.jpeg');
