@@ -5,7 +5,7 @@ body, div, span, textarea, ::-webkit-input-placeholder {
 }
 
 
-.defaultColor-HXu-5n,.username__81ee6,.textContent__45dd0,.title__10613,.name__02dbd{
+.defaultColor-HXu-5n,.username__81ee6,.textContent__45dd0,.title__10613,.name__02dbd, .bd-settings-title.bd-settings-group-title{
   color: var(--color-cyan);
 } /*change the text color*/
 
