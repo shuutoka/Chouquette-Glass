@@ -1,0 +1,46 @@
+/**
+ * @name Chouquette Glass
+ * @author @Shuutoka
+ * @version EA-1.0
+ * @description transparent & animated theme in bêta.
+ * @source https://github.com/shuutoka/Chouquette-Glass/
+*/
+
+/*Import*/
+
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/animations.css'); /*import and load animations*/
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/sound-para-anim.css');
+@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/cgtheme.css');
+
+
+:root {
+    --background-image: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
+    --background-image-Minsk: url('https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig');;
+    --background-image-Mikasa: url('https://wallpapercave.com/uwp/uwp423127.jpeg');;
+    --background-image-Ibuki: url('https://i.imgur.com/wPsgn7Y.jpeg');
+    --bg-blur: 0px; /*Amount of blur on the background*/
+    --bg-opacity: 80%; /*background value of the opacity*/
+    --mention-rgb: 135,15,255;/*mention alerte color in R G B value*/
+    --message-padding-side: 5px; /*message padding*/
+    --message-padding-top: 1px;
+    --scrollbar-color: 255,255,255; /*RGB values*/
+    --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
+    --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
+    --popout-color: rgba(0,0,0,0.55);
+    --popout-blur: 8px; /*blur of the popup's result search bar*/
+    --popout-header-opacity: 0.3;
+    --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
+    --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
+    --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    --color-button: rgb(67, 155, 67);
+    --color-transparency: #0ebfff18; /*general dark color*/
+    --color-light: rgba(70, 133, 187, 0.623);
+    --color-secondary: #0ebfff59;
+    --color-white: rgba(255, 255, 255, 0.096);
+    --color-cyan: rgb(17, 194, 194);
+    --color-darkerblue: rgba(3, 57, 96, 0.588);
+    --card-radius: 8px /*thread smoothness*/;
+    --interactive-normal: var(--color-white)
+  
+}
