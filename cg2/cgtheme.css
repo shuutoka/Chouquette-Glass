@@ -39,7 +39,7 @@
     --color-white: rgba(255, 255, 255, 0.096);
     --color-cyan: rgb(17, 194, 194);
     --color-darkerblue: rgba(3, 57, 96, 0.588);
-    --neon-color: #08f;
+    --neon-color: #0088FF;
     --card-radius: 8px /*thread smoothness*/;
     --interactive-normal: var(--color-white)
   
