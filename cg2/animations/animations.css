@@ -26,7 +26,7 @@
   transform: translateY(0); /* reset the animation to avoid bug in hover when the mouse ins't in the right place or too slow */
 }
 /*------------------FORUM NEW POST NOTIFICATION--------------------*/
-.newPostsButton-UaBhcU {
+.newPostsButton__760c6 {
   background-color: var(--color-secondary);
   border-color: var(--color-cyan);
   backdrop-filter: blur(2px);
@@ -48,6 +48,6 @@
   }
 }
 
-.newPostsButton-UaBhcU {
+.newPostsButton__760c6 {
   animation: shine 2s infinite; /* Animation de brillance lors du survol */
 }
