@@ -1,7 +1,7 @@
 /**
  * @name EAChouquette Glass
  * @author @Shuutoka
- * @version EA-1.0.3
+ * @version EA-1.0.4
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -23,17 +23,23 @@
     --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
     --popout-color: rgba(0,0,0,0.55);
     --popout-blur: 8px; /*blur of the popup's result search bar*/
-    --popout-header-opacity: 0.3;
     --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
     --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
-    --popout-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     --color-button: rgb(67, 155, 67);
     --color-transparency: #0ebfff18; /*general dark color*/
     --color-light: rgba(70, 133, 187, 0.623);
     --color-secondary: #0ebfff59;
     --color-white: rgba(255, 255, 255, 0.096);
     --color-cyan: rgb(17, 194, 194);
+    --color-title: rgba(0, 128, 255, 0.427);
+    --color-date-bar: rgba(14, 205, 244, 0.734);
     --color-darkerblue: rgba(3, 57, 96, 0.588);
+    --color-code: rgba(45, 111, 131, 0.438);
+    --color-searchbar: rgba(55, 48, 159, 0.229);
+    --color-note: rgba(0, 219, 248, 0.096);
+    --neon-color: #0088FF;
+    --color-cyan-transparent: rgba(0, 255, 255, 0.671);
+    --color-icon-bright: aqua;
     --card-radius: 8px /*thread smoothness*/;
     --neon-color: #08f;
       
