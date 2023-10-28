@@ -39,6 +39,7 @@
     --color-white: rgba(255, 255, 255, 0.096);
     --color-cyan: rgb(17, 194, 194);
     --color-darkerblue: rgba(3, 57, 96, 0.588);
+    --neon-color: #08f;
     --card-radius: 8px /*thread smoothness*/;
     --interactive-normal: var(--color-white)
   
@@ -113,8 +114,8 @@
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .1rem #fff,
             inset 0 0 .1rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .2rem #08f, /*offset glowing*/
-            inset 0 0 .1rem #08f;  /*glowing intensity*/
+            0 0 .2rem var(--neon-color), /*offset glowing*/
+            inset 0 0 .1rem var(--neon-color);  /*glowing intensity*/
   backdrop-filter: blur(3px);
 }
 
@@ -140,8 +141,8 @@
   box-shadow:
       0 0 .2rem #fff,
       inset 0 0 .2rem #fff,
-      0 0 .2rem #08f,
-      inset 0 0 .5rem #08f;
+      0 0 .2rem var(--neon-color),
+      inset 0 0 .5rem var(--neon-color);
 }
 
 .wrapper__6e669 {
@@ -244,8 +245,8 @@ background-color: var(--card-color) !important;
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .2rem #fff,
             inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .9rem #08f, /*offset glowing*/
-            inset 0 0 1rem #08f;  /*glowing intensity*/
+            0 0 .9rem var(--neon-color), /*offset glowing*/
+            inset 0 0 1rem var(--neon-color);  /*glowing intensity*/
 }
 
 .bd-addon-header,.bd-addon-list .bd-addon-card, .bd-addon-list .bd-addon-header,.bd-search-wrapper{ /*items*/
@@ -316,8 +317,8 @@ background-color: var(--card-color) !important;
   box-shadow: /*add a neon instead of the legacy border*/
       0 0 .1rem #fff,
       inset 0 0 .2rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-      0 0 .2rem #08f, /*offset glowing*/
-      inset 0 0 .2rem #08f;  /*glowing intensity*/
+      0 0 .2rem var(--neon-color), /*offset glowing*/
+      inset 0 0 .2rem var(--neon-color);  /*glowing intensity*/
       position: relative;
 }
 
@@ -377,8 +378,8 @@ background-color: var(--card-color) !important;
           box-shadow: /*add a neon instead of the legacy border*/
               0 0 .2rem #fff,
               inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-              0 0 .5rem #08f, /*offset glowing*/
-              inset 0 0 1.5rem #08f;  /*glowing intensity*/
+              0 0 .5rem var(--neon-color), /*offset glowing*/
+              inset 0 0 1.5rem var(--neon-color);  /*glowing intensity*/
             }  
 
 .contentTitle_b7c496 { /*color of the text*/
@@ -504,8 +505,8 @@ border: none; /*remove the border*/
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .2rem #fff,
             inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 1.5rem #08f, /*offset glowing*/
-            inset 0 0 1.5rem #08f;  /*glowing intensity*/
+            0 0 1.5rem var(--neon-color), /*offset glowing*/
+            inset 0 0 1.5rem var(--neon-color);  /*glowing intensity*/
             }
 
 
@@ -653,8 +654,8 @@ padding-top: 4px;
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .2rem #fff,
             inset 0 0 .1rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .9rem #08f, /*offset glowing*/
-            inset 0 0 .2rem #08f;  /*glowing intensity*/
+            0 0 .9rem var(--neon-color), /*offset glowing*/
+            inset 0 0 .2rem var(--neon-color);  /*glowing intensity*/
   backdrop-filter: blur(3px);
 }
 
@@ -744,8 +745,8 @@ padding-top: 4px;
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .2rem #fff,
             inset 0 0 .1rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .9rem #08f, /*offset glowing*/
-            inset 0 0 .2rem #08f;  /*glowing intensity*/
+            0 0 .9rem var(--neon-color), /*offset glowing*/
+            inset 0 0 .2rem var(--neon-color);  /*glowing intensity*/
 }
 
 .container_de798d{
@@ -1105,8 +1106,8 @@ border-radius: 13px;/*change the "add friend" button in the friend menu*/
         box-shadow: /*add a neon instead of the legacy border*/
             0 0 .1rem #fff,
             inset 0 0 .2rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
-            0 0 .8rem #08f, /*offset glowing*/
-            inset 0 0 .8rem #08f;  /*glowing intensity*/
+            0 0 .8rem var(--neon-color), /*offset glowing*/
+            inset 0 0 .8rem var(--neon-color);  /*glowing intensity*/
 }
 
 /*hovering reply and copy link button*/
@@ -1137,8 +1138,8 @@ border-color: var(--color-cyan);
   box-shadow:
     0 0 0.2rem #fff,
     inset 0 0 0.5rem #fff, /* Luminosité intérieure */
-    0 0 1.5rem #08f, /* Lueur externe */
-    inset 0 0 1.5rem #08f; /* Intensité de la lueur intérieure */
+    0 0 1.5rem var(--neon-color), /* Lueur externe */
+    inset 0 0 1.5rem var(--neon-color); /* Intensité de la lueur intérieure */
 }
 
 /*search bar - Post cards*/
