@@ -1,7 +1,7 @@
 /**
  * @name Chouquette Glass
  * @author @Shuutoka
- * @version EA 0.1.1.3
+ * @version EA 0.1.1.4
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -38,8 +38,15 @@
     --color-secondary: #0ebfff59;
     --color-white: rgba(255, 255, 255, 0.096);
     --color-cyan: rgb(17, 194, 194);
+    --color-title: rgba(0, 128, 255, 0.427);
+    --color-date-bar: rgba(14, 205, 244, 0.734);
     --color-darkerblue: rgba(3, 57, 96, 0.588);
+    --color-code: rgba(45, 111, 131, 0.438);
+    --color-searchbar: rgba(55, 48, 159, 0.229);
+    --color-note: rgba(0, 219, 248, 0.096);
     --neon-color: #0088FF;
+    --color-cyan-transparent: rgba(0, 255, 255, 0.671);
+    --color-icon-bright: aqua;
     --card-radius: 8px /*thread smoothness*/;
     --interactive-normal: var(--color-white)
   
@@ -190,7 +197,7 @@ transition: .4s; /*transition when unhover*/
 
 .actionButton__23182,.actionButton__23182.highlight__5b64b{ /*action button in your friends menu, chat and burger menu*/
   background-color: var(--color-transparency);
-  color:aqua /*color of the .icon*/
+  color:var(--color-icon-bright) /*color of the .icon*/
   }
 .actionButton__23182:hover,.actionButton__23182.highlight__5b64b:hover{
   background-color: var(--color-secondary); /*color of the buttons when hovered*/
@@ -329,7 +336,7 @@ background-color: var(--card-color) !important;
   top: 8px;
   width: 100%;
   height: 1px; /* height / like you like */
-  background-color: rgba(14, 205, 244, 0.734); /* color of the bar */
+  background-color: var(--color-date-bar); /* color of the bar */
 }
 
 
@@ -342,7 +349,7 @@ background-color: var(--card-color) !important;
 }
 /*code in message*/
 .markup_a7e664 code { /*Markup for code in message*/
-  background-color: rgba(45, 111, 131, 0.438);
+  background-color: var(--color-code);
   border-color: rgb(0, 0, 0);
 }
 
@@ -399,7 +406,7 @@ background-color: var(--card-color) !important;
   transition: all .4s;
 }
 .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover{ /*welcome/greeting button in hover mode*/
-  background-color: rgb(17, 194, 194);
+  background-color: var(--color-cyan);
   border-radius: 5px;
 }
 
@@ -416,7 +423,7 @@ background-color: var(--card-color) !important;
 
 .lookFilled__19298.colorPrimary__6ed40:hover {
   background-color: var(--color-transparency);
-  border: 2px solid rgb(0, 225, 255); /* border and become transparent when hovering the button */
+  border: 2px solid var(--color-cyan); /* border and become transparent when hovering the button */
 }
 
 
@@ -677,7 +684,7 @@ padding-top: 4px;
   background-color: var(--color-transparency);
 }
 .header_c3c744{ 
-  background-color: rgba(0, 128, 255, 0.427); /*title / name of the serveur*/
+  background-color: var(--color-title); /*title / name of the serveur*/
   border-radius: 13px;
 }
 
@@ -762,7 +769,7 @@ padding-top: 4px;
 /*----searchbar head-----*/
 .searchBar_e0c60b {
   padding: 0 8px;
-  background-color: rgba(55, 48, 159, 0.229);
+  background-color: var(--color-searchbar);
 }
 
 
@@ -844,14 +851,14 @@ padding-top: 4px;
     width: 100%;
     border-radius: 5px;
     color: var(--text-normal);
-    background-color: rgba(0, 219, 248, 0.096);
+    background-color: var(--color-note);
     border: none;
     -webkit-transition: border-color .2s ease-in-out;
     transition: border-color .2s ease-in-out;
 }
 
 .textarea_c5a7a3:focus {
-      background-color: rgba(0, 219, 248, 0.096);
+      background-color: var(--color-note);
 }
 /*------------Send DM in user pop out------------*/
 .input__95bc4 {
@@ -873,7 +880,7 @@ padding-top: 4px;
   backdrop-filter: blur (5px);
 }
 .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c, .wrapper_d281dd:hover .childWrapper__01b9c{
-  background-color:rgba(0, 255, 255, 0.671)!important; /*color on hover*/
+  background-color:var(var(--color-cyan-transparent))!important; /*color on hover*/
 }
 
 .circleIconButton_d8df29 { /*add server and discover button*/
@@ -941,7 +948,7 @@ color: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
 } /*change the text color*/
 
 .clickable_d23a1a .icon__4cb88,.app_de4237 button,.linkButtonIcon__2f35b,.container__11d72 .topPill-3DJJNV .item-3XjbnG.themed-2-lozF, .title_dc625c{
-  color: aqua;/*change the icon color*/
+  color: var(--color-icon-bright);/*change the icon color*/
 }
 
 .subtext__623a0, .container-q97qHp{
