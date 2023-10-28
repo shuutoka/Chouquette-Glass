@@ -1,3 +1,11 @@
+/**
+ * @name Chouquette Glass
+ * @author @Shuutoka
+ * @version EA 0.1
+ * @description transparent & animated theme in bêta.
+ * @source https://github.com/shuutoka/Chouquette-Glass/
+*/
+
 /*Import*/
 
 @import url('https://shuutoka.github.io/Chouquette-Glass/cg2/font.css'); /*font*/
@@ -115,7 +123,7 @@
 }
 
 .actionIcon_d679b5{ /*button in the selected channel (settings, invit friend), color set to default*/
-  color:none;
+  color:var(--color-cyan);
 }
 
 /*Friends list and MP channels pannel*/
