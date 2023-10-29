@@ -4,8 +4,8 @@
 }
 
 .theme-dark .outer_a41cf3.active__76f42, .theme-dark .outer_a41cf3.interactive__01cfa:hover {
-    background-color: rgba(31, 88, 102, 0.4); /*background color during the hover*/
+    background-color: var(--color-transparency); /*background color during the hover*/
     transition: .6s; /*speed of the transition between nothing and hover*/
     cursor: pointer; /*mouse type in hover*/
-        box-shadow: 0 0 5px #0ebeff, 0 0 8px #0ebeff, 0 0 5px #0ebeff, 0 0 5px #0ebeff, 0 0 2px #0ebeff; /*color of the shadow box*/
+        box-shadow: 0 0 5px var(--neon-color), 0 0 8px var(--neon-color), 0 0 5px var(--neon-color), 0 0 5px var(--neon-color), 0 0 2px var(--neon-color); /*color of the shadow box*/
     } /*Animation hover  on friend's activity card*/
