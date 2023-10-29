@@ -1,7 +1,7 @@
 /**
  * @name EAChouquette Glass
  * @author @Shuutoka
- * @version EA-1.0.6
+ * @version EA-1.0.6.1
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -48,7 +48,7 @@
 
 /*IMAGE PARAMETERS*/
 #app-mount::before {
-    background: var(--background-image-Minsk);/*custom background*/
+    background: var(--background-image-Minsk);/*<-- CHANGE THE BACKGROUND IMAGE, modify the value "Minsk" by what you want, aviable by default : Pixiv, Minsk, Mikasa, Ibuki, dust*/
     background-position: center; /*position of the background*/
     background-size: cover; /*size of the background, i recommand "cover" */
     position: absolute; /*position of the image*/
