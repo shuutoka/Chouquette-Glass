@@ -1,7 +1,7 @@
 /**
  * @name EAChouquette Glass
  * @author @Shuutoka
- * @version EA-1.0.4
+ * @version EA-1.0.5
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -21,28 +21,28 @@
     --scrollbar-color: 255,255,255; /*RGB values*/
     --scrollbar-opacity: 0.15; /*opacity of the scroll bar "bus" 0 -> 1*/
     --scrollbar-opacity-hover: 0.4;/*opacity of the scroll bar "bus" on hover 0 -> 1*/
-    --popout-color: rgba(0,0,0,0.55);
+    --popout-color: rgba(0,0,0,0.55); /*principal color of popout*/
     --popout-blur: 8px; /*blur of the popup's result search bar*/
     --popout-header-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25); /* popup result search bar shadow*/
     --popout-radius: 12px; /*radus of the pop up of the result from the search bar*/
-    --color-button: rgb(67, 155, 67);
+    --color-button: rgb(67, 155, 67); /*color buttons*/
     --color-transparency: #0ebfff18; /*general dark color*/
-    --color-light: rgba(70, 133, 187, 0.623);
-    --color-secondary: #0ebfff59;
-    --color-white: rgba(255, 255, 255, 0.096);
-    --color-cyan: rgb(17, 194, 194);
-    --color-title: rgba(0, 128, 255, 0.427);
-    --color-date-bar: rgba(14, 205, 244, 0.734);
-    --color-darkerblue: rgba(3, 57, 96, 0.588);
-    --color-code: rgba(45, 111, 131, 0.438);
-    --color-searchbar: rgba(55, 48, 159, 0.229);
+    --color-light: rgba(70, 133, 187, 0.623); /*principal color but lighter*/
+    --color-secondary: #0ebfff59; /*secondary color of the theme, used by many sub item and other*/
+    --color-white: rgba(255, 255, 255, 0.096); /*color of "white" you can change it. used by "elected item"*/
+    --color-cyan: rgb(17, 194, 194); /*the bright color of the theme used by many elements*/
+    --color-title: rgba(0, 128, 255, 0.427); /*change the color of title texte*/
+    --color-date-bar: rgba(14, 205, 244, 0.734); /*color of the separator bar in message date / day*/
+    --color-darkerblue: rgba(3, 57, 96, 0.588); /*main color, darker version*/
+    --color-code: rgba(45, 111, 131, 0.438); /*change the background color of "code" in message (css, C, Java etc...)*/
+    --color-searchbar: rgba(55, 48, 159, 0.229); /*change the color of the searchbar*/
     --color-note: rgba(0, 219, 248, 0.096);
-    --neon-color: #0088FF;
+    --neon-color: #0088FF; /*color of all neon effect*/
     --color-cyan-transparent: rgba(0, 255, 255, 0.671);
-    --color-icon-bright: aqua;
+    --color-guild: rgba(84, 151, 228, 0.524); /*default color for guild icon*/
+    --color-icon-bright: aqua; /*color of some icon in discord*/
     --card-radius: 8px /*thread smoothness*/;
-    --neon-color: #08f;
-      
+ 
 }
 
 /*IMAGE PARAMETERS*/
