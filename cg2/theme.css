@@ -1,7 +1,7 @@
 /**
  * @name EAChouquette Glass
  * @author @Shuutoka
- * @version EA-1.0.5
+ * @version EA-1.0.6
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -11,6 +11,7 @@
 
 
 :root {
+    --background-image-custom: url(''); /*<-- put your image URL between the quote '' , must be a direct link to your image, not a webpage / website. see variable below as example*/
     --background-image-pixiv: url(https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png);; /*Changes the background image*/
     --background-image-Minsk: url('https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig');;
     --background-image-Mikasa: url('https://wallpapercave.com/uwp/uwp423127.jpeg');;
@@ -47,7 +48,6 @@
 
 /*IMAGE PARAMETERS*/
 #app-mount::before {
-    content: ""; /*void content*/
     background: var(--background-image-Minsk);/*custom background*/
     background-position: center; /*position of the background*/
     background-size: cover; /*size of the background, i recommand "cover" */
