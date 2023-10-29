@@ -1,7 +1,7 @@
 /**
  * @name Chouquette Glass
  * @author @Shuutoka
- * @version EA 0.1.1.4
+ * @version EA 0.1.1.5
  * @description transparent & animated theme in bêta.
  * @source https://github.com/shuutoka/Chouquette-Glass/
 */
@@ -44,6 +44,7 @@
     --color-code: rgba(45, 111, 131, 0.438);
     --color-searchbar: rgba(55, 48, 159, 0.229);
     --color-note: rgba(0, 219, 248, 0.096);
+    --color-guild: rgba(84, 151, 228, 0.524);
     --neon-color: #0088FF;
     --color-cyan-transparent: rgba(0, 255, 255, 0.671);
     --color-icon-bright: aqua;
@@ -876,7 +877,7 @@ padding-top: 4px;
 
 /*DEFAULT ICON FOR IMAGELESS SERVERS*/
 .childWrapper__01b9c{
-  background-color: rgba(84, 151, 228, 0.524); /*basic color*/
+  background-color: var(--color-guild); /*basic color*/
   backdrop-filter: blur (5px);
 }
 .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c, .wrapper_d281dd:hover .childWrapper__01b9c{
