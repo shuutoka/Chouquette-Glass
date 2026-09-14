@@ -1,0 +1,10 @@
+/**
+ * @name Chouquette Glass Loader
+ * @author Shuutoka
+ * @version 2.1.0
+ * @description Development loader for the Chouquette Glass core.
+ */
+
+/* For GitHub Pages/development. BetterDiscord users should install
+   ChouquetteGlass.theme.css from the repository root. */
+@import url("./chouquette-core.css");

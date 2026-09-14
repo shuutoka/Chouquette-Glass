@@ -1,0 +1,5 @@
+/*
+ * Compatibility entry point retained for old Chouquette Glass links.
+ * New code lives in chouquette-core.css.
+ */
+@import url("./chouquette-core.css");

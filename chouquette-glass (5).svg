@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1207 133" width="1207" height="133">
+	<title>Nouveau projet</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 150px;fill: #ffffff;font-weight: 400;font-family: "Baloo", "Baloo" } 
+	</style>
+	<text id="Chouquette Glass" style="transform: matrix(1,0,0,1,0,3)" >
+		<tspan x="0" y="100.4" class="t0">C</tspan><tspan  y="100.4" class="t0">h</tspan><tspan  y="100.4" class="t0">o</tspan><tspan  y="100.4" class="t0">u</tspan><tspan  y="100.4" class="t0">q</tspan><tspan  y="100.4" class="t0">u</tspan><tspan  y="100.4" class="t0">e</tspan><tspan  y="100.4" class="t0">t</tspan><tspan  y="100.4" class="t0">t</tspan><tspan  y="100.4" class="t0">e</tspan><tspan  y="100.4" class="t0"> </tspan><tspan  y="100.4" class="t0">G</tspan><tspan  y="100.4" class="t0">l</tspan><tspan  y="100.4" class="t0">a</tspan><tspan  y="100.4" class="t0">s</tspan><tspan  y="100.4" class="t0">s
+</tspan>
+	</text>
+</svg>
