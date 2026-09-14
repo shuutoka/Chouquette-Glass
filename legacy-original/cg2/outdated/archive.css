@@ -1,0 +1,64 @@
+
+.userPopout-2j1gM4 {
+  max-height: 90vh;
+  background-color: var(--card-color) !important;
+  border-radius: var(--popout-radius) !important;border:display ; /*remove the border*/
+        box-shadow: /*add a neon instead of the legacy border*/
+            0 0 .2rem #fff,
+            inset 0 0 .5rem #fff, /*offset brightness of neon, or in another word, the "glowing intensity"*/
+            0 0 .9rem #08f, /*offset glowing*/
+            inset 0 0 1rem #08f;  /*glowing intensity*/
+  
+}
+
+.popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI{
+  position: relative;
+  z-index: -1;
+  transition: .7s;
+}
+
+.userPopout-2j1gM4:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-transparency);
+  border-radius: var(--popout-radius);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+  transition: .7s;
+}
+.userPopout-2j1gM4 .avatar-2Vndt_ { /*background connection statu (connected, idle etc..)*/
+  background-color: transparent;
+  border-color: transparent;
+  backdrop-filter: blur(2px);
+  transition: .7s;
+}
+.userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+  background-color: transparent;
+  transition: .7s;
+}
+
+.footer-3naVBw{
+  background-color: transparent;
+}
+
+.bodyInnerWrapper-2bQs1k{
+  background-color: transparent; /*about section*/
+}
+
+.separator-1So4YB{
+  border-color: transparent; /*remove lower separator*/
+  }
+
+.divider-1wtgZ3{
+  border-color: transparent;
+  background-color: transparent; /*remove upper separator*/
+}
+
+.avatar-2Vndt_{
+  border-color: transparent;
+  background-color: transparent; /*remove the dark background behind the avatar*/
+}
