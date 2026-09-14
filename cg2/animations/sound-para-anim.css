@@ -1,6 +1,6 @@
 /* User-panel controls.
  * The 2023 theme almost completely hid microphone/headphone buttons until hover.
- * They are only dimmed in 2.2 so the visual joke remains without harming usability.
+ * They are only dimmed in 2.3 so the visual joke remains without harming usability.
  */
 #app-mount [class*="panels_"] [class*="buttons_"] > * {
     opacity: .48;

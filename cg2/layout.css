@@ -54,6 +54,16 @@
     --reaction-background-reacted-default: rgb(14 191 255 / 0.26);
     --reaction-border-reacted-default: var(--cg-cyan);
 
+    /* Discord's own scroller classes read these variables. Keeping them here
+       avoids the bright, almost-native white gutters introduced by recent UI
+       refreshes. */
+    --scrollbar-auto-thumb: var(--cg-scrollbar-thumb);
+    --scrollbar-auto-track: var(--cg-scrollbar-track);
+    --scrollbar-auto-scrollbar-color-thumb: var(--cg-scrollbar-thumb);
+    --scrollbar-auto-scrollbar-color-track: var(--cg-scrollbar-track);
+    --scrollbar-thin-thumb: var(--cg-scrollbar-thumb);
+    --scrollbar-thin-track: var(--cg-scrollbar-track);
+
     /* Discord visual-refresh overlay variables. */
     --custom-theme-background: var(--cg-background-image);
     --bg-overlay-color: 5 9 28;

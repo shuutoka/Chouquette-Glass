@@ -45,7 +45,7 @@ meta = main[:main.index("/*\n * IMPORTANT")]
 user_root = main[main.index(":root {"):]
 
 OUTPUT.write_text(
-    meta.replace("@version 2.2.0", "@version 2.2.0-preview")
+    meta.replace("@version 2.3.0", "@version 2.3.0-preview")
     + "\n/* Standalone local preview build. */\n"
     + inline_css(ENTRY)
     + "\n/* ---- user configuration (same variables as the small loader) ---- */\n"

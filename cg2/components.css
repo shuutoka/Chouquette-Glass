@@ -32,19 +32,90 @@
 }
 #app-mount [class*="circleIconButton_"]:hover { background-color: rgb(14 191 255 / .24) !important; }
 
-/* Discord settings + BetterDiscord */
-#app-mount :is([class*="standardSidebarView_"], [class*="sidebarRegionScroller_"], [class*="contentRegion_"], [class*="contentRegionScroller_"]) {
-    background: transparent !important;
+/* Discord settings + BetterDiscord
+ *
+ * Discord now renders settings as a layer above the normal client. The old
+ * Chouquette rule made all four settings containers transparent, which leaves
+ * text floating directly over the chat wallpaper. 2.3 keeps the glass effect
+ * but gives the settings layer its own readable surfaces.
+ */
+#app-mount [class*="standardSidebarView_"] {
+    /* Scoped Discord tokens: cards/inputs created inside Settings no longer
+       inherit the globally-transparent chat values. */
+    --background-primary: var(--cg-settings-content);
+    --background-secondary: var(--cg-settings-sidebar);
+    --background-secondary-alt: rgb(0 0 0 / .28);
+    --background-tertiary: rgb(0 0 0 / .34);
+    --background-floating: var(--cg-popout);
+    --background-base-lowest: rgb(0 0 0 / .32);
+    --background-base-lower: rgb(0 0 0 / .24);
+    --background-base-low: rgb(0 0 0 / .18);
+    --background-surface-high: rgb(255 255 255 / .055);
+    --background-surface-higher: rgb(255 255 255 / .075);
+    --background-surface-highest: rgb(255 255 255 / .095);
+    --bg-surface-raised: rgb(6 11 29 / .84);
+    --card-background-default: var(--cg-settings-card);
+    --input-background: rgb(0 0 0 / .30);
+
+    background: var(--cg-settings) !important;
+    backdrop-filter: blur(var(--cg-settings-blur));
+    -webkit-backdrop-filter: blur(var(--cg-settings-blur));
 }
+
+#app-mount [class*="sidebarRegion_"] {
+    background: var(--cg-settings-sidebar) !important;
+    border-right: 1px solid rgb(var(--cg-cyan-rgb) / .10);
+}
+#app-mount [class*="sidebarRegionScroller_"] { background: transparent !important; }
+
+#app-mount [class*="contentRegion_"] {
+    background: var(--cg-settings-content) !important;
+}
+#app-mount [class*="contentRegionScroller_"] { background: transparent !important; }
+
+/* Settings cards. These selectors stay inside the settings layer so generic
+   names such as card_/container_ cannot unexpectedly recolor the chat. */
+#app-mount [class*="standardSidebarView_"] :is(
+    [class*="accountProfileCard_"],
+    [class*="fieldList_"],
+    [class*="connectionList_"],
+    [class*="connectContainer_"],
+    [class*="settingCard_"],
+    [class*="paymentPane_"],
+    [class*="paginator_"],
+    [class*="codeRedemptionRedirect_"]
+) {
+    background-color: var(--cg-settings-card) !important;
+    border-color: rgb(var(--cg-cyan-rgb) / .12) !important;
+}
+
 #app-mount [class*="accountProfileCard_"] {
-    background: rgb(0 0 0 / .30) !important;
+    background: var(--cg-settings-card) !important;
     backdrop-filter: blur(var(--cg-blur));
 }
+
+/* Context menus / select menus / floating menus need an actual glass pane.
+   background-color is repeated intentionally because some current Discord
+   menu roots replace the background shorthand with their own token. */
+#app-mount [class*="layerContainer_"] :is(
+    [class*="menu_"],
+    [class*="popout_"],
+    [class*="selectPositionTop_"],
+    [class*="selectPositionBottom_"]
+) {
+    background: var(--cg-popout) !important;
+    background-color: var(--cg-popout) !important;
+    backdrop-filter: blur(var(--cg-popout-blur));
+    -webkit-backdrop-filter: blur(var(--cg-popout-blur));
+    border: 1px solid rgb(var(--cg-cyan-rgb) / .16);
+    box-shadow: 0 12px 38px rgb(0 0 0 / .46);
+}
+
 .bd-addon-card,
 .bd-search-wrapper,
 .bd-changelog-modal,
 .bd-modal-root {
-    background: rgb(0 0 0 / .42) !important;
+    background: rgb(4 10 28 / .76) !important;
     backdrop-filter: blur(var(--cg-blur));
     border-color: rgb(var(--cg-cyan-rgb) / .20) !important;
 }
@@ -53,21 +124,58 @@
 .bd-settings-group-title,
 .bd-link { color: var(--cg-cyan) !important; }
 
-/* Scrollbars */
+/* Sliders/range controls inside Settings. This is separate from scrollbars. */
+#app-mount [class*="standardSidebarView_"] input[type="range"] {
+    accent-color: var(--cg-cyan);
+}
+#app-mount [class*="standardSidebarView_"] [class*="slider_"] [class*="bar_"] {
+    background: rgb(255 255 255 / .14) !important;
+    border-radius: 999px;
+}
+#app-mount [class*="standardSidebarView_"] [class*="slider_"] [class*="barFill_"] {
+    background: var(--cg-cyan) !important;
+}
+#app-mount [class*="standardSidebarView_"] [class*="slider_"] [class*="grabber_"] {
+    background: #eafcff !important;
+    border: 2px solid var(--cg-cyan) !important;
+    box-shadow: 0 0 .45rem rgb(var(--cg-cyan-rgb) / .38);
+}
+
+/* Scrollbars
+ * Discord uses both standard scrollbar properties and its own CSS variables.
+ * The variables are set in layout.css; the pseudo-elements below handle views
+ * that still draw WebKit scrollbars directly. */
 * {
-    scrollbar-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity, .15)) transparent;
+    scrollbar-color: var(--cg-scrollbar-thumb) var(--cg-scrollbar-track);
     scrollbar-width: thin;
 }
-::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: transparent !important; }
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width, 8px) !important;
+    height: var(--scrollbar-width, 8px) !important;
+}
+#app-mount [class*="thin_"]::-webkit-scrollbar,
+#app-mount [class*="scrollableContainer_"]::-webkit-scrollbar {
+    width: var(--scrollbar-thin-width, 5px) !important;
+    height: var(--scrollbar-thin-width, 5px) !important;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner {
+    background: var(--cg-scrollbar-track) !important;
+    border: 0 !important;
+}
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity, .15)) !important;
-    border: 2px solid transparent;
-    border-radius: 999px;
-    background-clip: padding-box;
+    min-height: 36px;
+    background: var(--cg-scrollbar-thumb) !important;
+    border: 2px solid transparent !important;
+    border-radius: 999px !important;
+    background-clip: padding-box !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity-hover, .40)) !important;
+    background: var(--cg-scrollbar-thumb-hover) !important;
+    background-clip: padding-box !important;
 }
+::-webkit-scrollbar-button { display: none !important; }
 
 #app-mount [class*="winButton_"] { color: white !important; }

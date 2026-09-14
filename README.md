@@ -1,10 +1,14 @@
-# Chouquette Glass 2.2
+# Chouquette Glass 2.3
 
 This revision restores the **original project architecture** instead of flattening the theme into one accidental monolith.
 
+## 2.3 readability fixes
+Discord 2026 renders Settings and scrollbars differently from the 2023 client. Version 2.3 gives Settings a dedicated glass surface and maps Chouquette Glass scrollbar variables to Discord's current native scrollbar tokens. The chat remains highly transparent; Settings are intentionally darker for readability.
+
+
 ## Which file do I use?
 
-- **`ChouquetteGlass.preview.theme.css`** — use this **right now** in BetterDiscord to test the 2.2 code. It is a standalone bundle and does not depend on the GitHub repository already being updated.
+- **`ChouquetteGlass.preview.theme.css`** — use this **right now** in BetterDiscord to test the 2.3 code. It is a standalone bundle and does not depend on the GitHub repository already being updated.
 - **`ChouquetteGlass.theme.css`** — the small public/user file. It imports `https://shuutoka.github.io/Chouquette-Glass/cg2/cgtheme.css` and then exposes the variables users are expected to edit.
 - **`cg2/theme.css`** — compatibility copy matching the location used by the historical repository.
 

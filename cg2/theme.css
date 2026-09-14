@@ -1,7 +1,7 @@
 /**
  * @name Chouquette Glass
  * @author @Shuutoka
- * @version 2.2.0
+ * @version 2.3.0
  * @description Transparent, animated and highly customizable glass theme for BetterDiscord.
  * @source https://github.com/shuutoka/Chouquette-Glass/
  */
@@ -39,9 +39,18 @@
     --glass-header: rgb(4 11 31 / 0.24);
     --glass-user-panel: rgb(5 9 27 / 0.46);
     --glass-input: rgb(3 9 27 / 0.48);
-    --popout-color: rgb(3 9 24 / 0.66);
+    --popout-color: rgb(3 9 24 / 0.78);
     --popout-blur: 12px;
     --popout-radius: 16px;
+
+    /* Settings are deliberately more opaque than the chat.
+       Discord 2026 opens settings above the main UI, so fully transparent
+       settings become hard to read very quickly. */
+    --glass-settings: rgb(2 6 20 / 0.78);
+    --glass-settings-sidebar: rgb(7 12 31 / 0.82);
+    --glass-settings-content: rgb(3 8 24 / 0.72);
+    --glass-settings-card: rgb(11 19 46 / 0.66);
+    --settings-blur: 16px;
 
     /* =========================== COLORS ========================== */
     /* Legacy variable names are intentionally kept for old custom configs. */
@@ -83,6 +92,10 @@
 
     /* ========================= SCROLLBAR ========================= */
     --scrollbar-color: 255, 255, 255;
-    --scrollbar-opacity: 0.15;
-    --scrollbar-opacity-hover: 0.40;
+    --scrollbar-opacity: 0.18;
+    --scrollbar-opacity-hover: 0.46;
+    --scrollbar-track-color: 0, 0, 0;
+    --scrollbar-track-opacity: 0.00;
+    --scrollbar-width: 8px;
+    --scrollbar-thin-width: 5px;
 }

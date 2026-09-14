@@ -1,5 +1,5 @@
 /**
- * Chouquette Glass core — 2.2.0
+ * Chouquette Glass core — 2.3.0
  *
  * This file is the public import target. It intentionally contains almost no
  * component CSS itself: each maintained part lives in a real module below.
@@ -27,7 +27,15 @@
     --cg-header: var(--glass-header, rgb(4 11 31 / 0.24));
     --cg-user-panel: var(--glass-user-panel, rgb(5 9 27 / 0.46));
     --cg-input: var(--glass-input, rgb(3 9 27 / 0.48));
-    --cg-popout: var(--popout-color, rgb(3 9 24 / 0.66));
+    --cg-popout: var(--popout-color, rgb(3 9 24 / 0.78));
+    --cg-settings: var(--glass-settings, rgb(2 6 20 / 0.78));
+    --cg-settings-sidebar: var(--glass-settings-sidebar, rgb(7 12 31 / 0.82));
+    --cg-settings-content: var(--glass-settings-content, rgb(3 8 24 / 0.72));
+    --cg-settings-card: var(--glass-settings-card, rgb(11 19 46 / 0.66));
+    --cg-settings-blur: var(--settings-blur, 16px);
+    --cg-scrollbar-thumb: rgb(var(--scrollbar-color, 255, 255, 255) / var(--scrollbar-opacity, .18));
+    --cg-scrollbar-thumb-hover: rgb(var(--scrollbar-color, 255, 255, 255) / var(--scrollbar-opacity-hover, .46));
+    --cg-scrollbar-track: rgb(var(--scrollbar-track-color, 0, 0, 0) / var(--scrollbar-track-opacity, 0));
     --cg-card: var(--color-darkerblue, rgb(20 107 156 / 0.22));
     --cg-card-hover: var(--color-secondary, rgb(14 191 255 / 0.15));
     --cg-selected: var(--color-light, rgb(59 118 176 / 0.58));
