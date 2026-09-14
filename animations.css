@@ -1,53 +1,20 @@
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/sound-para-anim.css');
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/roles-anim.css');
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/spotify.css');
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/friends-activity.css');
-@import url('https://shuutoka.github.io/Chouquette-Glass/cg2/animations/mention.css');
+/* Chouquette Glass — animation loader
+ * Every imported file below contains a real effect; no placeholder files.
+ */
+@import url("./composer-buttons.css");
+@import url("./mention.css");
+@import url("./friends-activity.css");
+@import url("./roles-anim.css");
+@import url("./sound-para-anim.css");
+@import url("./spotify.css");
+@import url("./new-posts.css");
 
-/*----------------input text bar button---------------*/
-
-.buttonWrapper__69593 svg, .attachButtonPlus_bf89ca {
-  color: lightgrey;
-  fill: lightgrey;
-  transition: transform 0.3s ease; /* Transition for jump animation */
-}
-
-.attachButton_b1db83:hover .attachButtonPlus_bf89ca {
- border-color: gold;
- fill: var(--color-cyan); /*the plus button*/
-}
-
-.buttonWrapper__69593 svg:hover {
-  transform: translateY(-5px); /* moove the item above in hover mode */
-  color: var(--color-cyan);
-}
-
-.buttonWrapper__69593 svg, .attachButtonPlus_bf89ca {
-  transform: translateY(0); /* reset the animation to avoid bug in hover when the mouse ins't in the right place or too slow */
-}
-/*------------------FORUM NEW POST NOTIFICATION--------------------*/
-.newPostsButton__760c6 {
-  background-color: var(--color-secondary);
-  border-color: var(--color-cyan);
-  backdrop-filter: blur(2px);
-  transition: background-color 0.5s ease, border-color 0.5s ease; /* Transition pour l'animation */
-}
-
-@keyframes shine {
-  0% {
-      background-color: var(--color-secondary);
-      border-color: var(--color-cyan);
-  }
-  50% {
-      background-color: var(--color-secondary-light); /* Couleur plus claire pour la brillance */
-      border-color: white; /* Couleur de la bordure plus claire pour la brillance */
-  }
-  100% {
-      background-color: var(--color-secondary);
-      border-color: var(--color-cyan);
-  }
-}
-
-.newPostsButton__760c6 {
-  animation: shine 2s infinite; /* Animation de brillance lors du survol */
+/* Respect the OS/Discord reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
 }

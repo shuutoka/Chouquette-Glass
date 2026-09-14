@@ -1,0 +1,63 @@
+/* Chouquette Glass — messages, composer, embeds and reactions */
+li[id^="chat-messages-"] {
+    border-radius: 10px;
+    transition: background-color 220ms ease, box-shadow 220ms ease;
+    padding-inline: var(--message-padding-side, 5px);
+    padding-top: var(--message-padding-top, 1px);
+}
+li[id^="chat-messages-"]:hover { background: var(--cg-hover) !important; }
+
+/* Date/day divider */
+#app-mount [class*="divider_"] { border-color: var(--cg-date-line) !important; }
+#app-mount [class*="divider_"] :is([class*="content_"], [class*="date_"]) {
+    color: var(--cg-text) !important;
+    background: rgb(0 126 170 / 0.64) !important;
+    border-radius: 999px !important;
+    padding-inline: 7px !important;
+    box-shadow: 0 0 .10rem rgb(255 255 255 / .60), 0 0 .35rem rgb(var(--cg-blue-rgb) / .48) !important;
+}
+
+/* Replies */
+#app-mount [class*="repliedMessage_"] { color: var(--cg-text-muted); }
+#app-mount [class*="repliedMessage_"]::before { border-color: rgb(var(--cg-cyan-rgb) / .55) !important; }
+
+/* Code and spoilers */
+#app-mount li[id^="chat-messages-"] code,
+#app-mount li[id^="chat-messages-"] pre {
+    background: var(--cg-code-bg) !important;
+    border-color: rgb(var(--cg-cyan-rgb) / .24) !important;
+}
+#app-mount [class*="spoilerContent_"][class*="hidden_"] {
+    background: rgb(76 160 163 / .62) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+/* Composer glass strip */
+#app-mount [class*="form_"] { background: transparent !important; }
+#app-mount [class*="form_"]::before,
+#app-mount [class*="form_"]::after { background: transparent !important; box-shadow: none !important; }
+#app-mount [class*="channelTextArea_"] { background: transparent !important; }
+#app-mount [class*="channelTextArea_"] [class*="scrollableContainer_"] {
+    background: var(--cg-input) !important;
+    border: 1px solid rgb(255 255 255 / .035) !important;
+    border-radius: var(--cg-input-radius) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+}
+
+/* Embeds / attachments / reactions */
+#app-mount :is([class*="embedFull_"], [class*="embedWrapper_"], [class*="attachment_"]) {
+    background-color: var(--cg-card) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+    border-radius: var(--cg-embed-radius) !important;
+    border-top-color: rgb(255 255 255 / .05) !important;
+    border-right-color: rgb(255 255 255 / .05) !important;
+    border-bottom-color: rgb(255 255 255 / .05) !important;
+}
+#app-mount [class*="reaction_"] {
+    background: rgb(54 77 121 / .34) !important;
+    border-color: rgb(var(--cg-cyan-rgb) / .25) !important;
+    border-radius: 999px !important;
+}
+#app-mount [class*="reaction_"]:hover { background: rgb(14 191 255 / .22) !important; }
+#app-mount [class*="buttons_"] [class*="wrapper_"] { backdrop-filter: blur(var(--cg-blur-small)); }

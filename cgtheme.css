@@ -1,5 +1,60 @@
-/*
- * Compatibility entry point retained for old Chouquette Glass links.
- * New code lives in chouquette-core.css.
+/**
+ * Chouquette Glass core — 2.2.0
+ *
+ * This file is the public import target. It intentionally contains almost no
+ * component CSS itself: each maintained part lives in a real module below.
+ * All @import rules MUST stay before declarations for CSS/BetterDiscord.
  */
-@import url("./chouquette-core.css");
+@import url("./font.css");
+@import url("./layout.css");
+@import url("./messages.css");
+@import url("./components.css");
+@import url("./animations/animations.css");
+
+:root {
+    /* Internal aliases. User-facing variables live in ChouquetteGlass.theme.css. */
+    --cg-background-image: var(--background-image-active, var(--background-image-Minsk));
+    --cg-background-fallback:
+        radial-gradient(circle at 72% 18%, rgb(0 202 255 / 0.22), transparent 35%),
+        radial-gradient(circle at 24% 78%, rgb(93 48 205 / 0.32), transparent 42%),
+        linear-gradient(135deg, #07152e 0%, #080b23 48%, #041423 100%);
+
+    --cg-global-tint: var(--glass-global-tint, rgb(5 9 28 / 0.46));
+    --cg-server-rail: var(--glass-server-rail, rgb(0 5 18 / 0.31));
+    --cg-sidebar: var(--glass-sidebar, rgb(18 24 58 / 0.38));
+    --cg-chat: var(--glass-chat, rgb(13 16 43 / 0.23));
+    --cg-members: var(--glass-members, rgb(8 14 36 / 0.28));
+    --cg-header: var(--glass-header, rgb(4 11 31 / 0.24));
+    --cg-user-panel: var(--glass-user-panel, rgb(5 9 27 / 0.46));
+    --cg-input: var(--glass-input, rgb(3 9 27 / 0.48));
+    --cg-popout: var(--popout-color, rgb(3 9 24 / 0.66));
+    --cg-card: var(--color-darkerblue, rgb(20 107 156 / 0.22));
+    --cg-card-hover: var(--color-secondary, rgb(14 191 255 / 0.15));
+    --cg-selected: var(--color-light, rgb(59 118 176 / 0.58));
+    --cg-hover: var(--color-transparency, rgb(14 191 255 / 0.095));
+
+    --cg-blur-small: 3px;
+    --cg-blur: 8px;
+    --cg-popout-blur: var(--popout-blur, 12px);
+    --cg-cyan: var(--color-cyan, #11c2c2);
+    --cg-cyan-bright: var(--color-icon-bright, #00ffff);
+    --cg-blue: var(--neon-color, #0088ff);
+    --cg-blue-rgb: 0, 136, 255;
+    --cg-cyan-rgb: 17, 194, 194;
+    --cg-date-line: var(--color-date-bar, rgb(14 205 244 / 0.72));
+    --cg-text: rgb(248 249 253);
+    --cg-text-muted: rgb(218 225 235 / 0.84);
+    --cg-code-bg: var(--color-code, rgb(45 111 131 / 0.44));
+
+    --cg-font: "Baloo Bhaijaan 2", "gg sans", sans-serif;
+    --cg-code-font: "Cascadia Mono", "Consolas", monospace;
+    --cg-message-font-size: var(--message-font-size, 16px);
+    --cg-message-line-height: var(--message-line-height, 1.38);
+    --cg-letter-spacing: var(--message-letter-spacing, 0.006em);
+    --cg-word-spacing: var(--message-word-spacing, 0.015em);
+    --cg-card-radius: var(--card-radius, 8px);
+    --cg-popout-radius: var(--popout-radius, 16px);
+    --cg-embed-radius: var(--embed-radius, 22px);
+    --cg-input-radius: var(--input-radius, 22px);
+    --cg-mention-animation: var(--mention-animation, cg-mention-flicker 1.5s infinite alternate);
+}

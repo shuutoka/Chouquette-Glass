@@ -1,17 +1,8 @@
-/*SPOTIFY ACTIVITY*/
-.activitySectionAssets_ea2444 .borderRadius0_b7b155 .assetsLargeImageSpotify__06348 {
-    border-radius: 15px; /*make the spotify album picture round*/
+/* Spotify activity album art rotation, retained from the original theme. */
+#app-mount [class*="assetsLargeImageSpotify_"] {
+    border-radius: 15px !important;
 }
-/*animation of the spotify album picture*/
-.activitySectionAssets_ea2444 .borderRadius0_b7b155 .assetsLargeImageSpotify__06348:hover {
-    border-radius: 15px; /*border radius of the picture, 0= square and 15=circle*/
-    animation: rotation 8s infinite linear; /*8secondes in an infinit loop*/
+#app-mount [class*="assetsLargeImageSpotify_"]:hover {
+    animation: cg-spotify-rotation 8s linear infinite;
 }
-@keyframes rotation { /*rotation from 0° to 359° in 8 secondes*/
-  from { /*start from this angle*/
-    transform: rotate(0deg); /*initial angle*/
-  }
-  to { /*go to this angle*/
-    transform: rotate(359deg); /*end angle*/
-  }
-}
+@keyframes cg-spotify-rotation { to { transform: rotate(1turn); } }

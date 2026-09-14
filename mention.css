@@ -1,23 +1,16 @@
-.mentioned__58017,
-.mouse-mode.full-motion .message__80c10.mentioned__58017 {
-  border-radius: 0.5rem; /* Angle smoothness of the neon */
-  animation: flicker 1.5s infinite alternate; /* Type of animation */
-  border: 0.1rem solid var(--color-light); /* Color of the center of the neon */
-  box-shadow: 0 0 .1rem var(--neon-color); /* Initial box-shadow */
+/* Mention neon, reconstructed from the original flicker animation. */
+#app-mount [class*="mentioned_"],
+#app-mount li[id^="chat-messages-"][class*="mentioned_"] {
+    border-radius: .5rem;
+    outline: .1rem solid var(--color-light, rgb(70 133 187 / .623));
+    box-shadow: 0 0 .1rem var(--neon-color, #0088ff);
+    animation: var(--cg-mention-animation);
 }
-
-/* Animation of the neon */
-@keyframes flicker {
-  0% {
-    box-shadow: 0 0 .1rem var(--neon-color); /* Initial box-shadow */
-  }
-  100% {
-    box-shadow:
-      0 0 .2rem #fff,
-      inset 0 0 .5rem #fff,
-      0 0 .1rem var(--neon-color), /* Offset brightness of neon, or in another word, the "glowing intensity" */
-      inset 0 0 .1rem var(--neon-color), /* In glowing */
-      0 0 .9rem var(--neon-color),
-      inset 0 0 1rem var(--neon-color); /* Glowing intensity */
-  }
+@keyframes cg-mention-flicker {
+    from { box-shadow: 0 0 .1rem var(--neon-color, #0088ff); }
+    to {
+        box-shadow: 0 0 .2rem #fff, inset 0 0 .5rem #fff,
+                    0 0 .1rem var(--neon-color, #0088ff), inset 0 0 .1rem var(--neon-color, #0088ff),
+                    0 0 .9rem var(--neon-color, #0088ff), inset 0 0 1rem var(--neon-color, #0088ff);
+    }
 }

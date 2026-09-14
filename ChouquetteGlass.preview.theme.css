@@ -1,0 +1,639 @@
+/**
+ * @name Chouquette Glass
+ * @author @Shuutoka
+ * @version 2.2.0-preview
+ * @description Transparent, animated and highly customizable glass theme for BetterDiscord.
+ * @source https://github.com/shuutoka/Chouquette-Glass/
+ */
+
+
+/* Standalone local preview build. */
+/**
+ * Chouquette Glass core — 2.2.0
+ *
+ * This file is the public import target. It intentionally contains almost no
+ * component CSS itself: each maintained part lives in a real module below.
+ * All @import rules MUST stay before declarations for CSS/BetterDiscord.
+ */
+
+/* ---- inlined: cg2/font.css ---- */
+/* Chouquette Glass — typography module */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&display=swap");
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--cg-font, "Baloo Bhaijaan 2", "gg sans", sans-serif) !important;
+}
+
+li[id^="chat-messages-"] [class*="messageContent_"],
+li[id^="chat-messages-"] [class*="markup_"] {
+    font-size: var(--cg-message-font-size, 16px);
+    line-height: var(--cg-message-line-height, 1.38);
+    letter-spacing: var(--cg-letter-spacing, 0.006em);
+    word-spacing: var(--cg-word-spacing, 0.015em);
+}
+
+pre,
+code,
+[class*="codeLine_"] {
+    font-family: var(--cg-code-font, "Cascadia Mono", "Consolas", monospace) !important;
+}
+
+
+/* ---- inlined: cg2/layout.css ---- */
+/* Chouquette Glass — global wallpaper, Discord tokens, panes and navigation */
+
+.theme-dark,
+.theme-darker,
+.theme-midnight {
+    --font-primary: var(--cg-font);
+    --font-display: var(--cg-font);
+    --font-code: var(--cg-code-font);
+
+    --text-primary: var(--cg-text);
+    --text-default: var(--cg-text);
+    --text-secondary: var(--cg-text-muted);
+    --text-muted: rgb(198 207 218 / 0.78);
+    --text-link: var(--cg-cyan-bright);
+    --text-brand: var(--cg-cyan);
+    --channels-default: rgb(217 225 235 / 0.90);
+    --channel-icon: rgb(205 220 232 / 0.90);
+    --interactive-normal: rgb(221 231 239 / 0.90);
+    --interactive-hover: #fff;
+    --interactive-active: #fff;
+
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-secondary-alt: rgb(0 0 0 / 0.14);
+    --background-tertiary: transparent;
+    --background-floating: var(--cg-popout);
+    --background-base-lowest: transparent;
+    --background-base-lower: rgb(0 0 0 / 0.08);
+    --background-base-low: rgb(0 0 0 / 0.13);
+    --background-surface-high: rgb(0 0 0 / 0.20);
+    --background-surface-higher: rgb(0 0 0 / 0.30);
+    --background-surface-highest: rgb(0 0 0 / 0.42);
+    --bg-surface-raised: rgb(0 0 0 / 0.48);
+    --bg-base-primary: transparent;
+    --bg-base-secondary: transparent;
+    --bg-base-tertiary: transparent;
+    --chat-background-default: transparent;
+    --channeltextarea-background: transparent;
+    --modal-background: var(--cg-popout);
+    --modal-footer-background: rgb(0 0 0 / 0.36);
+    --card-background-default: rgb(255 255 255 / 0.075);
+    --background-modifier-hover: var(--cg-hover);
+    --background-modifier-active: rgb(14 191 255 / 0.14);
+    --background-modifier-selected: rgb(14 191 255 / 0.20);
+    --background-modifier-accent: rgb(14 191 255 / 0.22);
+    --background-message-hover: var(--cg-hover);
+    --message-background-hover: var(--cg-hover);
+    --message-mentioned-background-default: rgb(0 136 255 / 0.13);
+    --message-mentioned-background-hover: rgb(0 136 255 / 0.19);
+    --mention-background: rgb(0 136 255 / 0.20);
+    --mention-foreground: #eafaff;
+    --reaction-background-default: rgb(43 66 110 / 0.34);
+    --reaction-background-hover: rgb(14 191 255 / 0.18);
+    --reaction-background-reacted-default: rgb(14 191 255 / 0.26);
+    --reaction-border-reacted-default: var(--cg-cyan);
+
+    /* Discord visual-refresh overlay variables. */
+    --custom-theme-background: var(--cg-background-image);
+    --bg-overlay-color: 5 9 28;
+    --bg-overlay-color-inverse: 255 255 255;
+    --bg-overlay-opacity-1: 0.58;
+    --bg-overlay-opacity-2: 0.48;
+    --bg-overlay-opacity-3: 0.38;
+    --bg-overlay-opacity-4: 0.29;
+    --bg-overlay-opacity-5: 0.20;
+    --bg-overlay-opacity-6: 0.08;
+    --bg-overlay-opacity-chat: 0.22;
+    --bg-overlay-opacity-home: 0.34;
+    --bg-overlay-opacity-home-card: 0.26;
+    --bg-overlay-opacity-app-frame: 0.28;
+    --bg-overlay-1: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-1)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-1))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-2: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-2)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-2))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-3: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-3)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-3))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-4: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-4)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-4))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-5: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-5)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-5))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-6: linear-gradient(rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)), rgb(var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-chat: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-chat)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-chat))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-home: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-home)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-home))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-home-card: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-home-card)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-home-card))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-app-frame: linear-gradient(rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-app-frame)), rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-app-frame))) fixed 0 0 / cover, var(--cg-background-image) fixed 0 0 / cover;
+    --bg-overlay-floating: var(--cg-popout);
+}
+
+/* Full-window wallpaper. Keeping this explicit makes the theme visibly active
+   even if Discord changes one of the overlay variables above. */
+html,
+body {
+    background-color: #071126 !important;
+    background-image: var(--cg-background-image), var(--cg-background-fallback) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+#app-mount {
+    background: var(--cg-global-tint) !important;
+}
+
+#app-mount > div,
+#app-mount [class*="app_"],
+#app-mount [class*="layers_"],
+#app-mount [class*="baseLayer_"],
+#app-mount [class*="base_"] {
+    background-color: transparent !important;
+}
+
+#app-mount > [class*="bg_"],
+#app-mount [class*="app_"] > [class*="bg_"] {
+    background: transparent !important;
+}
+
+/* Main glass panes */
+#app-mount [class*="guilds_"] {
+    background: var(--cg-server-rail) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+}
+
+#app-mount [class*="sidebarList_"] {
+    background: var(--cg-sidebar) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+    border-color: rgb(255 255 255 / 0.04) !important;
+}
+
+#app-mount :is(
+    [class*="privateChannels_"],
+    [class*="privateChannels_"] [class*="scroller_"],
+    [class*="sidebarList_"] [class*="scroller_"],
+    [class*="page_"],
+    [class*="chat_"],
+    [class*="messagesWrapper_"]
+) {
+    background: transparent !important;
+}
+
+#app-mount [class*="chatContent_"] {
+    background: var(--cg-chat) !important;
+    backdrop-filter: blur(1px);
+}
+
+#app-mount :is([class*="peopleColumn_"], [class*="mainPageScroller_"], [class*="shop_"]) {
+    background: var(--cg-chat) !important;
+}
+
+#app-mount [class*="nowPlayingColumn_"] {
+    background: rgb(6 12 33 / 0.28) !important;
+}
+
+#app-mount :is([class*="membersWrap_"], [class*="members_"]) {
+    background: var(--cg-members) !important;
+}
+
+#app-mount :is(
+    [class*="subtitleContainer_"],
+    [class*="title_"][class*="container_"],
+    [class*="searchResultsWrap_"] > header
+) {
+    background: var(--cg-header) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+    border-color: rgb(255 255 255 / 0.06) !important;
+}
+
+#app-mount [class*="panels_"] {
+    background: var(--cg-user-panel) !important;
+    backdrop-filter: blur(var(--cg-blur));
+    border-color: rgb(255 255 255 / 0.06) !important;
+}
+
+/* Navigation and selection */
+#app-mount [class*="modeSelected_"] [class*="link_"] {
+    background: rgb(14 191 255 / 0.13) !important;
+    border: 1px solid rgb(var(--cg-cyan-rgb) / 0.38) !important;
+    box-shadow: 0 0 .1rem rgb(255 255 255 / .6), inset 0 0 .1rem rgb(255 255 255 / .25), 0 0 .35rem rgb(var(--cg-blue-rgb) / .45), inset 0 0 .18rem rgb(var(--cg-blue-rgb) / .24) !important;
+    backdrop-filter: blur(3px);
+}
+
+#app-mount [class*="privateChannels_"] [class*="interactiveSelected_"],
+#app-mount [class*="privateChannels_"] [aria-selected="true"] {
+    background: var(--cg-selected) !important;
+    border-radius: 6px !important;
+}
+
+#app-mount :is([class*="link_"]:hover, [class*="interactive_"]:hover, [class*="peopleListItem_"]:hover, [class*="layout_"]:hover) {
+    background-color: var(--cg-hover) !important;
+}
+
+#app-mount :is([class*="toolbar_"] svg, [class*="linkButtonIcon_"], [class*="actionIcon_"], [class*="circleIconButton_"]) {
+    color: var(--cg-cyan-bright) !important;
+}
+
+#app-mount :is(
+    [class*="searchBar_"] [class*="searchBarComponent_"],
+    [class*="searchBar_"] [class*="DraftEditor-root"],
+    [class*="search_"] [class*="searchBar_"]
+) {
+    background: var(--color-searchbar, rgb(55 48 159 / .23)) !important;
+    border-radius: 8px !important;
+}
+
+
+/* ---- inlined: cg2/messages.css ---- */
+/* Chouquette Glass — messages, composer, embeds and reactions */
+li[id^="chat-messages-"] {
+    border-radius: 10px;
+    transition: background-color 220ms ease, box-shadow 220ms ease;
+    padding-inline: var(--message-padding-side, 5px);
+    padding-top: var(--message-padding-top, 1px);
+}
+li[id^="chat-messages-"]:hover { background: var(--cg-hover) !important; }
+
+/* Date/day divider */
+#app-mount [class*="divider_"] { border-color: var(--cg-date-line) !important; }
+#app-mount [class*="divider_"] :is([class*="content_"], [class*="date_"]) {
+    color: var(--cg-text) !important;
+    background: rgb(0 126 170 / 0.64) !important;
+    border-radius: 999px !important;
+    padding-inline: 7px !important;
+    box-shadow: 0 0 .10rem rgb(255 255 255 / .60), 0 0 .35rem rgb(var(--cg-blue-rgb) / .48) !important;
+}
+
+/* Replies */
+#app-mount [class*="repliedMessage_"] { color: var(--cg-text-muted); }
+#app-mount [class*="repliedMessage_"]::before { border-color: rgb(var(--cg-cyan-rgb) / .55) !important; }
+
+/* Code and spoilers */
+#app-mount li[id^="chat-messages-"] code,
+#app-mount li[id^="chat-messages-"] pre {
+    background: var(--cg-code-bg) !important;
+    border-color: rgb(var(--cg-cyan-rgb) / .24) !important;
+}
+#app-mount [class*="spoilerContent_"][class*="hidden_"] {
+    background: rgb(76 160 163 / .62) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+/* Composer glass strip */
+#app-mount [class*="form_"] { background: transparent !important; }
+#app-mount [class*="form_"]::before,
+#app-mount [class*="form_"]::after { background: transparent !important; box-shadow: none !important; }
+#app-mount [class*="channelTextArea_"] { background: transparent !important; }
+#app-mount [class*="channelTextArea_"] [class*="scrollableContainer_"] {
+    background: var(--cg-input) !important;
+    border: 1px solid rgb(255 255 255 / .035) !important;
+    border-radius: var(--cg-input-radius) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+}
+
+/* Embeds / attachments / reactions */
+#app-mount :is([class*="embedFull_"], [class*="embedWrapper_"], [class*="attachment_"]) {
+    background-color: var(--cg-card) !important;
+    backdrop-filter: blur(var(--cg-blur-small));
+    border-radius: var(--cg-embed-radius) !important;
+    border-top-color: rgb(255 255 255 / .05) !important;
+    border-right-color: rgb(255 255 255 / .05) !important;
+    border-bottom-color: rgb(255 255 255 / .05) !important;
+}
+#app-mount [class*="reaction_"] {
+    background: rgb(54 77 121 / .34) !important;
+    border-color: rgb(var(--cg-cyan-rgb) / .25) !important;
+    border-radius: 999px !important;
+}
+#app-mount [class*="reaction_"]:hover { background: rgb(14 191 255 / .22) !important; }
+#app-mount [class*="buttons_"] [class*="wrapper_"] { backdrop-filter: blur(var(--cg-blur-small)); }
+
+
+/* ---- inlined: cg2/components.css ---- */
+/* Chouquette Glass — popouts, friends, folders, settings and scrollbars */
+#app-mount :is(
+    [class*="menu_"], [class*="autocomplete_"], [class*="contentWrapper_"],
+    [class*="messagesPopoutWrap_"], [class*="quickswitcher_"], [class*="searchResultsWrap_"],
+    [class*="userProfileOuter_"], [class*="userProfileInner_"]
+) {
+    background: var(--cg-popout) !important;
+    backdrop-filter: blur(var(--cg-popout-blur));
+    border-color: rgb(var(--cg-cyan-rgb) / .20) !important;
+    border-radius: var(--cg-popout-radius) !important;
+    box-shadow: 0 12px 38px rgb(0 0 0 / .40);
+}
+
+#app-mount [role="dialog"] {
+    --modal-background: var(--cg-popout);
+    --modal-footer-background: rgb(0 0 0 / .30);
+}
+#app-mount [class*="quickswitcher_"] {
+    box-shadow: 0 0 .15rem rgb(255 255 255 / .45), 0 0 .80rem rgb(var(--cg-blue-rgb) / .46) !important;
+}
+
+/* Friends / activity */
+#app-mount [class*="addFriend_"] {
+    background: transparent !important;
+    border: 1px solid rgb(var(--cg-cyan-rgb) / .62) !important;
+}
+#app-mount [class*="addFriend_"]:hover { color: #d9ff8d !important; border-radius: 12px !important; }
+
+/* Server folders / action buttons */
+#app-mount :is([class*="expandedFolderBackground_"], [class*="folderGroup_"] [class*="folder_"], [class*="circleIconButton_"]) {
+    background-color: rgb(14 191 255 / .10) !important;
+}
+#app-mount [class*="circleIconButton_"]:hover { background-color: rgb(14 191 255 / .24) !important; }
+
+/* Discord settings + BetterDiscord */
+#app-mount :is([class*="standardSidebarView_"], [class*="sidebarRegionScroller_"], [class*="contentRegion_"], [class*="contentRegionScroller_"]) {
+    background: transparent !important;
+}
+#app-mount [class*="accountProfileCard_"] {
+    background: rgb(0 0 0 / .30) !important;
+    backdrop-filter: blur(var(--cg-blur));
+}
+.bd-addon-card,
+.bd-search-wrapper,
+.bd-changelog-modal,
+.bd-modal-root {
+    background: rgb(0 0 0 / .42) !important;
+    backdrop-filter: blur(var(--cg-blur));
+    border-color: rgb(var(--cg-cyan-rgb) / .20) !important;
+}
+.bd-addon-card:hover { border-color: rgb(var(--cg-cyan-rgb) / .55) !important; }
+.bd-settings-title,
+.bd-settings-group-title,
+.bd-link { color: var(--cg-cyan) !important; }
+
+/* Scrollbars */
+* {
+    scrollbar-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity, .15)) transparent;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent !important; }
+::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity, .15)) !important;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--scrollbar-color, 255,255,255) / var(--scrollbar-opacity-hover, .40)) !important;
+}
+
+#app-mount [class*="winButton_"] { color: white !important; }
+
+
+/* ---- inlined: cg2/animations/animations.css ---- */
+/* Chouquette Glass — animation loader
+ * Every imported file below contains a real effect; no placeholder files.
+ */
+
+/* ---- inlined: cg2/animations/composer-buttons.css ---- */
+/* Composer buttons: small upward jump + cyan highlight, from the original theme. */
+#app-mount [class*="channelTextArea_"] :is([class*="buttonWrapper_"], [class*="attachButton_"]) svg {
+    color: lightgrey !important;
+    fill: currentColor;
+    transform: translateY(0);
+    transition: transform .3s ease, color .3s ease, fill .3s ease;
+}
+#app-mount [class*="channelTextArea_"] :is([class*="buttonWrapper_"], [class*="attachButton_"]):hover svg {
+    color: var(--cg-cyan) !important;
+    fill: currentColor;
+    transform: translateY(-5px);
+}
+
+
+/* ---- inlined: cg2/animations/mention.css ---- */
+/* Mention neon, reconstructed from the original flicker animation. */
+#app-mount [class*="mentioned_"],
+#app-mount li[id^="chat-messages-"][class*="mentioned_"] {
+    border-radius: .5rem;
+    outline: .1rem solid var(--color-light, rgb(70 133 187 / .623));
+    box-shadow: 0 0 .1rem var(--neon-color, #0088ff);
+    animation: var(--cg-mention-animation);
+}
+@keyframes cg-mention-flicker {
+    from { box-shadow: 0 0 .1rem var(--neon-color, #0088ff); }
+    to {
+        box-shadow: 0 0 .2rem #fff, inset 0 0 .5rem #fff,
+                    0 0 .1rem var(--neon-color, #0088ff), inset 0 0 .1rem var(--neon-color, #0088ff),
+                    0 0 .9rem var(--neon-color, #0088ff), inset 0 0 1rem var(--neon-color, #0088ff);
+    }
+}
+
+
+/* ---- inlined: cg2/animations/friends-activity.css ---- */
+/* Friends activity card neon hover. */
+#app-mount [class*="nowPlayingColumn_"] [class*="outer_"] {
+    background: rgb(255 255 255 / .055) !important;
+    transition: background-color .6s ease, box-shadow .6s ease;
+}
+#app-mount [class*="nowPlayingColumn_"] [class*="outer_"]:hover {
+    background: var(--color-transparency, rgb(14 191 255 / .095)) !important;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--neon-color), 0 0 8px var(--neon-color), 0 0 5px var(--neon-color);
+}
+
+
+/* ---- inlined: cg2/animations/roles-anim.css ---- */
+/* Role chips: compact glass pill + gentle hover motion. */
+#app-mount [class*="roles_"] { gap: 8px; }
+#app-mount [class*="roles_"] [class*="role_"] {
+    margin: 0;
+    height: auto;
+    padding: 6px 8px;
+    border-radius: 7px;
+    overflow: hidden;
+    background: rgb(0 93 126 / .20) !important;
+    transition: transform .15s ease, background-color .15s ease, box-shadow .15s ease;
+}
+#app-mount [class*="roles_"] [class*="role_"]:hover {
+    transform: translateY(-1px);
+    background: rgb(14 191 255 / .16) !important;
+    box-shadow: 0 0 .35rem rgb(var(--cg-blue-rgb) / .28);
+}
+
+
+/* ---- inlined: cg2/animations/sound-para-anim.css ---- */
+/* User-panel controls.
+ * The 2023 theme almost completely hid microphone/headphone buttons until hover.
+ * They are only dimmed in 2.2 so the visual joke remains without harming usability.
+ */
+#app-mount [class*="panels_"] [class*="buttons_"] > * {
+    opacity: .48;
+    transform: rotate(0deg) scale(.94);
+    transition: opacity .2s ease, transform .35s ease, background-color .2s ease;
+}
+#app-mount [class*="panels_"]:hover [class*="buttons_"] > * {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+}
+#app-mount [class*="panels_"] [class*="buttons_"] > *:hover {
+    background-color: var(--color-secondary, rgb(14 191 255 / .35)) !important;
+    border-radius: 15px !important;
+}
+#app-mount [class*="panels_"] [class*="avatarWrapper_"]:hover {
+    border-radius: 13px;
+    background-color: var(--color-secondary, rgb(14 191 255 / .35));
+    transition: background-color .3s ease, border-radius .3s ease;
+}
+
+
+/* ---- inlined: cg2/animations/spotify.css ---- */
+/* Spotify activity album art rotation, retained from the original theme. */
+#app-mount [class*="assetsLargeImageSpotify_"] {
+    border-radius: 15px !important;
+}
+#app-mount [class*="assetsLargeImageSpotify_"]:hover {
+    animation: cg-spotify-rotation 8s linear infinite;
+}
+@keyframes cg-spotify-rotation { to { transform: rotate(1turn); } }
+
+
+/* ---- inlined: cg2/animations/new-posts.css ---- */
+/* Forum / thread new-post indicator glow. */
+#app-mount [class*="newPostsButton_"] {
+    background-color: var(--color-secondary, rgb(14 191 255 / .35)) !important;
+    border: 1px solid var(--color-cyan, rgb(17 194 194)) !important;
+    backdrop-filter: blur(2px);
+    animation: cg-new-post-shine 2s ease-in-out infinite;
+}
+@keyframes cg-new-post-shine {
+    0%, 100% { background-color: var(--color-secondary); border-color: var(--color-cyan); box-shadow: 0 0 .15rem rgb(var(--cg-blue-rgb) / .20); }
+    50% { background-color: var(--color-secondary-light); border-color: white; box-shadow: 0 0 .60rem rgb(var(--cg-blue-rgb) / .55); }
+}
+
+
+/* Respect the OS/Discord reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+
+:root {
+    /* Internal aliases. User-facing variables live in ChouquetteGlass.theme.css. */
+    --cg-background-image: var(--background-image-active, var(--background-image-Minsk));
+    --cg-background-fallback:
+        radial-gradient(circle at 72% 18%, rgb(0 202 255 / 0.22), transparent 35%),
+        radial-gradient(circle at 24% 78%, rgb(93 48 205 / 0.32), transparent 42%),
+        linear-gradient(135deg, #07152e 0%, #080b23 48%, #041423 100%);
+
+    --cg-global-tint: var(--glass-global-tint, rgb(5 9 28 / 0.46));
+    --cg-server-rail: var(--glass-server-rail, rgb(0 5 18 / 0.31));
+    --cg-sidebar: var(--glass-sidebar, rgb(18 24 58 / 0.38));
+    --cg-chat: var(--glass-chat, rgb(13 16 43 / 0.23));
+    --cg-members: var(--glass-members, rgb(8 14 36 / 0.28));
+    --cg-header: var(--glass-header, rgb(4 11 31 / 0.24));
+    --cg-user-panel: var(--glass-user-panel, rgb(5 9 27 / 0.46));
+    --cg-input: var(--glass-input, rgb(3 9 27 / 0.48));
+    --cg-popout: var(--popout-color, rgb(3 9 24 / 0.66));
+    --cg-card: var(--color-darkerblue, rgb(20 107 156 / 0.22));
+    --cg-card-hover: var(--color-secondary, rgb(14 191 255 / 0.15));
+    --cg-selected: var(--color-light, rgb(59 118 176 / 0.58));
+    --cg-hover: var(--color-transparency, rgb(14 191 255 / 0.095));
+
+    --cg-blur-small: 3px;
+    --cg-blur: 8px;
+    --cg-popout-blur: var(--popout-blur, 12px);
+    --cg-cyan: var(--color-cyan, #11c2c2);
+    --cg-cyan-bright: var(--color-icon-bright, #00ffff);
+    --cg-blue: var(--neon-color, #0088ff);
+    --cg-blue-rgb: 0, 136, 255;
+    --cg-cyan-rgb: 17, 194, 194;
+    --cg-date-line: var(--color-date-bar, rgb(14 205 244 / 0.72));
+    --cg-text: rgb(248 249 253);
+    --cg-text-muted: rgb(218 225 235 / 0.84);
+    --cg-code-bg: var(--color-code, rgb(45 111 131 / 0.44));
+
+    --cg-font: "Baloo Bhaijaan 2", "gg sans", sans-serif;
+    --cg-code-font: "Cascadia Mono", "Consolas", monospace;
+    --cg-message-font-size: var(--message-font-size, 16px);
+    --cg-message-line-height: var(--message-line-height, 1.38);
+    --cg-letter-spacing: var(--message-letter-spacing, 0.006em);
+    --cg-word-spacing: var(--message-word-spacing, 0.015em);
+    --cg-card-radius: var(--card-radius, 8px);
+    --cg-popout-radius: var(--popout-radius, 16px);
+    --cg-embed-radius: var(--embed-radius, 22px);
+    --cg-input-radius: var(--input-radius, 22px);
+    --cg-mention-animation: var(--mention-animation, cg-mention-flicker 1.5s infinite alternate);
+}
+
+/* ---- user configuration (same variables as the small loader) ---- */
+:root {
+    /* ========================= WALLPAPER ========================= */
+    --background-image-custom: url(""); /* Put a direct HTTPS image URL here. */
+    --background-image-pixiv: url("https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png");
+    --background-image-Minsk: url("https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig");
+    --background-image-Mikasa: url("https://wallpapercave.com/uwp/uwp423127.jpeg");
+    --background-image-Ibuki: url("https://i.imgur.com/wPsgn7Y.jpeg");
+    --background-image-dust: url("https://cdn.discordapp.com/attachments/987766394521272350/1167862595911421997/polar-lights-5858648_1920.jpg");
+
+    /* Change only this line to switch preset. You can also use custom. */
+    --background-image-active: var(--background-image-Minsk);
+    --bg-blur: 0px;
+    --bg-opacity: 80%;
+
+    /* =========================== GLASS =========================== */
+    --glass-global-tint: rgb(5 9 28 / 0.46);
+    --glass-server-rail: rgb(0 5 18 / 0.31);
+    --glass-sidebar: rgb(18 24 58 / 0.38);
+    --glass-chat: rgb(13 16 43 / 0.23);
+    --glass-members: rgb(8 14 36 / 0.28);
+    --glass-header: rgb(4 11 31 / 0.24);
+    --glass-user-panel: rgb(5 9 27 / 0.46);
+    --glass-input: rgb(3 9 27 / 0.48);
+    --popout-color: rgb(3 9 24 / 0.66);
+    --popout-blur: 12px;
+    --popout-radius: 16px;
+
+    /* =========================== COLORS ========================== */
+    /* Legacy variable names are intentionally kept for old custom configs. */
+    --color-button: rgb(67 155 67);
+    --color-transparency: rgb(14 191 255 / 0.095);
+    --color-light: rgb(70 133 187 / 0.623);
+    --color-secondary: rgb(14 191 255 / 0.35);
+    --color-secondary-light: rgb(70 190 255 / 0.46); /* Missing in the old repo: now defined. */
+    --color-white: rgb(255 255 255 / 0.096);
+    --color-cyan: rgb(17 194 194);
+    --color-title: rgb(0 128 255 / 0.427);
+    --color-date-bar: rgb(14 205 244 / 0.734);
+    --color-darkerblue: rgb(3 57 96 / 0.588);
+    --color-code: rgb(45 111 131 / 0.438);
+    --color-searchbar: rgb(55 48 159 / 0.229);
+    --color-note: rgb(0 219 248 / 0.096);
+    --color-guild: rgb(84 151 228 / 0.524);
+    --color-icon-bright: aqua;
+    --color-cyan-transparent: rgb(0 255 255 / 0.671);
+    --neon-color: #0088ff;
+
+    /* ========================= READABILITY ======================= */
+    --message-font-size: 16px;
+    --message-line-height: 1.38;
+    --message-letter-spacing: 0.006em;
+    --message-word-spacing: 0.015em;
+    --message-padding-side: 5px;
+    --message-padding-top: 1px;
+
+    /* ========================== SHAPES =========================== */
+    --card-radius: 8px;
+    --embed-radius: 22px;
+    --input-radius: 22px;
+
+    /* ========================= ANIMATION ========================= */
+    /* Historical neon mention. Set to "none" if you prefer no flashing. */
+    --mention-animation: cg-mention-flicker 1.5s infinite alternate;
+    --animation-speed: 1;
+
+    /* ========================= SCROLLBAR ========================= */
+    --scrollbar-color: 255, 255, 255;
+    --scrollbar-opacity: 0.15;
+    --scrollbar-opacity-hover: 0.40;
+}
