@@ -1,0 +1,22 @@
+/* User-panel controls.
+ * The 2023 theme almost completely hid microphone/headphone buttons until hover.
+ * They are only dimmed in 2.2 so the visual joke remains without harming usability.
+ */
+#app-mount [class*="panels_"] [class*="buttons_"] > * {
+    opacity: .48;
+    transform: rotate(0deg) scale(.94);
+    transition: opacity .2s ease, transform .35s ease, background-color .2s ease;
+}
+#app-mount [class*="panels_"]:hover [class*="buttons_"] > * {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+}
+#app-mount [class*="panels_"] [class*="buttons_"] > *:hover {
+    background-color: var(--color-secondary, rgb(14 191 255 / .35)) !important;
+    border-radius: 15px !important;
+}
+#app-mount [class*="panels_"] [class*="avatarWrapper_"]:hover {
+    border-radius: 13px;
+    background-color: var(--color-secondary, rgb(14 191 255 / .35));
+    transition: background-color .3s ease, border-radius .3s ease;
+}

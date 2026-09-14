@@ -1,0 +1,4 @@
+/* Compatibility shim for Chouquette Glass 2.1 links.
+ * The maintained modular entry point is cgtheme.css.
+ */
+@import url("./cgtheme.css");

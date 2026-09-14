@@ -1,0 +1,20 @@
+/* Chouquette Glass — animation loader
+ * Every imported file below contains a real effect; no placeholder files.
+ */
+@import url("./composer-buttons.css");
+@import url("./mention.css");
+@import url("./friends-activity.css");
+@import url("./roles-anim.css");
+@import url("./sound-para-anim.css");
+@import url("./spotify.css");
+@import url("./new-posts.css");
+
+/* Respect the OS/Discord reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}

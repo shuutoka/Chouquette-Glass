@@ -1,0 +1,8 @@
+/* Spotify activity album art rotation, retained from the original theme. */
+#app-mount [class*="assetsLargeImageSpotify_"] {
+    border-radius: 15px !important;
+}
+#app-mount [class*="assetsLargeImageSpotify_"]:hover {
+    animation: cg-spotify-rotation 8s linear infinite;
+}
+@keyframes cg-spotify-rotation { to { transform: rotate(1turn); } }

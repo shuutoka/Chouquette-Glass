@@ -1,0 +1,88 @@
+/**
+ * @name Chouquette Glass
+ * @author @Shuutoka
+ * @version 2.2.0
+ * @description Transparent, animated and highly customizable glass theme for BetterDiscord.
+ * @source https://github.com/shuutoka/Chouquette-Glass/
+ */
+
+/*
+ * IMPORTANT
+ * ---------
+ * This is deliberately the small USER file, like the original Chouquette Glass.
+ * The maintained theme code is loaded from cg2/cgtheme.css on GitHub Pages.
+ * Keep your personal choices below: updates to the core will not require you to
+ * rewrite the whole theme file.
+ */
+@import url("https://shuutoka.github.io/Chouquette-Glass/cg2/cgtheme.css");
+
+:root {
+    /* ========================= WALLPAPER ========================= */
+    --background-image-custom: url(""); /* Put a direct HTTPS image URL here. */
+    --background-image-pixiv: url("https://cdn.discordapp.com/attachments/909430333806608385/918433660426924102/94628242_p0.png");
+    --background-image-Minsk: url("https://ac2-o.namu.la/20210311/fdeaf21af1a8c94cf65995fa560394e605261bf1af72c8c9daaa24acee141fe4.jpg?type=orig");
+    --background-image-Mikasa: url("https://wallpapercave.com/uwp/uwp423127.jpeg");
+    --background-image-Ibuki: url("https://i.imgur.com/wPsgn7Y.jpeg");
+    --background-image-dust: url("https://cdn.discordapp.com/attachments/987766394521272350/1167862595911421997/polar-lights-5858648_1920.jpg");
+
+    /* Change only this line to switch preset. You can also use custom. */
+    --background-image-active: var(--background-image-Minsk);
+    --bg-blur: 0px;
+    --bg-opacity: 80%;
+
+    /* =========================== GLASS =========================== */
+    --glass-global-tint: rgb(5 9 28 / 0.46);
+    --glass-server-rail: rgb(0 5 18 / 0.31);
+    --glass-sidebar: rgb(18 24 58 / 0.38);
+    --glass-chat: rgb(13 16 43 / 0.23);
+    --glass-members: rgb(8 14 36 / 0.28);
+    --glass-header: rgb(4 11 31 / 0.24);
+    --glass-user-panel: rgb(5 9 27 / 0.46);
+    --glass-input: rgb(3 9 27 / 0.48);
+    --popout-color: rgb(3 9 24 / 0.66);
+    --popout-blur: 12px;
+    --popout-radius: 16px;
+
+    /* =========================== COLORS ========================== */
+    /* Legacy variable names are intentionally kept for old custom configs. */
+    --color-button: rgb(67 155 67);
+    --color-transparency: rgb(14 191 255 / 0.095);
+    --color-light: rgb(70 133 187 / 0.623);
+    --color-secondary: rgb(14 191 255 / 0.35);
+    --color-secondary-light: rgb(70 190 255 / 0.46); /* Missing in the old repo: now defined. */
+    --color-white: rgb(255 255 255 / 0.096);
+    --color-cyan: rgb(17 194 194);
+    --color-title: rgb(0 128 255 / 0.427);
+    --color-date-bar: rgb(14 205 244 / 0.734);
+    --color-darkerblue: rgb(3 57 96 / 0.588);
+    --color-code: rgb(45 111 131 / 0.438);
+    --color-searchbar: rgb(55 48 159 / 0.229);
+    --color-note: rgb(0 219 248 / 0.096);
+    --color-guild: rgb(84 151 228 / 0.524);
+    --color-icon-bright: aqua;
+    --color-cyan-transparent: rgb(0 255 255 / 0.671);
+    --neon-color: #0088ff;
+
+    /* ========================= READABILITY ======================= */
+    --message-font-size: 16px;
+    --message-line-height: 1.38;
+    --message-letter-spacing: 0.006em;
+    --message-word-spacing: 0.015em;
+    --message-padding-side: 5px;
+    --message-padding-top: 1px;
+
+    /* ========================== SHAPES =========================== */
+    --card-radius: 8px;
+    --embed-radius: 22px;
+    --input-radius: 22px;
+
+    /* ========================= ANIMATION ========================= */
+    /* Historical neon mention. Set to "none" if you prefer no flashing. */
+    --mention-animation: cg-mention-flicker 1.5s infinite alternate;
+    --animation-speed: 1;
+
+    /* ========================= SCROLLBAR ========================= */
+    --scrollbar-color: 255, 255, 255;
+    --scrollbar-opacity: 0.15;
+    --scrollbar-opacity-hover: 0.40;
+}
